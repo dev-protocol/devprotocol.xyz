@@ -28,7 +28,7 @@ jobs:
       - name: Push to pages repo
         uses: cpina/github-action-push-to-another-repository@main
         env:
-          API_TOKEN_GITHUB: ${{ secrets.GITHUB_API_TOKEN }}
+          API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
         with:
           source-directory: 'dist'
           destination-github-username: ${{ github.actor }}
