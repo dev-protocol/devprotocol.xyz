@@ -1,0 +1,37 @@
+---
+let { metaTitle } = Astro.props;
+---
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>{metaTitle}</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link
+  rel="stylesheet"
+  href={Astro.resolve("../styles/global.css")}
+  >
+</head>
+
+<body class="text-gray-900">
+  <nav class="bg-white flex items-center justify-evenly w-screen h-20 fixed">
+    <a href="https://devprotocol.xyz" class="text-gray-900">
+      <img src="/assets/logo.png" alt="DevProtocol" class="max-h-8">
+    </a>
+    <main>
+      <a href="/creators" class="mx-4 font-mono">for Creators</a>
+      <a href="/patrons" class="mx-4 font-mono">for Patrons</a>
+      <a href="/developers" class="mx-4 font-mono">for Developers</a>
+    </main>
+    <a class="border-2 rounded border-gray-900 rounded-lg py-2 px-4">
+      <button class="font-mono">Join</button>
+    </a>
+  </nav>
+  <main>
+    <slot />
+  </main>
+</body>
+
+</html>
