@@ -1,0 +1,38 @@
+env:
+  githubEmail: 41898282+github-actions[bot]@users.noreply.github.com
+  deployToRepo: https://web3community.github.io/devprotocol.xyz
+
+name: Github Pages Astro CI
+
+on:
+  push:
+    branches: [main]
+
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: |
+          npm run build
+          touch ./dist/.nojekyll
+
+      - name: Push to pages repo
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          source-directory: 'dist'
+          destination-github-username: ${{ github.actor }}
+          destination-repository-name: ${{ env.deployToRepo }}
+          user-email: ${{ env.githubEmail }}
+          commit-message: Deploy ORIGIN_COMMIT
+          target-branch: gh-pages
