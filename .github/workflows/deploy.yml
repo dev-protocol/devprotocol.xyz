@@ -1,13 +1,11 @@
 env:
   githubEmail: 41898282+github-actions[bot]@users.noreply.github.com
-  deployToRepo: https://github.com/krishguptadev/devprotocol.xyz
+  deployToRepo: krishguptadev.github.io/devprotocol.xyz
 
 name: Github Pages Astro CI
 
 on:
   push:
-    branches: [main]
-  pull_request:
     branches: [main]
 
   workflow_dispatch:
