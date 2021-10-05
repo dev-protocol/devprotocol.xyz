@@ -1,5 +1,5 @@
 env:
-  githubEmail: 41898282+github-actions[bot]@users.noreply.github.com
+  githubEmail: krishguptadev@outlook.com
   deployToRepo: https://web3community.github.io/devprotocol.xyz
 
 name: Github Pages Astro CI
@@ -28,7 +28,7 @@ jobs:
       - name: Push to pages repo
         uses: cpina/github-action-push-to-another-repository@main
         env:
-          API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
+          API_TOKEN_GITHUB: ${{ secrets.DEPLOYMENT }}
         with:
           source-directory: 'dist'
           destination-github-username: ${{ github.actor }}
