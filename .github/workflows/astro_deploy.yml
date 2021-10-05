@@ -3,7 +3,10 @@ name: Github Pages Astro CI
 on:
   push:
     branches:
-      - main
+      # Push events on main branch
+      # - main
+      # Push events to branches matching refs/heads/alpine_neat_stack_starter
+      - 'deploy_action'
 
 jobs:
   deploy:
@@ -13,11 +16,10 @@ jobs:
       - name: Git checkout
       - uses: actions/checkout@v2
 
-      # If we need a particular version of node for Astro :
-      # - name: Setup Node
-      #     uses: actions/setup-node@v1
-      #     with:
-      #       node-version: '14.x'
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
 
       - name: Install dependencies
         run: npm ci
