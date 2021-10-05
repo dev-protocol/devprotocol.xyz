@@ -4,9 +4,7 @@ on:
   push:
     branches:
       # Push events on main branch
-      # - main
-      # Push events to branches matching refs/heads/alpine_neat_stack_starter
-      - 'deploy_action'
+      - main
 
 jobs:
   deploy:
