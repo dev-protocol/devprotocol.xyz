@@ -1,6 +1,6 @@
 env:
   githubEmail: 41898282+github-actions[bot]@users.noreply.github.com
-  deployToRepo: krishguptadev.github.io/devprotocol.xyz
+  deployToRepo: https://web3community.github.io/devprotocol.xyz
 
 name: Github Pages Astro CI
 
