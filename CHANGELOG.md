@@ -1,4 +1,13 @@
-# 0.1.0 (2021-10-06)
+# [0.2.0](https://github.com/web3community/devprotocol.xyz/compare/v0.1.0...v0.2.0) (2021-10-06)
+
+
+### Features
+
+* Use the latest version for GitHub actions ([#16](https://github.com/web3community/devprotocol.xyz/issues/16)) ([325d4d3](https://github.com/web3community/devprotocol.xyz/commit/325d4d3d9919ed339c75f6f64bcd1a85e39b61d8))
+
+
+
+# [0.1.0](https://github.com/web3community/devprotocol.xyz/compare/a5c6d00e0b2c6710d55010ddb5726e22ff07c312...v0.1.0) (2021-10-06)
 
 
 ### Bug Fixes
