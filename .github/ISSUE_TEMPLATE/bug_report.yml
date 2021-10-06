@@ -10,7 +10,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: Provide a general summary of the issue in the Title above
+      description: Provide a general summary of the issue in the title above
     validations:
       required: true
   - type: input
