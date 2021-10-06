@@ -5,7 +5,7 @@ labels: [bug]
 body:
   - type: markdown
     attributes:
-      value: "Provide a general summary of the issue in the Title above"
+      value: "Provide a general summary of the issue in the title above"
   - type: textarea
     id: description
     attributes:
