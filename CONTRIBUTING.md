@@ -86,6 +86,7 @@ git push origin your-branch-name
 
 After this, project maintainers will review the changes and will merge your PR if they found it good, otherwise we will suggest the required changes.
 
-## Our Community:
+## Web3Community
+
 😕 Not sure where to start? Join our community on [Discord](https://discord.gg/37QFQ7J78B)
 ✨ You can also take part in [Community Discussion](https://github.com/web3community/devprotocol.xyz/discussions)
