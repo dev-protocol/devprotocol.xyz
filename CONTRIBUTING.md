@@ -2,7 +2,6 @@
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/) [![License](https://img.shields.io/github/license/web3community/devprotocol.xyz)](https://github.com/web3community/devprotocol.xyz/blob/main/LICENSE)
 
-  
 
 *👍🎉 First off, thanks for taking the time to contribute! 🎉👍*
 
