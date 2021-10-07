@@ -58,7 +58,6 @@ git push origin your-branch-name
 ```
 
 <br />
-
 **8.** Create a new [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) from ```your-branch-name```
 
 **9.** 🎉 Congratulations! You've made your contribution.
