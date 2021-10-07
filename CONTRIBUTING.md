@@ -27,7 +27,6 @@ The following is a set of guidelines for contributing to this repository. These 
 **1.** Fork [this](https://github.com/web3community/devprotocol.xyz) repository. Click on the <a  href="https://github.com/web3community/devprotocol.xyz"><img  src="https://img.icons8.com/fluency/30/000000/code-fork.png"/></a> symbol at the top right corner.
 
 <br />
-
 **2.** Clone the forked repository.
 ```bash
 git clone https://github.com/<your-username>/devprotocol.xyz.git
