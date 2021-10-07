@@ -36,7 +36,6 @@ git clone https://github.com/<your-username>/devprotocol.xyz.git
 cd devprotocol.xyz
 ```
 
-<br />
 
 **4.** Create a new branch:
 ```bash
