@@ -36,7 +36,6 @@ cd devprotocol.xyz
 git checkout -b your-branch-name
 ```
 
-<br />
 **5.** Make the necessary changes in source code.
 
 **6.** Stage your changes and commit
