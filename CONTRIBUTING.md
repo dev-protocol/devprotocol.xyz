@@ -32,7 +32,6 @@ git clone https://github.com/<your-username>/devprotocol.xyz.git
 ```
 
 <br />
-
 **3.** Navigate to the project directory.
 ```bash
 cd devprotocol.xyz
