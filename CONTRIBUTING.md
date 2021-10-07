@@ -88,4 +88,4 @@ After this, project maintainers will review the changes and will merge your PR i
 
 ## Our Community:
 😕 Not sure where to start? Join our community on [Discord](https://discord.gg/37QFQ7J78B)
-✨ You can also take part in [Community Discussion](https://github.com/web3community/web3community.github.io/discussions)
+✨ You can also take part in [Community Discussion](https://github.com/web3community/devprotocol.xyz/discussions)
