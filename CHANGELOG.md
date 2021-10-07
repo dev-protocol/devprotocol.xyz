@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/web3community/devprotocol.xyz/compare/v0.2.0...v0.3.0) (2021-10-07)
+
+
+### Features
+
+* add favicon ([803fe0b](https://github.com/web3community/devprotocol.xyz/commit/803fe0b6a372d3afc322bbd2b3e52889ebd422bd))
+
+
+
 # [0.2.0](https://github.com/web3community/devprotocol.xyz/compare/v0.1.0...v0.2.0) (2021-10-06)
 
 
