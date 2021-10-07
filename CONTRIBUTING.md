@@ -84,7 +84,7 @@ git push origin your-branch-name
 #### Bad Practice
 - Creating Pull Requests without Issue assignment will not be accepted and will be closed
 
-After this, project leaders and mentors will review the changes and will merge your PR if they found it good, otherwise we will suggest the required changes.
+After this, project maintainers will review the changes and will merge your PR if they found it good, otherwise we will suggest the required changes.
 
 ## Our Community:
 😕 Not sure where to start ? Join our community on [Discord](https://discord.gg/37QFQ7J78B)
