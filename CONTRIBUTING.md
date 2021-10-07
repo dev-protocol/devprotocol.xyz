@@ -42,7 +42,6 @@ git checkout -b your-branch-name
 **5.** Make the necessary changes in source code.
 
 <br />
-
 **6.** Stage your changes and commit
 ```bash
 git add .
