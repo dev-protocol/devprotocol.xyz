@@ -50,7 +50,6 @@ git commit -m "<your_commit_message>"
 ```
 *You can use appropriate emojis for your commit messages from [Gitmoji](https://gitmoji.dev/)*
 
-
 **7.** Push your local commits to the remote repo.
 ```bash
 git push origin your-branch-name
