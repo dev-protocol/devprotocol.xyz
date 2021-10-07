@@ -1,3 +1,13 @@
+# [0.5.0](https://github.com/web3community/devprotocol.xyz/compare/v0.4.0...v0.5.0) (2021-10-07)
+
+
+### Features
+
+* delete imperfect favicon ([624ff85](https://github.com/web3community/devprotocol.xyz/commit/624ff859b221240a9f6990abd40ae19922ffe973))
+* new favicon ([9592386](https://github.com/web3community/devprotocol.xyz/commit/959238670460bf206ebe89d9080722b49095ba27))
+
+
+
 # [0.4.0](https://github.com/web3community/devprotocol.xyz/compare/v0.3.0...v0.4.0) (2021-10-07)
 
 
