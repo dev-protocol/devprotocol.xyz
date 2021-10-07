@@ -31,7 +31,6 @@ git clone https://github.com/<your-username>/devprotocol.xyz.git
 cd devprotocol.xyz
 ```
 
-
 **4.** Create a new branch:
 ```bash
 git checkout -b your-branch-name
