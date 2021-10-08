@@ -1,3 +1,12 @@
+## [0.8.2](https://github.com/web3community/devprotocol.xyz/compare/v0.8.1...v0.8.2) (2021-10-08)
+
+
+### Bug Fixes
+
+* Capitalize `s` in the `Microsoft for Startups`... ([2acab91](https://github.com/web3community/devprotocol.xyz/commit/2acab910d4b77c94e57f3ebdfe80b55effb44b25))
+
+
+
 ## [0.8.1](https://github.com/web3community/devprotocol.xyz/compare/v0.8.0...v0.8.1) (2021-10-08)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * `og` property in meta tags ([#33](https://github.com/web3community/devprotocol.xyz/issues/33)) ([eb166f5](https://github.com/web3community/devprotocol.xyz/commit/eb166f5944fed2eb0338ed0f9468024daa1db89d))
-
-
-
-## [0.5.1](https://github.com/web3community/devprotocol.xyz/compare/v0.5.0...v0.5.1) (2021-10-07)
-
-
-### Bug Fixes
-
-* Buy Dev URL ([21093eb](https://github.com/web3community/devprotocol.xyz/commit/21093eb764c0f49cadb4d620702f3e2a6b8c0b7a))
 
 
 
