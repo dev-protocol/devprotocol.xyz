@@ -1,13 +1,12 @@
 #### Description of the change
 <!--
-Thank you for your Pull Request. Please provide a description above and review
+Thank you for your pull request. Please provide a description above and review
 the requirements below.
 
 Contributors guide: https://github.com/web3community/devprotocol.xyz/CONTRIBUTING.md
 -->
 
 <!-- If it fixes an issue, please add Closes #issue_no below with its respective issue number -->
-
 
 #### Screenshots
 
