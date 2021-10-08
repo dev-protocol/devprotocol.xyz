@@ -3,76 +3,163 @@ import Layout from '../layouts/Default.astro';
 ---
 
 <Layout metaTitle="Home | DevProtocol">
-  <header class="flex flex-col items-center justify-center text-center text-lg pt-24 pb-20">
+  <header
+    class="
+      flex flex-col
+      items-center
+      justify-center
+      text-center text-lg
+      pt-24
+      pb-20
+    "
+  >
     <a href="http://stakes.social/" class="mt-2">
-      <button class="bg-pink-500 text-white py-2 px-4 rounded">Join now!</button>
-      <img src="/assets/hand.png" alt="" class="ml-20 -mt-6 max-h-32">
+      <button class="text-white py-2 px-4 rounded" style="background:#D500E6;">
+        Join now!
+      </button>
+      <img src="/assets/hand.png" alt="" class="ml-20 -mt-6 max-h-32" />
     </a>
-    <h2 class="font-black	text-6xl my-6">Decentralized Creator Economy</h2>
-    <p class="max-w-prose my-6">Everything Creators need to grow their business: monetization, governance, and community is right here. Dev Protocol is easy to start with no knowledge of blockchain. Welcome to the new ecosystem for Creators and for Patrons!</p>
+    <h2 class="font-black font-display text-6xl my-6">
+      Decentralized Creator Economy
+    </h2>
+    <p class="max-w-prose my-6">
+      Everything Creators need to grow their business: monetization, governance,
+      and community is right here. Dev Protocol is easy to start with no
+      knowledge of blockchain. Welcome to the new ecosystem for Creators and for
+      Patrons!
+    </p>
   </header>
-  <section class="flex flex-col items-center justify-center text-center text-lg pb-20">
+  <section
+    class="flex flex-col items-center justify-center text-center text-lg pb-20"
+  >
     <a class="flex w-auto items-center">
-      <img src="/assets/creator.png" alt="" class="max-h-56 ml-52">
-      <p class="text-gray-400 ml-4 font-mono">Creative space by <br> White Russian Studio</p>
+      <img src="/assets/creator.png" alt="" class="max-h-56 ml-52" />
+      <p class="text-gray-400 ml-4 font-mono">
+        Creative space by <br />
+        White Russian Studio
+      </p>
     </a>
-    <h3 class="font-black	text-3xl mt-4">Decentralized Creator Economy</h3>
-    <p class="max-w-prose my-6">Dev Protocol offers a revolutionary and powerful solutions to grow and manage your business with blockchain. You can prove the ownership of your works and raise its revenue through support from the community. Let's start your creator economy today.</p>
-    <a href="https://docs.devprotocol.xyz/en/stakes-social/onboard-guide/" class="underline font-bold">Know More</a>
+    <h3 class="font-black font-display text-3xl mt-4">
+      Decentralized Creator Economy
+    </h3>
+    <p class="max-w-prose my-6">
+      Dev Protocol offers a revolutionary and powerful solutions to grow and
+      manage your business with blockchain. You can prove the ownership of your
+      works and raise its revenue through support from the community. Let's
+      start your creator economy today.
+    </p>
+    <a
+      href="https://docs.devprotocol.xyz/en/stakes-social/onboard-guide/"
+      class="underline font-bold"
+      >Know More</a
+    >
     <a href="https://stakes.social/create" class="mt-6">
-      <button class="bg-black text-white py-2 px-6 rounded">Submit a project</button>
+      <button class="bg-black text-white py-2 px-6 rounded">
+        Submit a project
+      </button>
     </a>
   </section>
   <hr class="mx-auto bg-gray-300 rounded h-1 mb-16" />
   <!-- TODO: Convert the below code to a slider of success stories -->
-  <section class="flex flex-col items-center justify-center text-center text-lg pb-20">
-    <p class="font-mono text-base mb-4 text-gray-400">Creator Success Stories</p>
-    <h3 class="font-black	text-3xl my-8">Staking is Stronger Than Donation</h3>
-    <img src="/assets/vyper.png" alt="" class="max-h-56">
+  <section
+    class="flex flex-col items-center justify-center text-center text-lg pb-20"
+  >
+    <p class="font-mono text-base mb-4 text-gray-400">
+      Creator Success Stories
+    </p>
+    <h3 class="font-black font-display text-3xl my-8">
+      Staking is Stronger Than Donation
+    </h3>
+    <img src="/assets/vyper.png" alt="" class="max-h-56" />
     <p class="underline font-bold mt-6 font-mono">Vyper</p>
-    <p class="max-w-prose my-6">Vyper is a Python-like language for writing EVM smart contracts. Vyper is used in Uniswap v1 and CurveFinance contracts. They had trouble collecting donations even though they were bringing in a lot of revenue for many blockchain projects. They raised $44,000 in donations in two years with GitCoin, and received $125,000 in compensation in one year with Dev Protocol.</p>
+    <p class="max-w-prose my-6">
+      Vyper is a Python-like language for writing EVM smart contracts. Vyper is
+      used in Uniswap v1 and CurveFinance contracts. They had trouble collecting
+      donations even though they were bringing in a lot of revenue for many
+      blockchain projects. They raised $44,000 in donations in two years with
+      GitCoin, and received $125,000 in compensation in one year with Dev
+      Protocol.
+    </p>
     <p class="font-mono text-base text-gray-400">1/10</p>
   </section>
-  <section class="flex flex-col items-center justify-center text-center text-lg pb-20">
+  <section
+    class="flex flex-col items-center justify-center text-center text-lg pb-20"
+  >
     <a class="flex w-auto items-center">
-      <img src="/assets/patron.png" alt="" class="max-h-56 ml-52">
-      <p class="text-gray-400 ml-4 font-mono">Creative space by <br> White Russian Studio</p>
+      <img src="/assets/patron.png" alt="" class="max-h-56 ml-52" />
+      <p class="text-gray-400 ml-4 font-mono">
+        Creative space by <br />
+        White Russian Studio
+      </p>
     </a>
-    <h3 class="font-black	text-3xl my-4">Hi, Patron!</h3>
-    <p class="max-w-prose my-6">Ever given up buying the work of your favorite creators for financial reasons? The Dev Protocol has made possible the opportunity for you to earn cryptos while supporting the creators. Welcome to the new Symbiotic Economy with creators!</p>
-    <a href="https://docs.devprotocol.xyz/en/stakes-social/how-to-stake/" class="underline font-bold">Know More</a>
+    <h3 class="font-black font-display text-3xl my-4">Hi, Patron!</h3>
+    <p class="max-w-prose my-6">
+      Ever given up buying the work of your favorite creators for financial
+      reasons? The Dev Protocol has made possible the opportunity for you to
+      earn cryptos while supporting the creators. Welcome to the new Symbiotic
+      Economy with creators!
+    </p>
+    <a
+      href="https://docs.devprotocol.xyz/en/stakes-social/how-to-stake/"
+      class="underline font-bold"
+      >Know More</a
+    >
     <a href="https://stakes.social/" class="mt-6">
-      <button class="bg-black text-white py-2 px-6 rounded">Start Staking</button>
+      <button class="bg-black text-white py-2 px-6 rounded">
+        Start Staking
+      </button>
     </a>
   </section>
   <hr class="mx-auto bg-gray-300 rounded h-1 mb-16" />
-  <section class="flex flex-col items-center justify-center text-center text-lg pb-20">
+  <section
+    class="flex flex-col items-center justify-center text-center text-lg pb-20"
+  >
     <p class="text-gray-400 ml-4 font-mono">Seleted Projects</p>
     <!-- TODO: Add the selected projects cards, dynamically -->
   </section>
-  <section class="flex flex-col items-center justify-center text-center text-lg pb-20">
-    <p class="font-mono text-base mb-4 text-gray-400">Creator Success Stories</p>
-    <h3 class="font-black	text-3xl my-8">DEV Token</h3>
-    <img src="/assets/devtoken.png" alt="" class="max-h-56">
-    <a href="https://etherscan.io/token/0x5cAf454Ba92e6F2c929DF14667Ee360eD9fD5b26"><p class="underline font-bold mt-6 font-mono">View on Etherscan</p></a>
-    <p class="max-w-prose my-6">DEV is an inflationary token that is rewarded to patrons and OSS projects for being active participants in the Dev Protocol ecosystem. The Dev Protocol inflation rate for minting is determined by the total amount of DEV staked versus OSS projects onboarded. The result is a sustainable counter-balance system.</p>
-    <a href="https://app.uniswap.org/#/swap?outputCurrency=0x5caf454ba92e6f2c929df14667ee360ed9fd5b26&use=V2" class="mt-6">
+  <section
+    class="flex flex-col items-center justify-center text-center text-lg pb-20"
+  >
+    <p class="font-mono text-base mb-4 text-gray-400">
+      Creator Success Stories
+    </p>
+    <h3 class="font-black font-display text-3xl my-8">DEV Token</h3>
+    <img src="/assets/devtoken.png" alt="" class="max-h-56" />
+    <a
+      href="https://etherscan.io/token/0x5cAf454Ba92e6F2c929DF14667Ee360eD9fD5b26"
+      ><p class="underline font-bold mt-6 font-mono">View on Etherscan</p></a
+    >
+    <p class="max-w-prose my-6">
+      DEV is an inflationary token that is rewarded to patrons and OSS projects
+      for being active participants in the Dev Protocol ecosystem. The Dev
+      Protocol inflation rate for minting is determined by the total amount of
+      DEV staked versus OSS projects onboarded. The result is a sustainable
+      counter-balance system.
+    </p>
+    <a
+      href="https://app.uniswap.org/#/swap?outputCurrency=0x5caf454ba92e6f2c929df14667ee360ed9fd5b26&use=V2"
+      class="mt-6"
+    >
       <button class="bg-black text-white py-2 px-6 rounded">Buy Dev</button>
     </a>
   </section>
   <section class="bg-gray-100 flex justify-evenly items-center">
-    <a href="#"><img src="/assets/sios.png" alt="Sios"></a>
-    <a href="#"><img src="/assets/hashub.png" alt="Hashhub"></a>
-    <a href="#"><img src="/assets/msstartups.png" alt="Microsoft for startups"></a>
-    <a href="#"><img src="/assets/miraise.png" alt="Miraise"></a>
-    <a href="#"><img src="/assets/monexventures.png" alt="Monex Ventures"></a>
+    <a href="#"><img src="/assets/sios.png" alt="Sios" /></a>
+    <a href="#"><img src="/assets/hashub.png" alt="Hashhub" /></a>
+    <a href="#"
+      ><img src="/assets/msstartups.png" alt="Microsoft for startups"
+    /></a>
+    <a href="#"><img src="/assets/miraise.png" alt="Miraise" /></a>
+    <a href="#"><img src="/assets/monexventures.png" alt="Monex Ventures" /></a>
   </section>
   <section class="bg-blue-500 px-20 py-28">
-    <p class="font-base text-gray-100">Latest on Medium</p>
+    <p class="font-display text-3xl text-gray-100">Latest on Medium</p>
     <!-- TODO: Find a way to add medium articles dynamically -->
     <a href="/devtokens" class="mt-6 mx-auto block">
-      <button class="bg-white text-gray-900 py-2 px-6">See more on Medium</button>
-    </a>  
+      <button class="bg-white font-display text-gray-900 py-2 px-6">
+        See more on Medium
+      </button>
+    </a>
   </section>
   <footer class="flex bg-black text-white">
     <!-- TODO: Get the links for the socials from @vinzvinci and add them -->
