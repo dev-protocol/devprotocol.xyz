@@ -1,3 +1,30 @@
+# [0.8.0](https://github.com/web3community/devprotocol.xyz/compare/v0.7.0...v0.8.0) (2021-10-08)
+
+
+### Features
+
+* custom fonts ([40ae1c1](https://github.com/web3community/devprotocol.xyz/commit/40ae1c1d7ec09931d4632e6d1f7301b1a2e1e183))
+
+
+
+# [0.7.0](https://github.com/web3community/devprotocol.xyz/compare/v0.6.0...v0.7.0) (2021-10-08)
+
+
+### Features
+
+* Update the contributing guidelines ([0983929](https://github.com/web3community/devprotocol.xyz/commit/098392919f7e9304422609c6a8ba3d7ed1d79d35))
+
+
+
+# [0.6.0](https://github.com/web3community/devprotocol.xyz/compare/v0.5.1...v0.6.0) (2021-10-08)
+
+
+### Features
+
+* `og` property in meta tags ([#33](https://github.com/web3community/devprotocol.xyz/issues/33)) ([eb166f5](https://github.com/web3community/devprotocol.xyz/commit/eb166f5944fed2eb0338ed0f9468024daa1db89d))
+
+
+
 ## [0.5.1](https://github.com/web3community/devprotocol.xyz/compare/v0.5.0...v0.5.1) (2021-10-07)
 
 
@@ -14,33 +41,6 @@
 
 * delete imperfect favicon ([624ff85](https://github.com/web3community/devprotocol.xyz/commit/624ff859b221240a9f6990abd40ae19922ffe973))
 * new favicon ([9592386](https://github.com/web3community/devprotocol.xyz/commit/959238670460bf206ebe89d9080722b49095ba27))
-
-
-
-# [0.4.0](https://github.com/web3community/devprotocol.xyz/compare/v0.3.0...v0.4.0) (2021-10-07)
-
-
-### Features
-
-* Add Contributor Covenant Code of Conduct v2.1 ([46cd874](https://github.com/web3community/devprotocol.xyz/commit/46cd8741a271279239c07d4eb18e58a5285af666))
-
-
-
-# [0.3.0](https://github.com/web3community/devprotocol.xyz/compare/v0.2.0...v0.3.0) (2021-10-07)
-
-
-### Features
-
-* add favicon ([803fe0b](https://github.com/web3community/devprotocol.xyz/commit/803fe0b6a372d3afc322bbd2b3e52889ebd422bd))
-
-
-
-# [0.2.0](https://github.com/web3community/devprotocol.xyz/compare/v0.1.0...v0.2.0) (2021-10-06)
-
-
-### Features
-
-* Use the latest version for GitHub actions ([#16](https://github.com/web3community/devprotocol.xyz/issues/16)) ([325d4d3](https://github.com/web3community/devprotocol.xyz/commit/325d4d3d9919ed339c75f6f64bcd1a85e39b61d8))
 
 
 
