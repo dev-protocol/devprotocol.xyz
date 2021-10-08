@@ -1,3 +1,12 @@
+# [0.6.0](https://github.com/web3community/devprotocol.xyz/compare/v0.5.1...v0.6.0) (2021-10-08)
+
+
+### Features
+
+* `og` property in meta tags ([#33](https://github.com/web3community/devprotocol.xyz/issues/33)) ([eb166f5](https://github.com/web3community/devprotocol.xyz/commit/eb166f5944fed2eb0338ed0f9468024daa1db89d))
+
+
+
 ## [0.5.1](https://github.com/web3community/devprotocol.xyz/compare/v0.5.0...v0.5.1) (2021-10-07)
 
 
@@ -32,15 +41,6 @@
 ### Features
 
 * add favicon ([803fe0b](https://github.com/web3community/devprotocol.xyz/commit/803fe0b6a372d3afc322bbd2b3e52889ebd422bd))
-
-
-
-# [0.2.0](https://github.com/web3community/devprotocol.xyz/compare/v0.1.0...v0.2.0) (2021-10-06)
-
-
-### Features
-
-* Use the latest version for GitHub actions ([#16](https://github.com/web3community/devprotocol.xyz/issues/16)) ([325d4d3](https://github.com/web3community/devprotocol.xyz/commit/325d4d3d9919ed339c75f6f64bcd1a85e39b61d8))
 
 
 
