@@ -28,7 +28,7 @@ Since the new GitHub Issue forms we only suggest you to include most information
 
 ### Your First Code Contribution
 
-Unsure where to begin contributing to Atom? You can start by looking through these `beginner` and `help-wanted` issues:
+Unsure where to begin contributing to this project? You can start by looking through these `beginner` and `help-wanted` issues:
 
 - [Beginner issues](https://github.com/web3community/devprotocol.xyz/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) - issues which should only require a few lines of code, and a test or two.
 - [Help wanted issues](https://github.com/web3community/devprotocol.xyz/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) - issues which should be a bit more involved than `beginner` issues.
