@@ -1,3 +1,12 @@
+# [0.8.0](https://github.com/web3community/devprotocol.xyz/compare/v0.7.0...v0.8.0) (2021-10-08)
+
+
+### Features
+
+* custom fonts ([40ae1c1](https://github.com/web3community/devprotocol.xyz/commit/40ae1c1d7ec09931d4632e6d1f7301b1a2e1e183))
+
+
+
 # [0.7.0](https://github.com/web3community/devprotocol.xyz/compare/v0.6.0...v0.7.0) (2021-10-08)
 
 
@@ -32,15 +41,6 @@
 
 * delete imperfect favicon ([624ff85](https://github.com/web3community/devprotocol.xyz/commit/624ff859b221240a9f6990abd40ae19922ffe973))
 * new favicon ([9592386](https://github.com/web3community/devprotocol.xyz/commit/959238670460bf206ebe89d9080722b49095ba27))
-
-
-
-# [0.4.0](https://github.com/web3community/devprotocol.xyz/compare/v0.3.0...v0.4.0) (2021-10-07)
-
-
-### Features
-
-* Add Contributor Covenant Code of Conduct v2.1 ([46cd874](https://github.com/web3community/devprotocol.xyz/commit/46cd8741a271279239c07d4eb18e58a5285af666))
 
 
 
