@@ -1,3 +1,12 @@
+# [0.7.0](https://github.com/web3community/devprotocol.xyz/compare/v0.6.0...v0.7.0) (2021-10-08)
+
+
+### Features
+
+* Update the contributing guidelines ([0983929](https://github.com/web3community/devprotocol.xyz/commit/098392919f7e9304422609c6a8ba3d7ed1d79d35))
+
+
+
 # [0.6.0](https://github.com/web3community/devprotocol.xyz/compare/v0.5.1...v0.6.0) (2021-10-08)
 
 
@@ -32,15 +41,6 @@
 ### Features
 
 * Add Contributor Covenant Code of Conduct v2.1 ([46cd874](https://github.com/web3community/devprotocol.xyz/commit/46cd8741a271279239c07d4eb18e58a5285af666))
-
-
-
-# [0.3.0](https://github.com/web3community/devprotocol.xyz/compare/v0.2.0...v0.3.0) (2021-10-07)
-
-
-### Features
-
-* add favicon ([803fe0b](https://github.com/web3community/devprotocol.xyz/commit/803fe0b6a372d3afc322bbd2b3e52889ebd422bd))
 
 
 
