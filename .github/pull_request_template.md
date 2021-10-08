@@ -8,6 +8,11 @@ Contributors guide: https://github.com/web3community/devprotocol.xyz/CONTRIBUTIN
 
 <!-- If it fixes an issue, please add Closes #issue_no below with its respective issue number -->
 
+
+#### Screenshots
+
+<!-- Please add screenshots if applicable. Otherwise, remove this section -->
+
 #### Checklist
 
 <!-- Remove items that do not apply. For completed items, change [ ] to [x]. -->
