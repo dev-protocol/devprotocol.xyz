@@ -1,3 +1,12 @@
+## [0.8.1](https://github.com/web3community/devprotocol.xyz/compare/v0.8.0...v0.8.1) (2021-10-08)
+
+
+### Bug Fixes
+
+* image resolution and sizing ([54b7766](https://github.com/web3community/devprotocol.xyz/commit/54b7766fe3b7c0194808e236f350005bf5f68a24))
+
+
+
 # [0.8.0](https://github.com/web3community/devprotocol.xyz/compare/v0.7.0...v0.8.0) (2021-10-08)
 
 
@@ -31,16 +40,6 @@
 ### Bug Fixes
 
 * Buy Dev URL ([21093eb](https://github.com/web3community/devprotocol.xyz/commit/21093eb764c0f49cadb4d620702f3e2a6b8c0b7a))
-
-
-
-# [0.5.0](https://github.com/web3community/devprotocol.xyz/compare/v0.4.0...v0.5.0) (2021-10-07)
-
-
-### Features
-
-* delete imperfect favicon ([624ff85](https://github.com/web3community/devprotocol.xyz/commit/624ff859b221240a9f6990abd40ae19922ffe973))
-* new favicon ([9592386](https://github.com/web3community/devprotocol.xyz/commit/959238670460bf206ebe89d9080722b49095ba27))
 
 
 
