@@ -4,13 +4,13 @@
 
 The following is a set of guidelines for contributing to this project. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
-## Code of Conduct 📜
+## 📜 Code of Conduct
 
 This project and everyone participating in it is governed by a [Code of Conduct](https://github.com/web3community/devprotcol.xyz/blob/main/code_of_conduct.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [@vinzvinci](https://github.com/vinzvinci) or in our [Discord server](https://discord.gg/TSRwqx4K2v).
 
-## How can I contribute? 🤔
+## 🤔 How can I contribute?
 
-### Reporting Bugs 💣
+### 💣 Reporting Bugs
 
 This section guides you through submitting a bug report. Following these guidelines helps maintainers and the community understand your report 📝, reproduce the behavior 💻 💻, and find related reports 🔎.
 
@@ -18,7 +18,7 @@ Since the new GitHub Issue forms we only suggest you to include most information
 
 > **Note:** If you find a **Closed** issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue in the body of your new one.
 
-### Suggesting Enhancements 🛠
+### 🛠 Suggesting Enhancements
 
 This section guides you through submitting an enhancement suggestion, including completely new features and minor improvements to existing functionality. Following these guidelines helps maintainers and the community understand your suggestion 📝 and find related suggestions 🔎.
 
@@ -26,14 +26,14 @@ Since the new GitHub Issue forms we only suggest you to include most information
 
 > **Note:** If you find a **Closed** issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue in the body of your new one.
 
-### Your First Code Contribution 🟩
+### 🟩 Your First Code Contribution
 
 Unsure where to begin contributing to this project? You can start by looking through these `beginner` and `help-wanted` issues:
 
 - [Beginner issues](https://github.com/web3community/devprotocol.xyz/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) - issues which should only require a few lines of code, and a test or two.
 - [Help wanted issues](https://github.com/web3community/devprotocol.xyz/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) - issues which should be a bit more involved than `beginner` issues.
 
-### Pull Requests 📣
+### 📣 Pull Requests
 
 The process described here has several goals:
 
@@ -111,7 +111,7 @@ git push origin your-branch-name
 
 **9.** 🎉 Congratulations! You've made your first pull request! Now, you should just wait until the maintainers review your pull request.
 
-## Hacktoberfest Guidelines 🌳
+## 🌳 Hacktoberfest Guidelines
 
 #### Good Practice ✅
 
@@ -122,9 +122,11 @@ git push origin your-branch-name
 
 - Creating pull requests without issue assignment will not be accepted and will be closed.
 
+**No idea what Hacktoberfest is? Visit their website [here](https://hacktoberfest.digitalocean.com) to know more about the event.**
+
 After this, the project maintainers will review the changes and will merge your PR if they found it good, otherwise we will suggest the required changes.
 
-## Web3Community 🌐
+## 🌐 Web3Community
 
-😕 Not sure where to start? Join our community on [Discord](https://discord.gg/37QFQ7J78B)
-✨ You can also take part in [Community Discussion](https://github.com/web3community/devprotocol.xyz/discussions)
+- 😕 Not sure where to start? Join our community on [Discord](https://discord.gg/37QFQ7J78B)
+- ✨ You can also take part in our [Community Discussions](https://github.com/web3community/devprotocol.xyz/discussions)
