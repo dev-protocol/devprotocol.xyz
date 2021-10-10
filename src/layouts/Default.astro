@@ -33,31 +33,31 @@ let { metaTitle } = Astro.props;
     <a href="http://stakes.social/" class="border-2 border-gray-900 rounded-lg py-2 px-4 md:block hidden">
       <button class="font-mono">Join</button>
     </a>
-	<div id="hamburger" class="md:hidden block">
-		<span></span>
-		<span></span>
-		<span></span>
-		<span></span>
-	</div>
+  <div id="hamburger" class="md:hidden block">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
   </nav>
   <main>
     <slot />
   </main>
 <script>
-	let hamburgerToggle = document.querySelector("#hamburger")
-	let nav = document.querySelector("#nav")
-	hamburgerToggle.addEventListener("click",()=>{
-		hamburgerToggle.classList.toggle("open");
-		if(nav.classList.contains("nav-show")){
-			nav.classList.toggle("nav-show");
-			nav.classList.toggle("nav-hide");
-		}
-		else{
-			nav.classList.add("nav-show");
-			nav.classList.remove("nav-hide");
-		}
+  let hamburgerToggle = document.querySelector("#hamburger")
+  let nav = document.querySelector("#nav")
+  hamburgerToggle.addEventListener("click",()=>{
+    hamburgerToggle.classList.toggle("open");
+    if(nav.classList.contains("nav-show")){
+      nav.classList.toggle("nav-show");
+      nav.classList.toggle("nav-hide");
+    }
+    else{
+      nav.classList.add("nav-show");
+      nav.classList.remove("nav-hide");
+    }
 
-	})
+  })
 </script>
 </body>
 
