@@ -11,6 +11,7 @@ import Layout from '../layouts/Default.astro';
       text-center text-lg
       pt-24
       pb-20
+	  lg:px-0 px-4
     "
   >
     <a href="http://stakes.social/" class="mt-2">
@@ -19,7 +20,7 @@ import Layout from '../layouts/Default.astro';
       </button>
       <img src="/assets/hand.png" alt="" class="ml-20 -mt-6 max-h-32" />
     </a>
-    <h2 class="font-black font-display text-6xl my-6">
+    <h2 class="font-black font-display lg:text-6xl text-4xl my-6">
       Decentralized Creator Economy
     </h2>
     <p class="max-w-prose my-6">
@@ -30,10 +31,10 @@ import Layout from '../layouts/Default.astro';
     </p>
   </header>
   <section
-    class="flex flex-col items-center justify-center text-center text-lg pb-20"
+    class="flex flex-col items-center justify-center text-center text-lg pb-20 lg:px-0 px-4"
   >
     <a class="flex w-auto items-center">
-      <img src="/assets/creator.png" alt="" class="max-h-56 ml-52" />
+      <img src="/assets/creator.png" alt="" class="max-h-56 lg:ml-52" />
       <p class="text-gray-400 ml-4 font-mono">
         Creative space by <br />
         White Russian Studio
@@ -62,7 +63,7 @@ import Layout from '../layouts/Default.astro';
   <hr class="mx-auto bg-gray-300 rounded h-1 mb-16" />
   <!-- TODO: Convert the below code to a slider of success stories -->
   <section
-    class="flex flex-col items-center justify-center text-center text-lg pb-20"
+    class="flex flex-col items-center justify-center text-center text-lg pb-20 lg:px-0 px-4"
   >
     <p class="font-mono text-base mb-4 text-gray-400">
       Creator Success Stories
@@ -83,10 +84,10 @@ import Layout from '../layouts/Default.astro';
     <p class="font-mono text-base text-gray-400">1/10</p>
   </section>
   <section
-    class="flex flex-col items-center justify-center text-center text-lg pb-20"
+    class="flex flex-col items-center justify-center text-center text-lg pb-20 lg:px-0 px-4"
   >
     <a class="flex w-auto items-center">
-      <img src="/assets/patron.png" alt="" class="max-h-56 ml-52" />
+      <img src="/assets/patron.png" alt="" class="max-h-56 lg:ml-52" />
       <p class="text-gray-400 ml-4 font-mono">
         Creative space by <br />
         White Russian Studio
@@ -112,13 +113,13 @@ import Layout from '../layouts/Default.astro';
   </section>
   <hr class="mx-auto bg-gray-300 rounded h-1 mb-16" />
   <section
-    class="flex flex-col items-center justify-center text-center text-lg pb-20"
+    class="flex flex-col items-center justify-center text-center text-lg pb-20 lg:px-0 px-4"
   >
     <p class="text-gray-400 ml-4 font-mono">Seleted Projects</p>
     <!-- TODO: Add the selected projects cards, dynamically -->
   </section>
   <section
-    class="flex flex-col items-center justify-center text-center text-lg pb-20"
+    class="flex flex-col items-center justify-center text-center text-lg pb-20 lg:px-0 px-4"
   >
     <p class="font-mono text-base mb-4 text-gray-400">
       Creator Success Stories
@@ -160,8 +161,7 @@ import Layout from '../layouts/Default.astro';
     </p>
     </a>
   </section>
-  <footer class="bg-black text-white px-20 py-28 grid grid-cols-12">
-    <!-- TODO: Get the links for the socials from @vinzvinci and add them -->
+  <footer class="bg-black text-white lg:px-20 lg:py-28 px-10 py-14 grid grid-cols-12">
       <div class="flex flex-col lg:col-span-6 col-span-full lg:mx-0 mx-auto">
         <div>
           <img src="/assets/devlogo.svg" alt="" class="w-28" />
