@@ -1,3 +1,12 @@
+# [0.11.0](https://github.com/web3community/devprotocol.xyz/compare/v0.10.0...v0.11.0) (2021-10-10)
+
+
+### Features
+
+* assets ([#48](https://github.com/web3community/devprotocol.xyz/issues/48)) ([da032f8](https://github.com/web3community/devprotocol.xyz/commit/da032f87c6127d8a6521ab49545945362b49b570))
+
+
+
 # [0.10.0](https://github.com/web3community/devprotocol.xyz/compare/v0.9.0...v0.10.0) (2021-10-09)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * image resolution and sizing ([54b7766](https://github.com/web3community/devprotocol.xyz/commit/54b7766fe3b7c0194808e236f350005bf5f68a24))
-
-
-
-# [0.8.0](https://github.com/web3community/devprotocol.xyz/compare/v0.7.0...v0.8.0) (2021-10-08)
-
-
-### Features
-
-* custom fonts ([40ae1c1](https://github.com/web3community/devprotocol.xyz/commit/40ae1c1d7ec09931d4632e6d1f7301b1a2e1e183))
 
 
 
