@@ -21,19 +21,19 @@ This website is live hosted at: https://devprotocol.netlify.app.
 2. Make sure you have the latest version of NodeJs Installed.
 
 ```sh
-    node --version
+node --version
 ```
 
 3. Install Dependencies
 
 ```sh
-    npm install
+npm install
 ```
 
 4. Start the app
 
 ```sh
-   npm run start
+npm run start
 ```
 
 ## 📦 Requirements
