@@ -42,12 +42,11 @@ This website is live hosted at: https://devprotocol.netlify.app.
 
 ## ⌚ Coming Soon
 
-Every contributor's efforts and time are deeply appreciated :smile: </br>
 Updates available at: https://github.com/web3community/devprotocol.xyz/projects/1
 
 ## 💖 Contributors
 
-A big thanks to all our contributors! 🚀
+Every contributor's efforts and time are deeply appreciated. Thank you! :smile:
 
 <a href = "https://github.com/web3community/devprotocol.xyz/graphs/contributors">
   <img src = "https://contrib.rocks/image?repo=web3community/devprotocol.xyz"/>
