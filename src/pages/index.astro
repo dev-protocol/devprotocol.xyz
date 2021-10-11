@@ -219,23 +219,21 @@ return blog;
         class="w-40 h-auto"
     /></a>
   </section>
-  <section class="bg-blue-500 px-20 py-28">
+  <section class="bg-blue-500 h-auto px-20 py-28 text-white flex flex-col">
     <p class="font-display text-2xl text-gray-100">Latest on Medium</p>
-    <div id="blogs" class="flex flex-col md:flex-row my-10">
-      { blogs.map((blog)=>(
-      <div class="mx-5 xl:mx-auto md:w-80 xl:w-aut xl:max-w-xs 2xl:max-w-sm">
-        <a href="{blog.link}">
-          <img class="h-64" src="{blog.thumbnail}" alt="" />
-        </a>
-        <div>
-          <a href="{blog.link}">
-            <h5 class="my-6 text-gray-100 font-bold text-xl">{blog.title}</h5>
+    <main class="flex flex-col md:flex-row">
+    {
+      blogs.map((blog) => (
+        <div href={blog.link} class="flex flex-col mr-8" style="flex-basis: 100%">
+          <a href={blog.link} class="text-white no-underline">
+            <img src={blog.thumbnail} class="max-w-full pt-4 my-8">
+            <h3 class="text-xl font-display font-bold pb-6">{blog.title}</h3>
           </a>
-          <p class="text-left font-normal text-gray-100 mb-3">{blog.desc}</p>
+          <p class="text-left font-normal text-gray-100 mb-3">{blog.desc} <a href={blog.link} class="underline ml-1">Read more...</a></p>
         </div>
-      </div>
-      )) }
-    </div>
+      ))
+    }
+    </main> 
     <a href="/devtokens" class="mt-6 mx-auto block">
       <p align="center">
         <button class="bg-white font-display text-gray-900 py-2 px-6">
