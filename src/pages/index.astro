@@ -1,5 +1,17 @@
 ---
 import Layout from '../layouts/Default.astro';
+
+const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/devprtcl');
+const data = await response.json();
+const blogs_data=data.items;
+const f_blogs=blogs_data.slice(0,3);
+const blogs=f_blogs.map((blog)=>{
+  let act_des=blog.description;
+  let f_desc=(act_des.replace(/<[^>]+>/g, '')).replace(/\n/g, '');
+  blog.desc=f_desc.substring(0, 250)+"...";
+  return blog;
+});
+
 ---
 
 <Layout metaTitle="Home | DevProtocol">
@@ -152,8 +164,26 @@ import Layout from '../layouts/Default.astro';
     <a href="#"><img src="/assets/monexventures.png" alt="Monex Ventures" class="w-40 h-auto"></a>
   </section>
   <section class="bg-blue-500 px-20 py-28">
-    <p align="center" class="font-display text-3xl text-gray-100">Latest on Medium</p>
-    <!-- TODO: Find a way to add medium articles dynamically -->
+    <p  class="font-display text-2xl text-gray-100">Latest on Medium</p>
+    <div id="blogs" class="flex flex-col md:flex-row my-10">
+  { 
+    blogs.map((blog)=>(
+    <div class="mx-5 xl:mx-auto md:w-80 xl:w-aut xl:max-w-xs 2xl:max-w-sm">
+        <a href="{blog.link}">
+            <img class="h-64" src="{blog.thumbnail}" alt="">
+        </a>
+        <div >
+            <a href="{blog.link}">
+                <h5 class="my-6 text-gray-100 font-bold text-xl">{blog.title}</h5>
+            </a>
+            <p class="text-left font-normal text-gray-100 mb-3">{blog.desc}</p>
+        </div>
+        
+    </div>
+    ))
+  }
+    </div>
+    
     <a href="/devtokens" class="mt-6 mx-auto block">
       <p align="center"><button class="bg-white font-display text-gray-900 py-2 px-6">
         See more on Medium

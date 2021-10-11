@@ -17,8 +17,6 @@ yarn-error.log*
 # macOS-specific files
 .DS_Store
 
-# yarn
-yarn.lock
 
 # vscode
 .vscode/
