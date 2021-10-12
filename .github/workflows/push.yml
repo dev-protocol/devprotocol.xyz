@@ -1,0 +1,31 @@
+name: GitHub Push to Main Repo
+
+on:
+  push:
+    branches: [main]
+
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@main
+
+      # Try building.
+      - name: Install dependencies
+        run: npm ci && npm run build
+
+      - name: Push to pages repo
+        if: ${{ github.repository_owner == 'web3community' }}
+        run: |
+          git config --global credential.helper store
+          ps: Set-Content -Path "$HOME\.git-credentials" -Value "https://${{ env.API_TOKEN_GITHUB }}:x-oauth-basic@github.com`n" -NoNewline
+          git config --global user.name github-actions
+          git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
+          git add .
+          git commit -m "Deploy ${{ github.sha }}"
+          git push -f git@github.com:web3community/app.git main --no-verify
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
