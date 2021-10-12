@@ -107,9 +107,13 @@ div {
     border: 0;
 }
 
+.image {
+    height: 325px;
+}
+
 @media (min-width: 1024px) {
     .image {
-        height: 350px;
+        height: 337px;
     }
 }
 </style>
