@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Default.astro';
+import Slider from '../components/Slider.vue';
 
 const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/devprtcl');
 const data = await response.json();
@@ -78,37 +79,8 @@ return blog;
       </button>
     </a>
   </section>
-  <hr class="mx-auto bg-gray-300 rounded h-1 mb-20 lg:mb-40" />
-  <!-- TODO: Convert the below code to a slider of success stories -->
-  <section
-    class="
-      flex flex-col
-      items-center
-      justify-center
-      text-center text-lg
-      pb-20
-      lg:pb-40
-      lg:px-0
-      px-4
-    "
-  >
-    <p class="font-mono text-base mb-4 text-gray-400">
-      Creator Success Stories
-    </p>
-    <h3 class="font-black font-display text-4xl my-8">
-      Staking is Stronger Than Donation
-    </h3>
-    <img src="/assets/vyper.png" alt="" class="max-h-56" />
-    <p class="underline font-bold mt-6 font-mono">Vyper</p>
-    <p class="max-w-prose my-6">
-      Vyper is a Python-like language for writing EVM smart contracts. Vyper is
-      used in Uniswap v1 and CurveFinance contracts. They had trouble collecting
-      donations even though they were bringing in a lot of revenue for many
-      blockchain projects. They raised $20,000 in donations in one year, but
-      received about 10 times that amount, $240,000, in one year with Dev
-      Protocol.
-    </p>
-  </section>
+  <hr class="mx-auto bg-gray-300 rounded h-1 mb-10" />
+  <Slider client:visible/>
   <hr class="mx-auto bg-gray-300 rounded h-1 mb-20 lg:mb-40" />
   <section
     class="
