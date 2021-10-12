@@ -65,7 +65,7 @@ export default {
     mounted() {
         this.items.forEach((item) => {
             const img = new Image();
-            img.src = `/assets/'${item.image}`;
+            img.src = `/assets/${item.image}`;
         });
     },
     methods: {
