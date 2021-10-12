@@ -23,13 +23,12 @@
         </div>
 
         <!-- This part need rework, justify-self-start/justify-self-end is overidden by global.css -->
+        <div class="w-full lg:w-1/3"></div>
         <div class="w-full lg:w-2/4 flex justify-between justify-items-stretch">
-              <p class="underline font-bold mt-6 font-mono justify-self-start" v-for="item in otherItems" v-bind:key="item.name" v-on:click="setCurrentItem(item)">{{item.name}}</p>
-              <!--
-              <p class="underline font-bold mt-6 font-mono justify-self-start">Sindre</p>
-              <p class="underline font-bold mt-6 font-mono justify-self-end">HiDE</p> 
-              -->
-              <!-- Ad JS onclick="slideNex()" function -->
+              <!-- <p class="px-4 lg:px-8 underline font-bold mt-6 font-mono justify-self-start" v-for="item in otherItems" v-bind:key="item.name" v-on:click="setCurrentItem(item)">{{item.name}}</p> -->
+
+              <p class="px-4 lg:px-8 underline font-bold mt-6 font-mono justify-self-start" v-on:click="setCurrentItem(prevItem())">&lt; {{ prevItem().name }}</p>
+              <p class="px-4 lg:px-8 underline font-bold mt-6 font-mono justify-self-end" v-on:click="setCurrentItem(nextItem())">{{ nextItem().name }} &gt;</p> 
         </div>
       </div>
 </div>
@@ -58,6 +57,7 @@ export default {
             }],
             currentItem: {
                 name: 'vyper',
+                title: 'Vyper',
                 image: 'vyper.png',
                 description: 'Vyper is a Python-like language for writing EVM smart contracts. Vyper is used in Uniswap v1 and CurveFinance contracts. They had trouble collecting donations even though they were bringing in a lot of revenue for many blockchain projects. They raised $44,000 in donations in two years with GitCoin, and received $125,000 in compensation in one year with Dev Protocol.'
             },
@@ -74,6 +74,32 @@ export default {
         setCurrentItem(item) {
             this.currentItem = item;
         },
+        nextItem() {
+            let nextItem;
+            this.items.forEach((item, index) => {
+                if(item.name == this.currentItem.name) {
+                    if(index + 1 < this.items.length) {
+                        nextItem = this.items[index + 1];
+                    } else {
+                        nextItem = this.items[0];
+                    }
+                }
+            });
+            return nextItem;
+        },
+        prevItem() {
+            let prevItem;
+            this.items.forEach((item, index) => {
+                if(item.name == this.currentItem.name) {
+                    if(index - 1 >= 0) {
+                        prevItem = this.items[index - 1];
+                    } else {
+                        prevItem =  this.items[this.items.length -1];
+                    }
+                }
+            });
+            return prevItem;
+        }
     }
 }
 </script>
