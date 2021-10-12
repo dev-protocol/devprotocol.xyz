@@ -22,7 +22,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.PUSH_TOKEN }}
         with:
-          source-directory: 'output'
+          source-directory: '.'
           destination-github-username: 'web3community'
           destination-repository-name: 'app'
           user-email: GITHUB_ACTOR@users.noreply.github.com
