@@ -17,13 +17,14 @@ jobs:
       - name: Install dependencies
         run: npm ci && npm run build
 
-      - name: Push to pages repo
-        if: ${{ github.repository_owner == 'web3community' }}
-        run: |
-          git config --global user.name github-actions
-          git config --global user.email '${GITHUB_ACTOR}@users.noreply.github.com'
-          git add .
-          git commit -m "Deploy ${{ github.sha }}"
-          git push -f https://github-actions:$API_TOKEN_GITHUB@github.com/web3community/app.git main --no-verify
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
         env:
-          API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
+          API_TOKEN_GITHUB: ${{ secrets.PUSH_TOKEN }}
+        with:
+          source-directory: 'output'
+          destination-github-username: 'web3community'
+          destination-repository-name: 'app'
+          user-email: ${{ GITHUB_ACTOR }}@users.noreply.github.com
+          target-branch: main
+
