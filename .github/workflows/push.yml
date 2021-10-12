@@ -1,0 +1,30 @@
+name: GitHub Push to Main Repo
+
+on:
+  push:
+    branches: [main]
+
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@main
+
+      # Try building.
+      - name: Install dependencies
+        run: npm ci && npm run build
+
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: '.'
+          destination-github-username: 'web3community'
+          destination-repository-name: 'app'
+          user-email: vincent.villafuerte1@gmail.com
+          target-branch: main
+
