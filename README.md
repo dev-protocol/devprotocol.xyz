@@ -12,7 +12,7 @@
 
 ## 🤔 I want to see a deployed version
 
-This website is live hosted at: https://devprotocol.netlify.app.
+This website is live hosted at: [devprotocol.netlify.app](https://devprotocol.netlify.app).
 
 ## 🚀 Get it running quick
 
