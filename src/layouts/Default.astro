@@ -14,25 +14,51 @@ let { metaTitle } = Astro.props;
   href={Astro.resolve("../styles/global.css")}
   >
   <meta name="description" content="Dev Protocol lets GitHub users tokenize their OSS projects in a few clicks. Creating an OSS token allows projects to access sustainable funding, create underlying economic models for their project, and distribute incentives at scale. For the first time, OSS projects have a scalable solution to unlock their value.">
+  <meta property="og:title" content={metaTitle} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://devprotocol.netlify.app/" />
+  <!-- TODO: <meta property="og:image" content="" /> -->
 </head>
 
-<body class="text-gray-900">
-  <nav class="bg-white flex items-center justify-evenly w-screen h-20 fixed">
+<body class="text-gray-900 font-body">
+  <nav class="bg-white flex items-center justify-evenly w-screen h-20 fixed lg:px-0 px-2 lg:border-0 border border-gray-200 lg:shadow-none shadow">
     <a href="https://devprotocol.xyz" class="text-gray-900">
       <img src="/assets/logo.png" alt="DevProtocol" class="max-h-8">
     </a>
-    <main>
-      <a href="/creators" class="mx-4 font-mono">for Creators</a>
-      <a href="/patrons" class="mx-4 font-mono">for Patrons</a>
-      <a href="/developers" class="mx-4 font-mono">for Developers</a>
+    <main class="md:block flex flex-col md:text-base text-sm min-w-0 nav-responsive" id="nav">
+      <a href="https://docs.devprotocol.xyz/en/stakes-social/onboard-guide/" class="mx-4 font-mono overflow-ellipsis overflow-hidden">for Creators</a>
+      <a href="https://docs.devprotocol.xyz/en/stakes-social/how-to-stake/" class="mx-4 font-mono overflow-ellipsis overflow-hidden">for Patrons</a>
+      <a href="https://docs.devprotocol.xyz/en/developers/modules/dev/" class="mx-4 font-mono overflow-ellipsis overflow-hidden">for Developers</a>
     </main>
-    <a class="border-2 border-gray-900 rounded-lg py-2 px-4">
+    <a href="http://stakes.social/" class="border-2 border-gray-900 rounded-lg py-2 px-4 md:block hidden">
       <button class="font-mono">Join</button>
     </a>
+  <div id="hamburger" class="md:hidden block">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
   </nav>
   <main>
     <slot />
   </main>
+<script>
+  let hamburgerToggle = document.querySelector("#hamburger")
+  let nav = document.querySelector("#nav")
+  hamburgerToggle.addEventListener("click",()=>{
+    hamburgerToggle.classList.toggle("open");
+    if(nav.classList.contains("nav-show")){
+      nav.classList.toggle("nav-show");
+      nav.classList.toggle("nav-hide");
+    }
+    else{
+      nav.classList.add("nav-show");
+      nav.classList.remove("nav-hide");
+    }
+
+  })
+</script>
 </body>
 
 </html>
