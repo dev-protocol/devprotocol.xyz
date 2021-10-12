@@ -1,3 +1,12 @@
+# [0.10.0](https://github.com/web3community/devprotocol.xyz/compare/v0.9.0...v0.10.0) (2021-10-09)
+
+
+### Features
+
+* center the `Latest on medium` text ([b5c3bc1](https://github.com/web3community/devprotocol.xyz/commit/b5c3bc10f3cd1ecd10724385156e853e33649c35))
+
+
+
 # [0.9.0](https://github.com/web3community/devprotocol.xyz/compare/v0.8.2...v0.9.0) (2021-10-08)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * custom fonts ([40ae1c1](https://github.com/web3community/devprotocol.xyz/commit/40ae1c1d7ec09931d4632e6d1f7301b1a2e1e183))
-
-
-
-# [0.7.0](https://github.com/web3community/devprotocol.xyz/compare/v0.6.0...v0.7.0) (2021-10-08)
-
-
-### Features
-
-* Update the contributing guidelines ([0983929](https://github.com/web3community/devprotocol.xyz/commit/098392919f7e9304422609c6a8ba3d7ed1d79d35))
 
 
 

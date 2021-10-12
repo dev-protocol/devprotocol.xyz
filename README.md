@@ -10,43 +10,43 @@
 - [x] Handcrafted UI with UX in mind
 - [x] Accessible, Performant and SEO Optimized
 
-## 🤔 I want to see a Deployed Version
+## 🤔 I want to see a deployed version
 
 This website is live hosted at: https://devprotocol.netlify.app.
 
-## 🚀 Get It Running Quick
+## 🚀 Get it running quick
 
 1. Skip all of the rest steps and use GitPod, which would automattically do all of this for you: [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/web3community/devprotocol.xyz)
 
 2. Make sure you have the latest version of NodeJs Installed.
 
-    ```sh
-    node --version
-    ```
+```sh
+node --version
+```
 
 3. Install Dependencies
 
-    ```sh
-    npm install
-    ```
+```sh
+npm install
+```
 
 4. Start the app
 
-   ```sh
-   npm run start
-   ```
+```sh
+npm run start
+```
 
 ## 📦 Requirements
 
-- [x] A latest version of [NodeJs](https://nodejs.org)
+- [x] The latest version of [NodeJs](https://nodejs.org)
 
 ## ⌚ Coming Soon
-
-Every contributor's efforts and time are deeply appreciated :smile:
 
 Updates available at: https://github.com/web3community/devprotocol.xyz/projects/1
 
 ## 💖 Contributors
+
+Every contributor's efforts and time are deeply appreciated. Thank you! :smile:
 
 <a href = "https://github.com/web3community/devprotocol.xyz/graphs/contributors">
   <img src = "https://contrib.rocks/image?repo=web3community/devprotocol.xyz"/>
