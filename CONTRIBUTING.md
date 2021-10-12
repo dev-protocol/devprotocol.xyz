@@ -113,12 +113,12 @@ git push origin your-branch-name
 
 ## 🌳 Hacktoberfest Guidelines
 
-#### Good Practice ✅
+#### ✅ Good Practice
 
 - Comment on the issue to get assigned
 - Create an issue before you make a Pull Request
 
-#### Bad Practice ❌
+#### ❌ Bad Practice
 
 - Creating pull requests without issue assignment will not be accepted and will be closed.
 
@@ -128,5 +128,5 @@ After this, the project maintainers will review the changes and will merge your 
 
 ## 🌐 Web3Community
 
-- 😕 Not sure where to start? Join our community on [Discord](https://discord.gg/37QFQ7J78B)
+- 😕 Not sure where to start? Join our community on [Discord](https://discord.gg/37QFQ7J78B)\
 - ✨ You can also take part in our [Community Discussions](https://github.com/web3community/devprotocol.xyz/discussions)
