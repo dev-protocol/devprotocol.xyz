@@ -23,7 +23,7 @@
         </div>
 
 
-        <div class="w-full lg:w-1/3" style="border: 0;"></div>
+        <div class="w-full lg:w-1/3"></div>
         <div class="w-full lg:w-2/4 flex justify-between justify-items-stretch">
 
               <p class="px-4 lg:px-8 underline font-bold mt-6 font-mono justify-self-start" v-on:click="setCurrentItem(prevItem())">&lt; {{ prevItem().title }}</p>
@@ -101,3 +101,9 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+div {
+    border: 0;
+}
+</style>
