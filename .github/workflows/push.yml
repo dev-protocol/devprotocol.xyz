@@ -25,6 +25,6 @@ jobs:
           source-directory: 'output'
           destination-github-username: 'web3community'
           destination-repository-name: 'app'
-          user-email: ${{ GITHUB_ACTOR }}@users.noreply.github.com
+          user-email: GITHUB_ACTOR@users.noreply.github.com
           target-branch: main
 
