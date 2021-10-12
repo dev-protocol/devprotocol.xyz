@@ -23,7 +23,7 @@
         </div>
 
 
-        <div class="w-full lg:w-1/3 border-0"></div>
+        <div class="w-full lg:w-1/3" style="border: 0;"></div>
         <div class="w-full lg:w-2/4 flex justify-between justify-items-stretch">
 
               <p class="px-4 lg:px-8 underline font-bold mt-6 font-mono justify-self-start" v-on:click="setCurrentItem(prevItem())">&lt; {{ prevItem().name }}</p>
@@ -62,12 +62,11 @@ export default {
             },
         }
     },
-    computed: {
-        otherItems() {
-            return this.items.filter((item) => {
-                return item.name !== this.currentItem.name;
-            });
-        }
+    mounted() {
+        this.items.forEach((item) => {
+            const img = new Image();
+            img.src = `/assets/'${item.image}`;
+        });
     },
     methods: {
         setCurrentItem(item) {
