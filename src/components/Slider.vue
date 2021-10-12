@@ -26,8 +26,8 @@
         <div class="w-full lg:w-1/3" style="border: 0;"></div>
         <div class="w-full lg:w-2/4 flex justify-between justify-items-stretch">
 
-              <p class="px-4 lg:px-8 underline font-bold mt-6 font-mono justify-self-start" v-on:click="setCurrentItem(prevItem())">&lt; {{ prevItem().name }}</p>
-              <p class="px-4 lg:px-8 underline font-bold mt-6 font-mono justify-self-end" v-on:click="setCurrentItem(nextItem())">{{ nextItem().name }} &gt;</p> 
+              <p class="px-4 lg:px-8 underline font-bold mt-6 font-mono justify-self-start" v-on:click="setCurrentItem(prevItem())">&lt; {{ prevItem().title }}</p>
+              <p class="px-4 lg:px-8 underline font-bold mt-6 font-mono justify-self-end" v-on:click="setCurrentItem(nextItem())">{{ nextItem().title }} &gt;</p> 
         </div>
       </div>
 </div>
@@ -49,9 +49,9 @@ export default {
                 image: 'hide.png',
                 description: 'HiDE is a decentralized blogging platform from Japan. In Japan, blogging projects like Steem It did not last, but they used the Dev Protocol to monetize blog posts and create a sustainable reward distribution model for users. They are a newly founded startup, but have made $60,000 in revenue in six months with Stakes.social and are about to start giving back to their blog users.'
             },{
-                name: 'sidre',
-                title: 'Sidre',
-                image: 'sidre.png',
+                name: 'sindre',
+                title: 'Sindre',
+                image: 'sindre.png',
                 description: 'He is one of the most influential independent developers in the OSS fields. He has developed over 1000 OSS projects and lives as a full-time Open Sourcer. One of his famous OSS project, Chalk is downloaded 90 million times a week, but he only receives $360 a month in donations on Patreon. He has been involved with Dev Protocol as an MVP user since 2019, and has given back about $2.1M in revenue earned there to GitHub\'s most active developers this year.'
             }],
             currentItem: {
