@@ -28,4 +28,4 @@ jobs:
           git commit -m "Deploy ${{ github.sha }}"
           git push -f git@github.com:web3community/app.git main --no-verify
         env:
-          API_TOKEN_GITHUB: ${{ secrets.GITHUB_PUSH_TOKEN }}
+          API_TOKEN_GITHUB: ${{ secrets.PUSH_TOKEN }}
