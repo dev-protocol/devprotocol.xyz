@@ -2,7 +2,7 @@
     <div id="slider-1" class="container items-center px-5 py-8 mx-auto">
       <div class="flex flex-wrap justify-center mb-12 divide-y-2 lg:divide-y-0 lg:divide-x-2">
 
-        <div class="w-full lg:w-1/3">
+        <div class="w-full lg:w-1/3 image">
           <div class="p-4 rounded-t-xl lg:rounded-l-xl lg:p-8 bg-blueGray-50 ">
                 <img :src="`/assets/${currentItem.image}`" alt="" class="" />
           </div>
@@ -105,5 +105,11 @@ export default {
 <style scoped>
 div {
     border: 0;
+}
+
+@media (min-width: 1024px) {
+    .image {
+        height: 350px;
+    }
 }
 </style>
