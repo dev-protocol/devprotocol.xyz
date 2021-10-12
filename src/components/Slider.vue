@@ -2,7 +2,7 @@
     <div id="slider-1" class="container items-center px-5 py-8 mx-auto">
       <div class="flex flex-wrap justify-center mb-12 divide-y-2 lg:divide-y-0 lg:divide-x-2">
 
-        <div class="w-full lg:w-1/3 image">
+        <div class="w-full lg:w-1/3 pt-32">
           <div class="p-4 rounded-t-xl lg:rounded-l-xl lg:p-8 bg-blueGray-50 ">
                 <img :src="`/assets/${currentItem.image}`" alt="" class="" />
           </div>
@@ -46,12 +46,12 @@ export default {
             },{
                 name: 'hide',
                 title: 'HiDE',
-                image: 'hide.png',
+                image: 'hide2.png',
                 description: 'HiDE is a decentralized blogging platform from Japan. In Japan, blogging projects like Steem It did not last, but they used the Dev Protocol to monetize blog posts and create a sustainable reward distribution model for users. They are a newly founded startup, but have made $60,000 in revenue in six months with Stakes.social and are about to start giving back to their blog users.'
             },{
                 name: 'sindre',
                 title: 'Sindre',
-                image: 'sindre.png',
+                image: 'sindre2.png',
                 description: 'He is one of the most influential independent developers in the OSS fields. He has developed over 1000 OSS projects and lives as a full-time Open Sourcer. One of his famous OSS project, Chalk is downloaded 90 million times a week, but he only receives $360 a month in donations on Patreon. He has been involved with Dev Protocol as an MVP user since 2019, and has given back about $2.1M in revenue earned there to GitHub\'s most active developers this year.'
             }],
             currentItem: {
@@ -105,15 +105,5 @@ export default {
 <style scoped>
 div {
     border: 0;
-}
-
-.image {
-    height: 325px;
-}
-
-@media (min-width: 1024px) {
-    .image {
-        height: 337px;
-    }
 }
 </style>
