@@ -26,8 +26,8 @@
         <div class="w-full lg:w-1/3"></div>
         <div class="w-full lg:w-2/4 flex justify-between justify-items-stretch">
 
-              <p class="px-4 lg:px-8 underline font-bold mt-6 font-mono justify-self-start" v-on:click="setCurrentItem(prevItem())">&lt; {{ prevItem().title }}</p>
-              <p class="px-4 lg:px-8 underline font-bold mt-6 font-mono justify-self-end" v-on:click="setCurrentItem(nextItem())">{{ nextItem().title }} &gt;</p> 
+              <p class="px-4 lg:px-8 underline font-bold mt-6 font-mono justify-self-start cursor-pointer" v-on:click="setCurrentItem(prevItem())">&lt; {{ prevItem().title }}</p>
+              <p class="px-4 lg:px-8 underline font-bold mt-6 font-mono justify-self-end cursor-pointer" v-on:click="setCurrentItem(nextItem())">{{ nextItem().title }} &gt;</p> 
         </div>
       </div>
 </div>
