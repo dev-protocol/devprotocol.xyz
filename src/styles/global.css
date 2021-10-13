@@ -45,11 +45,6 @@
   letter-spacing: 1px;
 }
 
-#nav-bar {
-  --tw-bg-opacity: 0.9;
-  /* border-bottom: solid 1px black; */
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
