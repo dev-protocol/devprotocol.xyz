@@ -8,6 +8,7 @@ import DevToken from '@components/Home/Heros/DevToken.astro'
 
 import Backers from '@components/Home/Sections/Backers.astro'
 import Blog from '@components/Home/Sections/Blog.astro'
+import Dapps from '@components/Home/Sections/Dapps.astro'
 
 import Slider from '../components/Slider.vue'
 ---
@@ -19,6 +20,7 @@ import Slider from '../components/Slider.vue'
   <Slider client:visible/>
   <hr class="h-1 mx-auto rounded-sm" style="width: 70%" />
   <Patrons></Patrons>
+  <Dapps></Dapps>
   <DevToken></DevToken>
   <Backers></Backers>
   <Blog></Blog>
