@@ -1,0 +1,71 @@
+<nav
+  class="
+    bg-white
+    flex
+    items-center
+    justify-evenly
+    w-screen
+    h-20
+    fixed
+    lg:px-0
+    px-6
+    lg:border-0
+    border border-gray-200
+    lg:shadow-none
+    shadow
+  "
+>
+  <a href="https://devprotocol.xyz" class="text-gray-900">
+    <img src="/assets/logo.png" alt="DevProtocol" class="max-h-8" />
+  </a>
+  <main
+    class="md:block flex flex-col md:text-base text-sm min-w-0 nav-responsive"
+    id="nav"
+  >
+    <a
+      href="https://docs.devprotocol.xyz/en/stakes-social/onboard-guide/"
+      class="mx-4 text-lg font-display lg:font-mono overflow-ellipsis overflow-hidden"
+      >for Creators</a
+    >
+    <a
+      href="https://docs.devprotocol.xyz/en/stakes-social/how-to-stake/"
+      class="mx-4 text-lg font-display lg:font-mono overflow-ellipsis overflow-hidden"
+      >for Patrons</a
+    >
+    <a
+      href="https://docs.devprotocol.xyz/en/developers/modules/dev/"
+      class="mx-4 text-lg font-display lg:font-mono overflow-ellipsis overflow-hidden"
+      >for Developers</a
+    >
+  </main>
+  <a
+    href="http://stakes.social/"
+    class="border-2 border-gray-900 rounded-lg py-2 px-4 md:block hidden"
+  >
+    <button class="font-mono">Join</button>
+  </a>
+  <div id="hamburger" class="md:hidden block">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<script>
+  let hamburgerToggle = document.getElementById("hamburger");
+  let nav = document.getElementById("nav")
+
+  hamburgerToggle.addEventListener("click", () => {
+
+    hamburgerToggle.classList.toggle("open")
+
+    if (nav.classList.contains("nav-show")) {
+      nav.classList.toggle("nav-show")
+      nav.classList.toggle("nav-hide")
+    } else {
+      nav.classList.add("nav-show")
+      nav.classList.remove("nav-hide")
+    }
+  })
+</script>

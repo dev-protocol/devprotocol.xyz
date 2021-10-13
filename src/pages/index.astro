@@ -1,86 +1,23 @@
 ---
-import Layout from '../layouts/Default.astro';
-import Slider from '../components/Slider.vue';
+import Layout from '../layouts/Default.astro'
 
-const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/devprtcl');
-const data = await response.json();
-const blogs_data=data.items;
-const f_blogs=blogs_data.slice(0,3);
-const blogs=f_blogs.map((blog)=>{
-let act_des=blog.description;
-let f_desc=(act_des.replace(/<[^>]+>/g, '')).replace(/\n/g, '');
-blog.desc=f_desc.substring(0, 250)+"...";
-return blog;
-});
+import Hero from '@components/Home/Hero.astro'
+import Creators from '@components/Home/Heros/Creators.astro'
+import Patrons from '@components/Home/Heros/Patrons.astro'
+import DevToken from '@components/Home/Heros/DevToken.astro'
+
+import Backers from '@components/Home/Sections/Backers.astro'
+import Blog from '@components/Home/Sections/Blog.astro'
+
+import Slider from '../components/Slider.vue'
 ---
 
 <Layout metaTitle="Home | Dev Protocol">
-  <header
-    class="
-      flex flex-col
-      items-center
-      justify-center
-      text-center text-lg
-      pt-24
-      pb-20
-      lg:pb-40
-      lg:px-0
-      px-4
-    "
-  >
-    <a href="http://stakes.social/" class="mt-2">
-      <button class="text-white py-2 px-4 rounded" style="background: #d500e6">
-        Join now
-      </button>
-      <img src="/assets/hand.png" alt="" class="ml-20 -mt-6 max-h-32" />
-    </a>
-    <h2 class="font-black font-display lg:text-9xl text-4xl my-6">
-      Decentralized<br/>Creator Economy
-    </h2>
-    <p class="max-w-prose my-6">
-      Start your own economy easily with a powerful blockchain solution designed
-      to help grow your creator business. Take advantage of the Web 3.0 technology and
-      integrate it with a variety of decentralized apps to accelerate the growth
-      of your economy.
-    </p>
-  </header>
-  <section
-    class="
-      flex flex-col
-      items-center
-      justify-center
-      text-center text-lg
-      pb-20
-      lg:pb-40
-      lg:px-0
-      px-4
-    "
-  >
-    <div class="w-auto items-center">
-      <img src="/assets/art/art--bears.png" alt="" class="max-h-96 w-auto" width="900" height="900" />
-    </div>
-    <h3 class="font-black font-display text-6xl mt-4">
-      Hello, Creators
-    </h3>
-    <p class="max-w-prose my-6">
-      Launch your social tokens with proof of ownership of your projects and open
-      the door to web3.0. Dev Protocol supports sustainable revenue opportunity
-      and global expansion by using crypto assets. And you can share your success
-      with your fans!
-    </p>
-    <a
-      href="https://docs.devprotocol.xyz/en/stakes-social/onboard-guide/"
-      class="underline font-bold"
-      >Know More</a
-    >
-    <a href="https://stakes.social/create" class="mt-6">
-      <button class="bg-black text-white py-2 px-6 rounded">
-        Submit a project
-      </button>
-    </a>
-  </section>
-  <hr class="mx-auto bg-gray-300 rounded h-1 mb-10" />
+  <Hero></Hero>
+  <Creators></Creators>
+  <hr class="h-1 mx-auto rounded-sm" style="width: 70%" />
   <Slider client:visible/>
+
   <hr class="mx-auto bg-gray-300 rounded h-1 mb-20 lg:mb-40" />
   <section
     class="
@@ -400,4 +337,11 @@ return blog;
       </ul>
     </div>
   </footer>
+
+  <hr class="h-1 mx-auto rounded-sm" style="width: 70%" />
+  <Patrons></Patrons>
+  <DevToken></DevToken>
+  <Backers></Backers>
+  <Blog></Blog>
+
 </Layout>

@@ -1,4 +1,7 @@
 ---
+import Navigation from '@components/Global/Navigation.astro'
+import Footer from '@components/Global/Footer.astro'
+
 let { metaTitle } = Astro.props;
 ---
 
@@ -21,6 +24,7 @@ let { metaTitle } = Astro.props;
 </head>
 
 <body class="text-gray-900 font-body">
+
   <nav class="bg-white flex items-center justify-evenly w-screen h-20 fixed lg:px-0 px-2 lg:border-0 border border-gray-200 lg:shadow-none shadow" id="nav-bar">
     <a href="https://devprotocol.xyz" class="text-gray-900">
       <img src="/assets/logo.png" alt="DevProtocol" class="max-h-8">
@@ -40,25 +44,13 @@ let { metaTitle } = Astro.props;
     <span></span>
   </div>
   </nav>
+
+  <Navigation></Navigation>
+
   <main>
     <slot />
   </main>
-<script>
-  let hamburgerToggle = document.querySelector("#hamburger")
-  let nav = document.querySelector("#nav")
-  hamburgerToggle.addEventListener("click",()=>{
-    hamburgerToggle.classList.toggle("open");
-    if(nav.classList.contains("nav-show")){
-      nav.classList.toggle("nav-show");
-      nav.classList.toggle("nav-hide");
-    }
-    else{
-      nav.classList.add("nav-show");
-      nav.classList.remove("nav-hide");
-    }
-
-  })
-</script>
+  <Footer></Footer>
 </body>
 
 </html>
