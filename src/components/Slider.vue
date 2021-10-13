@@ -17,7 +17,7 @@
                 {{ currentItem.title }}
               </h3>
               <p class="mx-auto mb-16 text-base font-medium leading-relaxed text-blueGray-700 ">
-                 {{ currentItem.description }} 
+                 {{ currentItem.description }}
               </p>
           </div>
         </div>
@@ -27,7 +27,7 @@
         <div class="w-full lg:w-2/4 flex justify-between justify-items-stretch">
 
               <p class="px-4 lg:px-8 underline font-bold mt-6 font-mono justify-self-start cursor-pointer" v-on:click="setCurrentItem(prevItem())">&lt; {{ prevItem().title }}</p>
-              <p class="px-4 lg:px-8 underline font-bold mt-6 font-mono justify-self-end cursor-pointer" v-on:click="setCurrentItem(nextItem())">{{ nextItem().title }} &gt;</p> 
+              <p class="px-4 lg:px-8 underline font-bold mt-6 font-mono justify-self-end cursor-pointer" v-on:click="setCurrentItem(nextItem())">{{ nextItem().title }} &gt;</p>
         </div>
       </div>
 </div>
@@ -42,23 +42,23 @@ export default {
                 name: 'vyper',
                 title: 'Vyper',
                 image: 'vyper.png',
-                description: 'Vyper is a Python-like language for writing EVM smart contracts. Vyper is used in Uniswap v1 and CurveFinance contracts. They had trouble collecting donations even though they were bringing in a lot of revenue for many blockchain projects. They raised $44,000 in donations in two years with GitCoin, and received $125,000 in compensation in one year with Dev Protocol.'
+                description: `Vyper is a Python-like language for writing EVM smart contracts. Vyper is used in Uniswap v1 and CurveFinance contracts. They had trouble collecting donations even though they were bringing in a lot of revenue for many blockchain projects. They raised $20,000 in donations in one year, but received about 10 times that amount, $240,000, in one year with Dev Protocol.`
+            },{
+                name: 'sindre',
+                title: 'Sindre Sorhus',
+                image: 'chalk.png',
+                description: `Sindre is one of the great full-time open-sourcerer who have developed over 1000 OSS projects. One of his famous OSS projects, Chalk is downloaded 90 million times a week, but was not receiving sufficient revenue from donations. He has been involved with Dev Protocol as an MVP user since 2019, and has given back about $2.1M in revenue earned there to GitHub's most active developers this year.`
             },{
                 name: 'hide',
                 title: 'HiDE',
                 image: 'hide2.png',
-                description: 'HiDE is a decentralized blogging platform from Japan. In Japan, blogging projects like Steem It did not last, but they used the Dev Protocol to monetize blog posts and create a sustainable reward distribution model for users. They are a newly founded startup, but have made $60,000 in revenue in six months with Stakes.social and are about to start giving back to their blog users.'
-            },{
-                name: 'sindre',
-                title: 'Sindre',
-                image: 'chalk.png',
-                description: 'He is one of the most influential independent developers in the OSS fields. He has developed over 1000 OSS projects and lives as a full-time Open Sourcer. One of his famous OSS projects, Chalk is downloaded 90 million times a week, but he only receives $360 a month in donations on Patreon. He has been involved with Dev Protocol as an MVP user since 2019, and has given back about $2.1M in revenue earned there to GitHub\'s most active developers this year.'
+                description: `HiDE is a decentralized blogging platform from Japan. They used the Dev Protocol to monetize bloggers and create a sustainable reward distribution model for users. They are a newly founded startup, but have made $60,000 in revenue in six months with Stakes.social and are about to start giving back to their bloggers.`
             }],
             currentItem: {
                 name: 'vyper',
                 title: 'Vyper',
                 image: 'vyper.png',
-                description: 'Vyper is a Python-like language for writing EVM smart contracts. Vyper is used in Uniswap v1 and CurveFinance contracts. They had trouble collecting donations even though they were bringing in a lot of revenue for many blockchain projects. They raised $44,000 in donations in two years with GitCoin, and received $125,000 in compensation in one year with Dev Protocol.'
+                description: `Vyper is a Python-like language for writing EVM smart contracts. Vyper is used in Uniswap v1 and CurveFinance contracts. They had trouble collecting donations even though they were bringing in a lot of revenue for many blockchain projects. They raised $20,000 in donations in one year, but received about 10 times that amount, $240,000, in one year with Dev Protocol.`
             },
         }
     },
