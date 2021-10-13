@@ -1,0 +1,53 @@
+---
+const dapps = [
+  {
+    name: 'stakes.social',
+    logo: '/assets/stakes.social.png',
+    description: 'First and official Dapp of Dev Protocol',
+    link: 'https://stakes.social'
+  },
+  {
+    name: 'μ-zomia',
+    logo: '/assets/m-zomia.png',
+    description: 'Support musicians and people involved in music production',
+    link: '#'
+  },
+  {
+    name: 'Cobogo',
+    logo: '/assets/cobogo.png',
+    description: 'The next generation of YouTube Monetization',
+    link: 'https://cobogo.social'
+  },
+  {
+    name: 'Anime Bank',
+    logo: '/assets/anime-bank.png',
+    description: 'Anime x Blockchain new service (beta)',
+    link: '#'
+  },
+]
+---
+
+<section class="p-2">
+  <h3 class="font-black font-display text-4xl my-4 text-center">Dapps</h3>
+  <div class="flex text-xl gap-4 flex-wrap justify-evenly py-4 items-center text-center">
+    {dapps.map(dapp => (
+      <div class="md:p-4 m-4" style="max-width: 50%;">
+        <a
+          href={dapp.link}
+          target="_blank"
+          class="no-underline flex flex-col align-center"
+        >
+          <img alt={dapp.name + ' Logo'} src={dapp.logo} class="w-40 h-auto mx-auto" />
+        </a>
+        <a
+          href={dapp.link}
+          target="_blank"
+          class="no-underline text-black"
+        >
+          <h4 class="font-display underline my-4 font-bold">{dapp.name}</h4>
+        </a>
+            <p class="text-base md:max-w-prose my-2">{dapp.description}</p>
+      </div>
+    ))}
+  </div>
+</section>
