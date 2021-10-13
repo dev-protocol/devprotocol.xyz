@@ -188,7 +188,7 @@ return blog;
     </div>
   </section>
   <section class="bg-blue-500 h-auto px-20 py-28 text-white flex flex-col">
-    <p class="font-display text-2xl text-gray-100">Latest on Medium</p>
+    <p class="font-display text-gray-100" id="medium-blog-title">Latest on Medium</p>
     <main class="flex flex-col lg:flex-row">
     {
       blogs.map((blog) => (
@@ -197,7 +197,7 @@ return blog;
             <img src={blog.thumbnail} class="max-w-full pt-4 my-8">
             <h3 class="text-xl font-display font-bold pb-6">{blog.title}</h3>
           </a>
-          <p class="text-left font-normal text-gray-100 mb-3">{blog.desc} <a href={blog.link} class="underline ml-1">Read more...</a></p>
+          <p class="text-left font-normal text-gray-100 mb-3" style="text-align: justify;">{blog.desc} <a href={blog.link} class="underline ml-1">Read more...</a></p>
         </div>
       ))
     }
@@ -233,7 +233,7 @@ return blog;
           completely on-chain, 100% composable middleware protocol.
         </p>
         <div class="flex mt-6">
-          <a href="https://twitter.com/devprtcl">
+          <a href="https://twitter.com/devprtcl" style="padding-right: 1rem;">
             <svg
               width="26"
               height="21"
