@@ -27,15 +27,15 @@ const dapps = [
 ]
 ---
 
-<section class="p-10">
-  <h3 class="font-black font-display text-4xl my-8 text-center">Dapps</h3>
+<section class="p-2">
+  <h3 class="font-black font-display text-4xl my-4 text-center">Dapps</h3>
   <div class="flex text-xl gap-4 flex-wrap justify-evenly py-4 items-center text-center">
     {dapps.map(dapp => (
       <div class="md:p-4 m-4" style="max-width: 50%;">
         <a
           href={dapp.link}
           target="_blank"
-          class="no-underline flex flex-col align-center filter grayscale hover:filter-none"
+          class="no-underline flex flex-col align-center"
         >
           <img alt={dapp.name + ' Logo'} src={dapp.logo} class="w-40 h-auto mx-auto" />
         </a>
