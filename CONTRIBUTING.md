@@ -6,7 +6,7 @@ The following is a set of guidelines for contributing to this project. These are
 
 ## 📜 Code of Conduct
 
-This project and everyone participating in it is governed by a [Code of Conduct](https://github.com/web3community/devprotcol.xyz/blob/main/code_of_conduct.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [@vinzvinci](https://github.com/vinzvinci) or in our [Discord server](https://discord.gg/TSRwqx4K2v).
+This project and everyone participating in it is governed by a [Code of Conduct](https://github.com/web3community/devprotcol.xyz/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [@vinzvinci](https://github.com/vinzvinci) or in our [Discord server](https://discord.gg/TSRwqx4K2v).
 
 ## 🤔 How can I contribute?
 
@@ -122,12 +122,12 @@ git push origin your-branch-name
 
 ## 🌳 Hacktoberfest Guidelines
 
-#### ✅ Good Practice
+### ✅ Good Practice
 
 - Comment on the issue to get assigned
 - Create an issue before you make a Pull Request
 
-#### ❌ Bad Practice
+### ❌ Bad Practice
 
 - Creating pull requests without issue assignment will not be accepted and will be closed.
 
@@ -136,7 +136,6 @@ git push origin your-branch-name
 After this, the project maintainers will review the changes and will merge your PR if they found it good, otherwise we will suggest the required changes.
 
 ## 🌐 Web3Community
-
 
 - 😕 Not sure where to start? Join our community on [Discord](https://discord.gg/37QFQ7J78B)\
 - ✨ You can also take part in our [Community Discussions](https://github.com/web3community/devprotocol.xyz/discussions)

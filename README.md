@@ -12,11 +12,11 @@
 
 ## 🤔 I want to see a deployed version
 
-This website is live hosted at: [devprotocol.netlify.app](https://devprotocol.netlify.app).
+This website is live hosted at [devprotocol.xyz](https://devprotocol.xyz).
 
 ## 🚀 Get it running quick
 
-1. Skip all of the rest steps and use GitPod, which would automattically do all of this for you: [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/web3community/devprotocol.xyz)
+1. Skip all of the rest steps and use Gitpod, which would automattically do all of this for you: [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/web3community/devprotocol.xyz)
 
 2. Make sure you have the latest version of NodeJs Installed.
 
@@ -38,7 +38,7 @@ npm run start
 
 ## 📦 Requirements
 
-- [x] The latest version of [NodeJs](https://nodejs.org)
+- [x] The latest version of [Node.js](https://nodejs.org)
 
 ## ⌚ Coming Soon
 
