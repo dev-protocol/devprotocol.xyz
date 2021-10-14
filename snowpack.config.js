@@ -19,6 +19,9 @@ module.exports = {
     /* ... */
   },
   alias: {
-    '@components': './src/components'
+    '@components': './src/components',
+    '@layouts': './src/layouts',
+    '@styles': './src/styles',
+    '@pages': './src/pages',
   }
 };
