@@ -11,7 +11,7 @@
     >
       <div class="w-full lg:w-1/3 pt-32">
         <div class="p-4 rounded-t-xl lg:rounded-l-xl lg:p-8 bg-blueGray-50">
-          <a target="_blank" :href="currentItem.link"
+          <a target="_blank" :href="currentItem.link" class="no-underline"
             ><img :src="`/assets/${currentItem.image}`" alt="" class=""
           /></a>
         </div>
