@@ -10,14 +10,14 @@ import Backers from '@components/Home/Sections/Backers.astro'
 import Blog from '@components/Home/Sections/Blog.astro'
 import Dapps from '@components/Home/Sections/Dapps.astro'
 
-import Slider from '../components/Slider.vue'
+import SuccessStories from '../components/Home/SuccessStories.vue'
 ---
 
 <Layout metaTitle="Home | Dev Protocol">
   <Hero></Hero>
   <Creators></Creators>
   <hr class="h-2 mx-auto rounded-sm" style="width: 70%" />
-  <Slider client:visible/>
+  <SuccessStories client:visible></SuccessStories>
   <hr class="h-2 mx-auto rounded-sm" style="width: 70%" />
   <Patrons></Patrons>
   <hr class="h-2 mx-auto rounded-sm" style="width: 70%" />
