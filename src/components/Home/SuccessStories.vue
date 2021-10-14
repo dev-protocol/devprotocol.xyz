@@ -103,7 +103,7 @@ export default {
           title: "HiDE",
           image: "hide2.png",
           description:
-            "HiDE is a decentralized blogging platform from Japan. In Japan, blogging projects like Steem It did not last, but they used the Dev Protocol to monetize blog posts and create a sustainable reward distribution model for users. They are a newly founded startup, but have made $60,000 in revenue in six months with Stakes.social and are about to start giving back to their blog users.",
+            "HiDE is a decentralized blogging platform from Japan. In Japan, blogging projects like Steem did not last, but they used the Dev Protocol to monetize blog posts and create a sustainable reward distribution model for users. They are a newly founded startup, but have made $60,000 in revenue in six months with Stakes.social and are about to start giving back to their blog users.",
         },
         {
           name: "sindre",
