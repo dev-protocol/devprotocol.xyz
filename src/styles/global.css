@@ -41,7 +41,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .nav-responsive{
     position: absolute;
     right: 0;
