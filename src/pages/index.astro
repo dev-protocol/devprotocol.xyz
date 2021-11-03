@@ -11,19 +11,26 @@ import Blog from '@components/Home/Sections/Blog.astro'
 import Dapps from '@components/Home/Sections/Dapps.astro'
 
 import SuccessStories from '../components/Home/SuccessStories.vue'
+
+import L2 from '@components/Home/Banners/L2.astro'
 ---
 
 <Layout metaTitle="Home | Dev Protocol">
   <Hero></Hero>
-  <Creators></Creators>
-  <hr class="h-2 mx-auto rounded-sm" style="width: 70%" />
-  <SuccessStories client:visible></SuccessStories>
-  <hr class="h-2 mx-auto rounded-sm" style="width: 70%" />
-  <Patrons></Patrons>
-  <hr class="h-2 mx-auto rounded-sm" style="width: 70%" />
-  <Dapps></Dapps>
-  <hr class="h-2 mx-auto rounded-sm" style="width: 70%" />
-  <DevToken></DevToken>
-  <Backers></Backers>
-  <Blog></Blog>
+  <L2></L2>
+  <article>
+    <Creators></Creators>
+    <hr class="h-2 mx-auto rounded-sm my-20" style="width: 70%" />
+    <SuccessStories client:visible></SuccessStories>
+    <hr class="h-2 mx-auto rounded-sm my-20" style="width: 70%" />
+    <Patrons></Patrons>
+    <hr class="h-2 mx-auto rounded-sm my-20" style="width: 70%" />
+    <Dapps></Dapps>
+    <hr class="h-2 mx-auto rounded-sm my-20" style="width: 70%" />
+    <DevToken></DevToken>
+  </article>
+  <aside>
+    <Backers></Backers>
+    <Blog></Blog>
+  </aside>
 </Layout>

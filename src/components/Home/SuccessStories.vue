@@ -1,5 +1,5 @@
 <template>
-  <div id="slider-1" class="container items-center px-5 py-8 mx-auto">
+  <div id="slider-1" class="container items-center px-5 mx-auto">
     <div
       class="
         flex flex-wrap
