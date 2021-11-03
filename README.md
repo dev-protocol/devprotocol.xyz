@@ -20,20 +20,20 @@ This website is live hosted at [devprotocol.xyz](https://devprotocol.xyz).
 
 2. Make sure you have the latest version of NodeJs Installed.
 
-```sh
+```bash
 node --version
 ```
 
 3. Install Dependencies
 
-```sh
-npm install
+```bash
+yarn
 ```
 
 4. Start the app
 
-```sh
-npm run start
+```bash
+yarn start
 ```
 
 ## 📦 Requirements
