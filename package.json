@@ -1,7 +1,7 @@
 {
   "name": "devprotocol",
   "version": "0.11.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -13,5 +13,10 @@
     "astro": "^0.20.9",
     "postcss": "^8.3.9",
     "tailwindcss": "^2.2.16"
-  }
+  },
+  "description": "Dev Protocol's open-source website, built with Astro",
+  "main": "layouts/Default.astro",
+  "repository": "https://github.com/web3community/devprotocol.xyz.git",
+  "author": "Web3Community",
+  "license": "MIT"
 }
