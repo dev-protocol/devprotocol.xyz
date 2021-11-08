@@ -13,21 +13,21 @@ body:
       description: Provide a general summary of the issue in the title above
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: expectedbhv
     attributes:
       label: Expected behavior
       description: Tell us what should happen
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: actualbhv
     attributes:
       label: Actual behavior
       description: Tell us what happens instead
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: possiblefix
     attributes:
       label: Possible fix
@@ -66,7 +66,7 @@ body:
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/web3community/web3community.github.io/blob/main/CODE_OF_CONDUCT.md)
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/dev-protocol/community/blob/main/CODE_OF_CONDUCT.md)
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
