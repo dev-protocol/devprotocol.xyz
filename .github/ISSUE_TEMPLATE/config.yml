@@ -1,1 +1,8 @@
 blank_issues_enabled: false
+contact_links:
+  - name: E-mail contact
+    url: https://bio.link/web3community
+    about: Feel free to mail us regarding any issue or something related to Dev Protocol.
+  - name: Discord community
+    url: https://discord.gg/VwJp4KM
+    about: Contact us via our Discord community.
