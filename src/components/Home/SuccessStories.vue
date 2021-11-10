@@ -130,7 +130,7 @@ export default {
         image: "vyper.png",
         description:
           `Vyper is a Python-like language for writing EVM smart contracts. Vyper is used in Uniswap v1 and CurveFinance contracts. They had trouble collecting donations even though they were bringing in a lot of revenue for many blockchain projects. They raised $20,000 in donations in one year, but received about 10 times that amount, $240,000, in one year with Dev Protocol.`,
-        link: "https://stakes.social/0x44d871aebF0126Bf646753E2C976Aa7e68A66c15",
+        link: "https://stakes.social/0x90168f9Ba07B95f629f8b77F789d46A549d6470F",
       },
     };
   },
