@@ -1,72 +1,46 @@
 name: Bug report
-description: Create a report to help us improve. Report bugs found while using the project
+description: Create a report to help us improve
 title: "[BUG] <description>"
 labels: [bug]
 body:
-  - type: markdown
-    attributes:
-      value: "Provide a general summary of the issue in the title above"
-  - type: textarea
-    id: description
-    attributes:
-      label: Description
-      description: Provide a general summary of the issue in the title above
-    validations:
-      required: true
-  - type: textarea
-    id: expectedbhv
-    attributes:
-      label: Expected behavior
-      description: Tell us what should happen
-    validations:
-      required: true
-  - type: textarea
-    id: actualbhv
-    attributes:
-      label: Actual behavior
-      description: Tell us what happens instead
-    validations:
-      required: true
-  - type: textarea
-    id: possiblefix
-    attributes:
-      label: Possible fix
-      description: Not obligatory, but suggest a fix or reason for the bug
-    validations:
-      required: false
-  - type: textarea
-    id: steps
-    attributes:
-      label: Steps to reproduce
-      description: |
-         Provide a link to a live example, or an unambiguous set of steps to
-         reproduce this bug. Include code to reproduce, if relevant
-      placeholder: |
-        1.
-        2.
-        3.
-        4.
-    validations:
-      required: true
-  - type: textarea
-    id: context
-    attributes:
-      label: Context
-      description: How has this bug affected you? What were you trying to accomplish?
-    validations:
-      required: true
-  - type: textarea
-    id: extrainformation
-    attributes:
-      label: Additional information
-      description: Is there anything else we should know about this bug?
-    validations:
-      required: false
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/dev-protocol/community/blob/main/CODE_OF_CONDUCT.md)
-      options:
-        - label: I agree to follow this project's Code of Conduct
+    - type: textarea
+      id: subject
+      attributes:
+        label: Problem subject
+        description: Use one of the following boxes. If none of them apply, please specify.
+        placeholder: |
+          - [ ] Contracts
+          - [ ] Tests
+          - [ ] Documentation
+          - [ ] Other (please specify)
+      validations:
+        required: false
+    - type: textarea
+      id: description
+      attributes:
+        label: Description
+        description: Please write what problem/bug you are experiencing or want to report.
+      validations:
+        required: true
+    - type: textarea
+      id: expectedbhv
+      attributes:
+        label: Expected behavior/contents
+        description: Please write here the expected behavior/contents
+      validations:
           required: true
+    - type: textarea
+      id: actualbhv
+      attributes:
+        label: Actual behavior/contents
+        description: Please write here the actual behavior/contents
+      validations:
+          required: false
+    - type: checkboxes
+      id: coc
+      attributes:
+        label: Code of Conduct
+        description: By submitting this issue, I confirm I've read and complied with the [CoC](https://github.com/dev-protocol/community/blob/main/CODE_OF_CONDUCT.md) 🖖
+        options:
+          - label: I agree to follow this project's Code of Conduct
+            required: true
