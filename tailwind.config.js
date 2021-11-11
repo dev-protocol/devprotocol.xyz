@@ -10,6 +10,7 @@ module.exports = {
       },
       maxWidth: {
         "para": "40ch",
+        "half": "50%"
       }
     }
   }
