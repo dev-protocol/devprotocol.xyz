@@ -9,13 +9,12 @@
         lg:divide-y-0 lg:divide-x-2
       "
     >
-      <div class="w-full lg:w-1/3 pt-32">
-        <div class="p-4 rounded-t-xl lg:rounded-l-xl lg:p-8 bg-blueGray-50">
-          <a target="_blank" :href="currentItem.link" class="no-underline"
-            ><img :src="`/assets/${currentItem.image}`" alt="" class=""
-          /></a>
-        </div>
+      <div class="w-full lg:w-1/3">
+      <img :src="`/assets/${currentItem.image}`" alt="" class="pt-0 lg:pt-24"/>
       </div>
+       <div class="p-4 rounded-t-xl lg:rounded-l-xl lg:p-8 bg-blueGray-50">
+          <a target="_blank" :href="currentItem.link" class="no-underline"></a>
+        </div>
 
       <div class="w-full lg:w-2/4">
         <div
