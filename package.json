@@ -11,7 +11,13 @@
   "devDependencies": {
     "@astrojs/renderer-vue": "^0.1.9",
     "astro": "^0.20.9",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1",
     "postcss": "^8.3.9",
+    "remark-cli": "^10.0.0",
     "tailwindcss": "^2.2.16"
   },
   "description": "Dev Protocol's open-source website, built with Astro",
