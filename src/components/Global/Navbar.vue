@@ -54,15 +54,7 @@
                 ? (isOpen[0] = false)
                 : (isOpen = [true, false, false, false])
             "
-            class="
-              relative
-              z-10
-              flex
-              items-center
-              overflow-hidden
-              focus:outline-none focus:border-white
-              ml-3
-            "
+            class="navbar-item"
           >
             Overview
             <img
@@ -77,70 +69,16 @@
             v-if="isOpen[0]"
             @click="isOpen[0] = false"
             tabindex="-1"
-            class="
-              fixed
-              inset-0
-              h-full
-              w-full
-              bg-black
-              opacity-50
-              overflow-y-hidden
-              cursor-default
-            "
+            class="navbar-item-background"
           ></button>
           <!-- Subnavbar block -->
-          <div
-            v-if="isOpen[0]"
-            class="
-              fixed
-              mt-2
-              p-1
-              flex flex-col
-              z-40
-              bg-white
-              rounded-lg
-              shadow-xl
-            "
-          >
-            <a
-              href="/creators"
-              class="
-                block
-                p-1
-                text-gray-800
-                hover:bg-indigo-500 hover:text-white
-              "
-              >For Creators</a
-            >
-            <a
-              href="/patrons"
-              class="
-                block
-                p-1
-                text-gray-800
-                hover:bg-indigo-500 hover:text-white
-              "
-              >For Patrons</a
-            >
-            <a
-              href="/developers"
-              class="
-                block
-                p-1
-                text-gray-800
-                hover:bg-indigo-500 hover:text-white
-              "
-              >For Developers</a
-            >
-
+          <div v-if="isOpen[0]" class="sub-navbar-block">
+            <a href="/creators" class="sub-navbar-item">For Creators</a>
+            <a href="/patrons" class="sub-navbar-item">For Patrons</a>
+            <a href="/developers" class="sub-navbar-item">For Developers</a>
             <a
               href="https://trello.com/b/oFu5uWJF/roadmap"
-              class="
-                block
-                p-1
-                text-gray-800
-                hover:bg-indigo-500 hover:text-white
-              "
+              class="sub-navbar-item"
               >Roadmap</a
             >
           </div>
@@ -155,14 +93,7 @@
                 ? (isOpen[1] = false)
                 : (isOpen = [false, true, false, false])
             "
-            class="
-              relative
-              z-10
-              flex
-              items-center
-              overflow-hidden
-              focus:outline-none focus:border-white
-            "
+            class="navbar-item"
           >
             DAO
             <img
@@ -177,37 +108,10 @@
             v-if="isOpen[1]"
             @click="isOpen[1] = false"
             tabindex="-1"
-            class="
-              fixed
-              inset-0
-              h-full
-              w-full
-              bg-black
-              opacity-50
-              cursor-default
-            "
+            class="navbar-item-background"
           ></button>
-          <div
-            v-if="isOpen[1]"
-            class="
-              fixed
-              mt-2
-              z-40
-              p-1
-              flex flex-col
-              bg-white
-              rounded-lg
-              shadow-xl
-            "
-          >
-            <a
-              href="https://govern.devprotocol.xyz/"
-              class="
-                block
-                p-1
-                text-gray-800
-                hover:bg-indigo-500 hover:text-white
-              "
+          <div v-if="isOpen[1]" class="sub-navbar-block">
+            <a href="https://govern.devprotocol.xyz/" class="sub-navbar-item"
               >Voting Portal</a
             >
           </div>
@@ -222,14 +126,7 @@
                 ? (isOpen[2] = false)
                 : (isOpen = [false, false, true, false])
             "
-            class="
-              relative
-              z-10
-              flex
-              items-center
-              overflow-hidden
-              focus:outline-none focus:border-white
-            "
+            class="navbar-item"
           >
             Community
             <img
@@ -244,49 +141,13 @@
             v-if="isOpen[2]"
             @click="isOpen[2] = false"
             tabindex="-1"
-            class="
-              fixed
-              inset-0
-              h-full
-              w-full
-              bg-black
-              opacity-50
-              cursor-default
-            "
+            class="navbar-item-background"
           ></button>
-          <div
-            v-if="isOpen[2]"
-            class="
-              fixed
-              mt-2
-              z-40
-              p-1
-              flex flex-col
-              bg-white
-              rounded-lg
-              shadow-xl
-            "
-          >
-            <a
-              href="https://community.devprotocol.xyz/"
-              class="
-                block
-                p-1
-                text-gray-800
-                hover:bg-indigo-500 hover:text-white
-              "
+          <div v-if="isOpen[2]" class="sub-navbar-block">
+            <a href="https://community.devprotocol.xyz/" class="sub-navbar-item"
               >Forum</a
             >
-            <a
-              href="#"
-              class="
-                block
-                p-1
-                text-gray-800
-                hover:bg-indigo-500 hover:text-white
-              "
-              >Builders Program</a
-            >
+            <a href="#" class="sub-navbar-item">Builders Program</a>
           </div>
         </div>
         <!-- Help Section -->
@@ -299,14 +160,7 @@
                 ? (isOpen[3] = false)
                 : (isOpen = [false, false, false, true])
             "
-            class="
-              relative
-              z-10
-              flex
-              items-center
-              overflow-hidden
-              focus:outline-none focus:border-white
-            "
+            class="navbar-item"
           >
             Help
             <img
@@ -321,68 +175,20 @@
             v-if="isOpen[3]"
             @click="isOpen[3] = false"
             tabindex="-1"
-            class="
-              fixed
-              inset-0
-              h-full
-              w-full
-              bg-black
-              opacity-50
-              cursor-default
-            "
+            class="navbar-item-background"
           ></button>
-          <div
-            v-if="isOpen[3]"
-            class="
-              fixed
-              z-40
-              mt-2
-              p-1
-              flex flex-col
-              bg-white
-              rounded-lg
-              shadow-xl
-            "
-          >
-            <a
-              href="#"
-              class="
-                block
-                p-1
-                text-gray-800
-                hover:bg-indigo-500 hover:text-white
-              "
-              >FAQ</a
-            >
-            <a
-              href="https://initto.devprotocol.xyz/"
-              class="
-                block
-                p-1
-                text-gray-800
-                hover:bg-indigo-500 hover:text-white
-              "
+          <div v-if="isOpen[3]" class="sub-navbar-block">
+            <a href="#" class="sub-navbar-item">FAQ</a>
+            <a href="https://initto.devprotocol.xyz/" class="sub-navbar-item"
               >Tutorials</a
             >
-            <a
-              href="https://docs.devprotocol.xyz/"
-              class="
-                block
-                p-1
-                text-gray-800
-                hover:bg-indigo-500 hover:text-white
-              "
+            <a href="https://docs.devprotocol.xyz/" class="sub-navbar-item"
               >Documentation</a
             >
 
             <a
               href="https://github.com/dev-protocol/community/blob/main/CODE_OF_CONDUCT.md"
-              class="
-                block
-                p-1
-                text-gray-800
-                hover:bg-indigo-500 hover:text-white
-              "
+              class="sub-navbar-item"
               >Code of Conduct</a
             >
           </div>
