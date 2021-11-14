@@ -7,9 +7,11 @@
     "
   >
     <div class="flex items-center justify-between px-4 py-3 sm:p-0 text-3xl">
+      <!-- Dev Protocol Icon -->
       <a href="https://devprotocol.xyz" class="text-gray-900">
         <img src="/assets/logo.png" alt="DevProtocol" class="max-h-8" />
       </a>
+      <!-- Hamburger icon and close icon -->
       <div class="sm:hidden">
         <button
           @click="smIsOpen = !smIsOpen"
@@ -36,12 +38,16 @@
         </button>
       </div>
     </div>
+    <!-- all dropdown icons -->
     <nav
       :class="smIsOpen ? 'block border' : 'hidden'"
       class="px-2 pt-2 pb-4 sm:flex sm:p-0"
     >
       <div class="flex flex-col space-y-3 sm:space-y-0 sm:flex-row space-x-3">
+        <!-- Overview Section -->
         <div class="relative">
+          <!-- Main Button with dropdown arrow 
+          On Click - when current dropdown needs to be opened change all other states to false-->
           <button
             @click="
               isOpen[0]
@@ -65,6 +71,8 @@
               class="h-4 w-4 ml-1 text-black"
             />
           </button>
+          <!-- Background for the subnavbar 
+          So Clicking outside the navbar will close it -->
           <button
             v-if="isOpen[0]"
             @click="isOpen[0] = false"
@@ -80,6 +88,7 @@
               cursor-default
             "
           ></button>
+          <!-- Subnavbar block -->
           <div
             v-if="isOpen[0]"
             class="
@@ -136,7 +145,10 @@
             >
           </div>
         </div>
+        <!-- DAO Section -->
         <div class="relative">
+          <!-- Main Button with dropdown arrow 
+          On Click - when current dropdown needs to be opened change all other states to false-->
           <button
             @click="
               isOpen[1]
@@ -159,6 +171,8 @@
               class="h-4 w-4 ml-1 text-black"
             />
           </button>
+          <!-- Background for the subnavbar 
+          So Clicking outside the navbar will close it -->
           <button
             v-if="isOpen[1]"
             @click="isOpen[1] = false"
@@ -198,7 +212,10 @@
             >
           </div>
         </div>
+        <!-- Community Section -->
         <div class="relative">
+          <!-- Main Button with dropdown arrow 
+          On Click - when current dropdown needs to be opened change all other states to false-->
           <button
             @click="
               isOpen[2]
@@ -221,6 +238,8 @@
               class="h-4 w-4 ml-1 text-black"
             />
           </button>
+          <!-- Background for the subnavbar 
+          So Clicking outside the navbar will close it -->
           <button
             v-if="isOpen[2]"
             @click="isOpen[2] = false"
@@ -249,7 +268,7 @@
             "
           >
             <a
-              href="#"
+              href="https://community.devprotocol.xyz/"
               class="
                 block
                 p-1
@@ -270,7 +289,10 @@
             >
           </div>
         </div>
+        <!-- Help Section -->
         <div class="relative">
+          <!-- Main Button with dropdown arrow 
+          On Click - when current dropdown needs to be opened change all other states to false-->
           <button
             @click="
               isOpen[3]
@@ -293,6 +315,8 @@
               class="h-4 w-4 ml-1 text-black"
             />
           </button>
+          <!-- Background for the subnavbar 
+          So Clicking outside the navbar will close it -->
           <button
             v-if="isOpen[3]"
             @click="isOpen[3] = false"
@@ -331,7 +355,7 @@
               >FAQ</a
             >
             <a
-              href="#"
+              href="https://initto.devprotocol.xyz/"
               class="
                 block
                 p-1
@@ -341,7 +365,7 @@
               >Tutorials</a
             >
             <a
-              href="#"
+              href="https://docs.devprotocol.xyz/"
               class="
                 block
                 p-1
@@ -352,7 +376,7 @@
             >
 
             <a
-              href="#"
+              href="https://github.com/dev-protocol/community/blob/main/CODE_OF_CONDUCT.md"
               class="
                 block
                 p-1
@@ -366,6 +390,7 @@
       </div>
     </nav>
 
+    <!-- Lauch Icon -->
     <a
       class="hidden md:block bg-indigo-600 p-2 text-white rounded-md"
       href="https://stakes.social/"
@@ -379,7 +404,9 @@
 export default {
   data() {
     return {
+      // states for each of the 4 dropdowns
       isOpen: [false, false, false, false],
+      // state for mobile view (hamburger icon)
       smIsOpen: false,
     };
   },
