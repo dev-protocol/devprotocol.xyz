@@ -193,6 +193,24 @@
             >
           </div>
         </div>
+        <div class="relative">
+          <a
+            class="
+              ml-3
+              block
+              w-min
+              whitespace-nowrap
+              md:hidden
+              bg-indigo-600
+              p-2
+              text-white
+              rounded-md
+            "
+            href="https://stakes.social/"
+          >
+            Launch App
+          </a>
+        </div>
       </div>
     </nav>
 
