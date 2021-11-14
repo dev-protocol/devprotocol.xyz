@@ -54,7 +54,7 @@
                 ? (isOpen[0] = false)
                 : (isOpen = [true, false, false, false])
             "
-            class="navbar-item"
+            class="px-3 navbar-item"
           >
             Overview
             <img
