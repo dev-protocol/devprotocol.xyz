@@ -51,13 +51,19 @@
             class="
               relative
               z-10
-              block
+              flex
+              items-center
               overflow-hidden
               focus:outline-none focus:border-white
               ml-3
             "
           >
             Overview
+            <img
+              src="/assets/dropdown-arrow.svg"
+              alt="arrow"
+              class="h-4 w-4 ml-1 text-black"
+            />
           </button>
           <button
             v-if="isOpen[0]"
@@ -66,8 +72,8 @@
             class="
               fixed
               inset-0
-              h-screen
-              w-screen
+              h-full
+              w-full
               bg-black
               opacity-50
               overflow-y-hidden
@@ -76,36 +82,42 @@
           ></button>
           <div
             v-if="isOpen[0]"
-            class="fixed mt-2 py-2 z-40 w-48 bg-white rounded-lg shadow-xl"
+            class="
+              fixed
+              mt-2
+              p-1
+              flex flex-col
+              z-40
+              bg-white
+              rounded-lg
+              shadow-xl
+            "
           >
             <a
-              href="#"
+              href="/creators"
               class="
                 block
-                px-4
-                py-2
+                p-1
                 text-gray-800
                 hover:bg-indigo-500 hover:text-white
               "
               >For Creators</a
             >
             <a
-              href="#"
+              href="/patrons"
               class="
                 block
-                px-4
-                py-2
+                p-1
                 text-gray-800
                 hover:bg-indigo-500 hover:text-white
               "
               >For Patrons</a
             >
             <a
-              href="#"
+              href="/developers"
               class="
                 block
-                px-4
-                py-2
+                p-1
                 text-gray-800
                 hover:bg-indigo-500 hover:text-white
               "
@@ -113,11 +125,10 @@
             >
 
             <a
-              href="#"
+              href="https://trello.com/b/oFu5uWJF/roadmap"
               class="
                 block
-                px-4
-                py-2
+                p-1
                 text-gray-800
                 hover:bg-indigo-500 hover:text-white
               "
@@ -135,12 +146,18 @@
             class="
               relative
               z-10
-              block
+              flex
+              items-center
               overflow-hidden
               focus:outline-none focus:border-white
             "
           >
             DAO
+            <img
+              src="/assets/dropdown-arrow.svg"
+              alt="arrow"
+              class="h-4 w-4 ml-1 text-black"
+            />
           </button>
           <button
             v-if="isOpen[1]"
@@ -158,14 +175,22 @@
           ></button>
           <div
             v-if="isOpen[1]"
-            class="fixed mt-2 z-40 py-2 w-48 bg-white rounded-lg shadow-xl"
+            class="
+              fixed
+              mt-2
+              z-40
+              p-1
+              flex flex-col
+              bg-white
+              rounded-lg
+              shadow-xl
+            "
           >
             <a
-              href="#"
+              href="https://govern.devprotocol.xyz/"
               class="
                 block
-                px-4
-                py-2
+                p-1
                 text-gray-800
                 hover:bg-indigo-500 hover:text-white
               "
@@ -183,12 +208,18 @@
             class="
               relative
               z-10
-              block
+              flex
+              items-center
               overflow-hidden
               focus:outline-none focus:border-white
             "
           >
             Community
+            <img
+              src="/assets/dropdown-arrow.svg"
+              alt="arrow"
+              class="h-4 w-4 ml-1 text-black"
+            />
           </button>
           <button
             v-if="isOpen[2]"
@@ -206,14 +237,22 @@
           ></button>
           <div
             v-if="isOpen[2]"
-            class="fixed mt-2 z-40 py-2 w-48 bg-white rounded-lg shadow-xl"
+            class="
+              fixed
+              mt-2
+              z-40
+              p-1
+              flex flex-col
+              bg-white
+              rounded-lg
+              shadow-xl
+            "
           >
             <a
               href="#"
               class="
                 block
-                px-4
-                py-2
+                p-1
                 text-gray-800
                 hover:bg-indigo-500 hover:text-white
               "
@@ -223,8 +262,7 @@
               href="#"
               class="
                 block
-                px-4
-                py-2
+                p-1
                 text-gray-800
                 hover:bg-indigo-500 hover:text-white
               "
@@ -242,12 +280,18 @@
             class="
               relative
               z-10
-              block
+              flex
+              items-center
               overflow-hidden
               focus:outline-none focus:border-white
             "
           >
             Help
+            <img
+              src="/assets/dropdown-arrow.svg"
+              alt="arrow"
+              class="h-4 w-4 ml-1 text-black"
+            />
           </button>
           <button
             v-if="isOpen[3]"
@@ -265,14 +309,22 @@
           ></button>
           <div
             v-if="isOpen[3]"
-            class="fixed z-40 mt-2 py-2 w-48 bg-white rounded-lg shadow-xl"
+            class="
+              fixed
+              z-40
+              mt-2
+              p-1
+              flex flex-col
+              bg-white
+              rounded-lg
+              shadow-xl
+            "
           >
             <a
               href="#"
               class="
                 block
-                px-4
-                py-2
+                p-1
                 text-gray-800
                 hover:bg-indigo-500 hover:text-white
               "
@@ -282,8 +334,7 @@
               href="#"
               class="
                 block
-                px-4
-                py-2
+                p-1
                 text-gray-800
                 hover:bg-indigo-500 hover:text-white
               "
@@ -293,8 +344,7 @@
               href="#"
               class="
                 block
-                px-4
-                py-2
+                p-1
                 text-gray-800
                 hover:bg-indigo-500 hover:text-white
               "
@@ -305,8 +355,7 @@
               href="#"
               class="
                 block
-                px-4
-                py-2
+                p-1
                 text-gray-800
                 hover:bg-indigo-500 hover:text-white
               "
@@ -316,9 +365,13 @@
         </div>
       </div>
     </nav>
-    <button class="hidden md:block bg-purple-800 p-2 text-white rounded-md">
+
+    <a
+      class="hidden md:block bg-indigo-600 p-2 text-white rounded-md"
+      href="https://stakes.social/"
+    >
       Launch App
-    </button>
+    </a>
   </header>
 </template>
 
@@ -329,18 +382,6 @@ export default {
       isOpen: [false, false, false, false],
       smIsOpen: false,
     };
-  },
-
-  mounted() {
-    const handleEscape = (e) => {
-      if (e.key === "Esc" || e.key === "Escape") {
-        this.isOpen = false;
-      }
-    };
-    document.addEventListener("keydown", handleEscape);
-    this.$once("hook:beforeDestroy", () => {
-      document.removeEventListener("keydown", handleEscape);
-    });
   },
 };
 </script>
