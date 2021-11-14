@@ -193,7 +193,7 @@
             >
           </div>
         </div>
-        <div class="relative">
+        <div class="md:hidden relative">
           <a class="navbar-item" href="https://stakes.social/"> Launch App </a>
         </div>
       </div>
