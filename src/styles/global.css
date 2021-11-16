@@ -163,4 +163,7 @@
   .sub-navbar-item {
     @apply block p-1 text-gray-800 hover:bg-indigo-500 hover:text-white;
   }
+  .dropdown-arrow {
+    @apply h-4 w-4 ml-1 text-black dark:text-white;
+  }
 }

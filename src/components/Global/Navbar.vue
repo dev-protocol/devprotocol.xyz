@@ -2,8 +2,10 @@
   <header
     class="
       text-black
+      dark:text-white
       sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3
       border-b-2
+      dark:border-b-0
     "
   >
     <div class="flex items-center justify-between px-4 py-3 sm:p-0 text-3xl">
@@ -19,6 +21,7 @@
           class="
             block
             text-gray-800
+            dark:text-white
             hover:text-black
             focus:text-black focus:outline-none
           "
@@ -40,7 +43,7 @@
     </div>
     <!-- all dropdown icons -->
     <nav
-      :class="smIsOpen ? 'block border' : 'hidden'"
+      :class="smIsOpen ? 'block' : 'hidden'"
       class="px-2 pt-2 pb-4 sm:flex sm:p-0"
     >
       <div class="flex flex-col space-y-3 sm:space-y-0 sm:flex-row space-x-3">
@@ -60,7 +63,7 @@
             <img
               src="/assets/dropdown-arrow.svg"
               alt="arrow"
-              class="h-4 w-4 ml-1 text-black"
+              class="dropdown-arrow"
             />
           </button>
           <!-- Background for the subnavbar 
@@ -97,9 +100,9 @@
           >
             DAO
             <img
-              src="/assets/dropdown-arrow.svg"
+              src="/assets/dropdown.svg"
               alt="arrow"
-              class="h-4 w-4 ml-1 text-black"
+              class="dropdown-arrow"
             />
           </button>
           <!-- Background for the subnavbar 
@@ -132,7 +135,7 @@
             <img
               src="/assets/dropdown-arrow.svg"
               alt="arrow"
-              class="h-4 w-4 ml-1 text-black"
+              class="dropdown-arrow"
             />
           </button>
           <!-- Background for the subnavbar 
@@ -166,7 +169,7 @@
             <img
               src="/assets/dropdown-arrow.svg"
               alt="arrow"
-              class="h-4 w-4 ml-1 text-black"
+              class="dropdown-arrow"
             />
           </button>
           <!-- Background for the subnavbar 
