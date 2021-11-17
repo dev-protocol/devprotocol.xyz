@@ -8,44 +8,17 @@
       dark:border-b-0
     "
   >
-    <div class="flex items-center justify-between px-4 py-3 sm:p-0 text-3xl">
+    <div class="flex flex-wrap sm:flex-nowrap w-full items-center justify-between align-baseline px-4 py-3 sm:p-0">
       <!-- Dev Protocol Icon -->
       <a href="https://devprotocol.xyz" class="text-gray-900">
         <img src="/assets/logo.png" alt="DevProtocol" class="max-h-8" />
       </a>
       <!-- Hamburger icon and close icon -->
-      <div class="sm:hidden flex">
-        <ThemeButton />
-        <button
-          @click="smIsOpen = !smIsOpen"
-          type="button"
-          class="
-            block
-            text-gray-800
-            dark:text-white
-            hover:text-black
-            focus:text-black focus:outline-none
-          "
-        >
-          <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-            <path
-              v-if="smIsOpen"
-              fill-rule="evenodd"
-              d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
-            />
-            <path
-              v-if="!smIsOpen"
-              fill-rule="evenodd"
-              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
+  
     <!-- all dropdown icons -->
     <nav
-      :class="smIsOpen ? 'block' : 'hidden'"
-      class="px-2 pt-2 pb-4 sm:flex sm:p-0 md:ml-32"
+      :class="smIsOpen ? 'block w-full pt-4 order-1 sm:order-none' : 'hidden'"
+      class="px-2 pt-2 pb-4 sm:flex sm:p-0 "
     >
       <div class="flex flex-col space-y-3 sm:space-y-0 sm:flex-row space-x-3">
         <!-- Overview Section -->
@@ -202,16 +175,44 @@
         </div>
       </div>
     </nav>
-    <div class="hidden sm:flex space-x-3 align-baseline">
-      <ThemeButton />
-      <!-- Lauch Icon -->
-      <a
-        class="bg-indigo-600 p-2 text-white rounded-md whitespace-nowrap"
-        href="https://stakes.social/"
+    <div class="flex">
+    <ThemeButton/>
+    <div class="sm:hidden visible">     
+      <button
+        @click="smIsOpen = !smIsOpen"
+        type="button"
+        class="
+          block
+          text-gray-800
+          dark:text-white
+          hover:text-black
+          focus:text-black focus:outline-none
+        "
       >
-        Launch App
-      </a>
+        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+          <path
+            v-if="smIsOpen"
+            fill-rule="evenodd"
+            d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+          />
+          <path
+            v-if="!smIsOpen"
+            fill-rule="evenodd"
+            d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+          />
+        </svg>
+      </button>
     </div>
+    <!-- Lauch Icon -->
+    <a
+      class="bg-indigo-600 p-2 hidden sm:flex space-x-3 align-baseline text-white rounded-md whitespace-nowrap"
+      href="https://stakes.social/"
+    >
+      Launch App
+    </a>
+  </div>
+    </div>
+
   </header>
 </template>
 
