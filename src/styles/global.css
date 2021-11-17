@@ -164,6 +164,6 @@
     @apply block p-1 text-gray-800 dark:text-gray-50 hover:bg-indigo-500 hover:text-white;
   }
   .dropdown-arrow {
-    @apply h-3 w-3 md:h-4 md:w-4 mx-1 text-black dark:text-white;
+    @apply h-3 w-3 md:h-4 md:w-4 mx-1 text-black dark:invert;
   }
 }
