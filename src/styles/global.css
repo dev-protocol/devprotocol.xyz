@@ -152,19 +152,19 @@
 
 @layer components {
   .navbar-item {
-    @apply relative z-10 flex items-center overflow-hidden focus:outline-none focus:border-white ml-3;
+    @apply relative z-10 flex items-center overflow-hidden focus:outline-none focus:border-white text-sm md:text-base mx-1;
   }
   .navbar-item-background {
     @apply fixed inset-0 h-full w-full bg-black opacity-50 overscroll-none cursor-default;
   }
   .sub-navbar-block {
-    @apply fixed mt-2 p-1 flex flex-col z-40 bg-white rounded-lg shadow-xl;
+    @apply fixed mt-2 p-1 flex flex-col z-40 bg-white rounded-lg shadow-xl dark:bg-darkSecondary;
   }
   .sub-navbar-item {
-    @apply block p-1 text-gray-800 hover:bg-indigo-500 hover:text-white;
+    @apply block p-1 text-gray-800 dark:text-gray-50 hover:bg-indigo-500 hover:text-white;
   }
   .dropdown-arrow {
-    @apply h-4 w-4 ml-1 text-black dark:text-white;
+    @apply h-3 w-3 md:h-4 md:w-4 mx-1 text-black dark:text-white;
   }
 }
 

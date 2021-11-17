@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-end items-center space-x-2">
+  <div class="flex justify-end items-center space-x-2 mx-1">
     <span class="text-sm text-gray-800">Light</span>
     <div>
       <input
@@ -13,8 +13,8 @@
       <label for="toggle">
         <div
           class="
-            w-6
-            h-2
+            w-7
+            h-4
             sm:w-9 sm:h-5
             flex
             items-center
@@ -26,8 +26,8 @@
           <div
             class="
               toggle-dot
-              w-3
-              h-3
+              w-3.5
+              h-3.5
               sm:w-4 sm:h-4
               bg-white
               rounded-full
@@ -74,7 +74,6 @@ export default {
       document.documentElement.classList.add("dark");
       this.isDarkMode = true;
       localStorage.setItem("theme", "dark");
-      console.log("here");
     } else {
       document.documentElement.classList.remove("dark");
       this.isDarkMode = false;

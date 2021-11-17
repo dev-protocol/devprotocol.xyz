@@ -45,7 +45,7 @@
     <!-- all dropdown icons -->
     <nav
       :class="smIsOpen ? 'block' : 'hidden'"
-      class="px-2 pt-2 pb-4 sm:flex sm:p-0"
+      class="px-2 pt-2 pb-4 sm:flex sm:p-0 md:ml-32"
     >
       <div class="flex flex-col space-y-3 sm:space-y-0 sm:flex-row space-x-3">
         <!-- Overview Section -->
@@ -58,7 +58,7 @@
                 ? (isOpen[0] = false)
                 : (isOpen = [true, false, false, false])
             "
-            class="px-3 navbar-item"
+            class="px-3 sm:px-0 navbar-item"
           >
             Overview
             <img
@@ -101,7 +101,7 @@
           >
             DAO
             <img
-              src="/assets/dropdown.svg"
+              src="/assets/dropdown-arrow.svg"
               alt="arrow"
               class="dropdown-arrow"
             />
@@ -202,19 +202,11 @@
         </div>
       </div>
     </nav>
-    <div class="flex space-x-3 align-baseline">
-      <ThemeButton class="hidden sm:flex" />
+    <div class="hidden sm:flex space-x-3 align-baseline">
+      <ThemeButton />
       <!-- Lauch Icon -->
       <a
-        class="
-          hidden
-          sm:flex
-          bg-indigo-600
-          p-2
-          text-white
-          rounded-md
-          whitespace-nowrap
-        "
+        class="bg-indigo-600 p-2 text-white rounded-md whitespace-nowrap"
         href="https://stakes.social/"
       >
         Launch App
