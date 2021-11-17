@@ -16,6 +16,6 @@ module.exports = {
         para: '40ch',
         half: '50%'
       }
+    }
       }
-  },
 }
