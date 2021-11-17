@@ -14,7 +14,8 @@
         <img src="/assets/logo.png" alt="DevProtocol" class="max-h-8" />
       </a>
       <!-- Hamburger icon and close icon -->
-      <div class="sm:hidden">
+      <div class="sm:hidden flex">
+        <ThemeButton />
         <button
           @click="smIsOpen = !smIsOpen"
           type="button"
@@ -196,23 +197,34 @@
             >
           </div>
         </div>
-        <div class="md:hidden relative">
+        <div class="sm:hidden relative">
           <a class="navbar-item" href="https://stakes.social/"> Launch App </a>
         </div>
       </div>
     </nav>
-
-    <!-- Lauch Icon -->
-    <a
-      class="hidden md:block bg-indigo-600 p-2 text-white rounded-md"
-      href="https://stakes.social/"
-    >
-      Launch App
-    </a>
+    <div class="flex space-x-3 align-baseline">
+      <ThemeButton class="hidden sm:flex" />
+      <!-- Lauch Icon -->
+      <a
+        class="
+          hidden
+          sm:flex
+          bg-indigo-600
+          p-2
+          text-white
+          rounded-md
+          whitespace-nowrap
+        "
+        href="https://stakes.social/"
+      >
+        Launch App
+      </a>
+    </div>
   </header>
 </template>
 
 <script>
+import ThemeButton from "./ThemeButton.vue";
 export default {
   data() {
     return {
@@ -221,6 +233,9 @@ export default {
       // state for mobile view (hamburger icon)
       smIsOpen: false,
     };
+  },
+  components: {
+    ThemeButton,
   },
 };
 </script>
