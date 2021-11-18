@@ -5,8 +5,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        darkPrimary: '#222222',
-        darkSecondary: '#151414'
+        darkPrimary: '#111827',
+        darkSecondary: '#1E3A8A',
+        darkThird: '#1F2937'
       },
       fontFamily: {
         mono: ['IBM Plex Mono', 'monospace'],
@@ -17,6 +18,11 @@ module.exports = {
         para: '40ch',
         half: '50%'
       }
+    }
+  },
+  vairants: {
+    extend: {
+      boxShadow: ['dark']
     }
   }
 }
