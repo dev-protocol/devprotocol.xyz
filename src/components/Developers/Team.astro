@@ -1,74 +1,88 @@
 ---
 const people = [
     {
-        name: <a href="https://www.linkedin.com/in/hara-mayumi-58799b37/">Mayumi Hara</a>,
+        name: "Mayumi Hara",
         title: 'CEO',
-        img: '/assets/teams/mayu.png'
+        img: '/assets/teams/mayu.png',
+        link: "https://www.linkedin.com/in/hara-mayumi-58799b37/"
     },
     {
-        name: <a href="https://www.linkedin.com/in/aggre/">Aggre</a>,
+        name: "Aggre",
         title: 'CTO',
-        img: '/assets/teams/aggre.png'
+        img: '/assets/teams/aggre.png',
+        link: "https://www.linkedin.com/in/aggre/"
     },
     {
-        name: <a href="https://www.linkedin.com/in/mariko-miyamoto-96a907112/">Mariko Miyamoto</a>,
+        name: "Mariko Miyamoto",
         title: 'COO',
-        img: '/assets/teams/mariko.png'
+        img: '/assets/teams/mariko.png',
+        link: "https://www.linkedin.com/in/mariko-miyamoto-96a907112/"
     },
     {
         name: 'Masako Arita',
         title: 'General Manager',
-        img: '/assets/teams/masako.jpeg'
+        img: '/assets/teams/masako.jpeg',
+        link: "https://medium.com/@masako_76810/about"
     },
     {
-        name: <a href="https://github.com/Akira-Taniguchi">Akira Taniguchi</a>,
+        name: "Akira Taniguchi",
         title: 'Core Dev',
-        img: 'https://github.com/Akira-Taniguchi.png'
+        img: 'https://github.com/Akira-Taniguchi.png',
+        link: "https://github.com/Akira-Taniguchi"
     },
     {
-        name: <a href="https://github.com/stuartwk">Stu</a>,
+        name: "Stu",
         title: 'Core Dev',
-        img: '/assets/teams/stu.jpg'
+        img: '/assets/teams/stu.jpg',
+        link: "https://github.com/stuartwk"
     },
     {
-        name: <a href="https://github.com/CryptoDogg">Yusuke Ikeda</a>,
+        name: "Yusuke Ikeda",
         title: 'Core Dev',
-        img: '/assets/teams/ikeda.jpg'
+        img: '/assets/teams/ikeda.jpg',
+        link: "https://github.com/CryptoDogg"
     },
     {
-        name: <a href="https://github.com/hhatto">Hideo Hattori</a>,
+        name: "Hideo Hattori",
         title: 'Core Dev',
-        img: 'https://github.com/hhatto.png'
+        img: 'https://github.com/hhatto.png',
+        link: "https://github.com/hhatto"
     },
     {
-        name: <a href="https://twitter.com/pdotal">Pedro Alves (P.)</a>,
+        name: "Pedro Alves (P.)",
         title: 'Collaboration and Blockchain researcher',
-        img: 'https://github.com/pdotall.png'
+        img: 'https://github.com/pdotall.png',
+        link: "https://twitter.com/pdotal"
     },
     {
         name: 'Andrew Giunta',
         title: 'Ecosystem Growth',
-        img: '/assets/teams/soon.png'
+        img: '/assets/teams/soon.png',
+        link: "https://devprotocol.xyz/developers"
     },
     {
-        name: <a href="https://twitter.com/kurochandev">Kent Kuroiwa</a>,
+        name: "Kent Kuroiwa",
         title: 'Communications Lead',
-        img: '/assets/teams/kent.jpg'
+        img: '/assets/teams/kent.jpg',
+        link: "https://twitter.com/kurochandev"
     },
     {
-        name: <a href="https://github.com/vinzvinci">Vincent Villafuerte</a>,
+        name: "Vincent Villafuerte",
         title: 'Developer Relations',
-        img: 'https://github.com/vinzvinci.png'
+        img: "https://github.com/vinzvinci.png",
+        link: "https://github.com/vinzvinci"
     },
     {
         name: 'Dr. Eelco Fiole',
         title: 'Adviser',
-        img: '/assets/teams/Eelco.jpg'
+        img: '/assets/teams/Eelco.jpg',
+        link: "https://www.linkedin.com/in/fiole"
     },
     {
         name: 'Hiroki Omae',
         title: 'Adviser',
-        img: '/assets/teams/omae_hiroki.jpg'
+        img: '/assets/teams/omae_hiroki.jpg',
+        link: "https://learning.unity3d.jp/speaker/hiroki-omae/"
     }
 ]
 ---
@@ -84,10 +98,10 @@ const people = [
         {people.map(person => (
         <li>
           <div class="space-y-4">
-            <img class="mx-auto h-20 w-20 rounded-full lg:w-24 lg:h-24" src={person.img} alt={person.name}>
+            <a href={person.link}><img class="mx-auto h-20 w-20 rounded-full lg:w-24 lg:h-24" src={person.img} alt={person.name}></a>
             <div class="space-y-2">
               <div class="text-xs font-medium lg:text-sm">
-                <h3>{person.name}</h3>
+                <a href={person.link}><h3>{person.name}</h3></a>
                 <p class="text-indigo-600">{person.title}</p>
               </div>
             </div>
