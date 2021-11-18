@@ -34,7 +34,7 @@
           <a
             target="_blank"
             :href="currentItem.link"
-            class="text-black no-underline"
+            class="text-black no-underline dark:text-white"
           >
             <h3 class="font-black font-display text-3xl my-8">
               {{ currentItem.title }}
