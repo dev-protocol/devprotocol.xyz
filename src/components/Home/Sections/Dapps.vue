@@ -1,5 +1,6 @@
 <template>
-  <div class="p-10 sm:p-20">
+  <div class="px-10 sm:px-20">
+    <h1 class="text-center text-5xl mb-5">Dapps</h1>
     <Carousel
       :settings="settings"
       :breakpoints="breakpoints"
