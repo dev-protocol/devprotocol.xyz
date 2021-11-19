@@ -6,6 +6,7 @@
       sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3
       border-b-2
       dark:border-b-0
+      dark:shadow-xl
     "
   >
     <div class="flex flex-wrap sm:flex-nowrap w-full items-center justify-between align-baseline px-4 py-3 sm:p-0">
