@@ -23,5 +23,8 @@
   "description": "Dev Protocol's open-source website, built with Astro",
   "repository": "https://github.com/web3community/devprotocol.xyz.git",
   "author": "Web3Community",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "vue3-carousel": "^0.1.30"
+  }
 }

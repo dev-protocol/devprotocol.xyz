@@ -8,9 +8,10 @@ import DevToken from '@components/Home/Heros/DevToken.astro'
 
 import Backers from '@components/Home/Sections/Backers.astro'
 import Blog from '@components/Home/Sections/Blog.astro'
-import Dapps from '@components/Home/Sections/Dapps.astro'
+// import Dapps from '@components/Home/Sections/Dapps.astro'
 
 import SuccessStories from '../components/Home/SuccessStories.vue'
+import Dapps from '../components/Home/Sections/Dapps.vue'
 
 import L2 from '@components/Home/Banners/L2.astro'
 ---
@@ -25,7 +26,7 @@ import L2 from '@components/Home/Banners/L2.astro'
     <hr class="h-2 mx-auto rounded-sm my-20" style="width: 70%" />
     <Patrons></Patrons>
     <hr class="h-2 mx-auto rounded-sm my-20" style="width: 70%" />
-    <Dapps></Dapps>
+    <Dapps client:only></Dapps>
     <hr class="h-2 mx-auto rounded-sm my-20" style="width: 70%" />
     <DevToken></DevToken>
   </article>
