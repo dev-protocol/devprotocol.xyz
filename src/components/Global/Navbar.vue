@@ -2,46 +2,24 @@
   <header
     class="
       text-black
+      dark:text-white
       sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3
       border-b-2
+      dark:border-b-0
+      dark:shadow-xl
     "
   >
-    <div class="flex items-center justify-between px-4 py-3 sm:p-0 text-3xl">
+    <div class="flex flex-wrap sm:flex-nowrap w-full items-center justify-between align-baseline px-4 py-3 sm:p-0">
       <!-- Dev Protocol Icon -->
       <a href="https://devprotocol.xyz" class="text-gray-900">
         <img src="/assets/logo.png" alt="DevProtocol" class="max-h-8" />
       </a>
       <!-- Hamburger icon and close icon -->
-      <div class="sm:hidden">
-        <button
-          @click="smIsOpen = !smIsOpen"
-          type="button"
-          class="
-            block
-            text-gray-800
-            hover:text-black
-            focus:text-black focus:outline-none
-          "
-        >
-          <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
-            <path
-              v-if="smIsOpen"
-              fill-rule="evenodd"
-              d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
-            />
-            <path
-              v-if="!smIsOpen"
-              fill-rule="evenodd"
-              d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
+  
     <!-- all dropdown icons -->
     <nav
-      :class="smIsOpen ? 'block border' : 'hidden'"
-      class="px-2 pt-2 pb-4 sm:flex sm:p-0"
+      :class="smIsOpen ? 'block w-full pt-4 order-1 sm:order-none' : 'hidden'"
+      class="px-2 pt-2 pb-4 sm:flex sm:p-0 "
     >
       <div class="flex flex-col space-y-3 sm:space-y-0 sm:flex-row space-x-3">
         <!-- Overview Section -->
@@ -54,13 +32,13 @@
                 ? (isOpen[0] = false)
                 : (isOpen = [true, false, false, false])
             "
-            class="px-3 navbar-item"
+            class="px-3 sm:px-0 navbar-item"
           >
             Overview
             <img
               src="/assets/dropdown-arrow.svg"
               alt="arrow"
-              class="h-4 w-4 ml-1 text-black"
+              class="dropdown-arrow"
             />
           </button>
           <!-- Background for the subnavbar 
@@ -99,7 +77,7 @@
             <img
               src="/assets/dropdown-arrow.svg"
               alt="arrow"
-              class="h-4 w-4 ml-1 text-black"
+              class="dropdown-arrow"
             />
           </button>
           <!-- Background for the subnavbar 
@@ -132,7 +110,7 @@
             <img
               src="/assets/dropdown-arrow.svg"
               alt="arrow"
-              class="h-4 w-4 ml-1 text-black"
+              class="dropdown-arrow"
             />
           </button>
           <!-- Background for the subnavbar 
@@ -166,7 +144,7 @@
             <img
               src="/assets/dropdown-arrow.svg"
               alt="arrow"
-              class="h-4 w-4 ml-1 text-black"
+              class="dropdown-arrow"
             />
           </button>
           <!-- Background for the subnavbar 
@@ -193,23 +171,54 @@
             >
           </div>
         </div>
-        <div class="md:hidden relative">
+        <div class="sm:hidden relative">
           <a class="navbar-item" href="https://stakes.social/"> Launch App </a>
         </div>
       </div>
     </nav>
-
+    <div class="flex">
+    <ThemeButton/>
+    <div class="sm:hidden visible">     
+      <button
+        @click="smIsOpen = !smIsOpen"
+        type="button"
+        class="
+          block
+          text-gray-800
+          dark:text-white
+          hover:text-black
+          focus:text-black focus:outline-none
+        "
+      >
+        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+          <path
+            v-if="smIsOpen"
+            fill-rule="evenodd"
+            d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+          />
+          <path
+            v-if="!smIsOpen"
+            fill-rule="evenodd"
+            d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+          />
+        </svg>
+      </button>
+    </div>
     <!-- Lauch Icon -->
     <a
-      class="hidden md:block bg-indigo-600 p-2 text-white rounded-md"
+      class="bg-indigo-600 p-2 hidden sm:flex space-x-3 align-baseline text-white rounded-md whitespace-nowrap"
       href="https://stakes.social/"
     >
       Launch App
     </a>
+  </div>
+    </div>
+
   </header>
 </template>
 
 <script>
+import ThemeButton from "./ThemeButton.vue";
 export default {
   data() {
     return {
@@ -218,6 +227,9 @@ export default {
       // state for mobile view (hamburger icon)
       smIsOpen: false,
     };
+  },
+  components: {
+    ThemeButton,
   },
 };
 </script>
