@@ -33,4 +33,16 @@ import L2 from '@components/Home/Banners/L2.astro'
     <Backers></Backers>
     <Blog></Blog>
   </aside>
+  <div id="wom-viewer-plugin" style="width: 285px; height: 700px;" />
+  <script src="https://viewer.womprotocol.io/static/js/wom.js"></script>
+  <script>
+    document.addEventListener("wom-viewer-init", () {
+      window.wom.init({
+        organizationPublicId: "DEV PROTOCOL_619bbef3237f2c2d1f26ce9d",
+        selector: "#wom-viewer-plugin",
+        remoteProductId: "",
+        isDev: false,
+      });
+    });
+  </script>
 </Layout>
