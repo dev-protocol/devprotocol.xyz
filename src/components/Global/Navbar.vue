@@ -15,7 +15,7 @@
         <img src="/assets/logo.png" alt="DevProtocol" class="max-h-8" />
       </a>
       <!-- Hamburger icon and close icon -->
-  
+
     <!-- all dropdown icons -->
     <nav
       :class="smIsOpen ? 'block w-full pt-4 order-1 sm:order-none' : 'hidden'"
@@ -24,7 +24,7 @@
       <div class="flex flex-col space-y-3 sm:space-y-0 sm:flex-row space-x-3">
         <!-- Overview Section -->
         <div class="relative">
-          <!-- Main Button with dropdown arrow 
+          <!-- Main Button with dropdown arrow
           On Click - when current dropdown needs to be opened change all other states to false-->
           <button
             @click="
@@ -41,7 +41,7 @@
               class="dropdown-arrow"
             />
           </button>
-          <!-- Background for the subnavbar 
+          <!-- Background for the subnavbar
           So Clicking outside the navbar will close it -->
           <button
             v-if="isOpen[0]"
@@ -63,7 +63,7 @@
         </div>
         <!-- DAO Section -->
         <div class="relative">
-          <!-- Main Button with dropdown arrow 
+          <!-- Main Button with dropdown arrow
           On Click - when current dropdown needs to be opened change all other states to false-->
           <button
             @click="
@@ -80,7 +80,7 @@
               class="dropdown-arrow"
             />
           </button>
-          <!-- Background for the subnavbar 
+          <!-- Background for the subnavbar
           So Clicking outside the navbar will close it -->
           <button
             v-if="isOpen[1]"
@@ -96,7 +96,7 @@
         </div>
         <!-- Community Section -->
         <div class="relative">
-          <!-- Main Button with dropdown arrow 
+          <!-- Main Button with dropdown arrow
           On Click - when current dropdown needs to be opened change all other states to false-->
           <button
             @click="
@@ -113,7 +113,7 @@
               class="dropdown-arrow"
             />
           </button>
-          <!-- Background for the subnavbar 
+          <!-- Background for the subnavbar
           So Clicking outside the navbar will close it -->
           <button
             v-if="isOpen[2]"
@@ -126,11 +126,12 @@
               >Forum</a
             >
             <a href="#" class="sub-navbar-item">Builders Program</a>
+            <a href="/community-partners" class="sub-navbar-item">Community Partners</a>
           </div>
         </div>
         <!-- Help Section -->
         <div class="relative">
-          <!-- Main Button with dropdown arrow 
+          <!-- Main Button with dropdown arrow
           On Click - when current dropdown needs to be opened change all other states to false-->
           <button
             @click="
@@ -147,7 +148,7 @@
               class="dropdown-arrow"
             />
           </button>
-          <!-- Background for the subnavbar 
+          <!-- Background for the subnavbar
           So Clicking outside the navbar will close it -->
           <button
             v-if="isOpen[3]"
@@ -178,7 +179,7 @@
     </nav>
     <div class="flex">
     <ThemeButton/>
-    <div class="sm:hidden visible">     
+    <div class="sm:hidden visible">
       <button
         @click="smIsOpen = !smIsOpen"
         type="button"
