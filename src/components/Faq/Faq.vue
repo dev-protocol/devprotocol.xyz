@@ -1,7 +1,20 @@
 <template>
   <div class="flex flex-col justify-center pt-20 pb-10 md:pt-28">
     <p class="text-center text-4xl">Frequently Asked Questions</p>
-    <button @click="translate" class="text-xl mt-4 select-none">
+    <button
+      @click="translate"
+      class="
+        text-xl
+        mt-4
+        select-none
+        bg-gray-300
+        dark:bg-indigo-600
+        w-max
+        mx-auto
+        p-2
+        rounded-lg
+      "
+    >
       Transalate {{ lang === "English" ? "(JPN)" : "ENG" }}
     </button>
   </div>
