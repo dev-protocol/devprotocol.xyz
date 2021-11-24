@@ -19,10 +19,10 @@
     </button>
   </div>
   <div
-    class="grid md:grid-cols-2 justify-items-stretch md:-mt-20 lg:-mt-32 mb-5"
+    class="grid md:grid-cols-2 justify-items-stretch md:-mt-20 lg:-mt-32 mb-28"
   >
-    <div v-for="(item, index) in tranlatedList" v-bind:key="index">
-      <div class="mx-10 my-2 h-full">
+    <div v-for="(item, index) in tranlatedList" v-bind:key="index" class="my-2">
+      <div class="mx-5 my-4 h-full bg-gray-300 rounded-md dark:bg-indigo-600">
         <input type="checkbox" :id="'question' + index" class="peer hidden" />
         <div
           class="
@@ -42,18 +42,7 @@
         </div>
         <label
           :for="'question' + index"
-          class="
-            bg-gray-300
-            rounded-md
-            dark:bg-indigo-600
-            relative
-            text-xl
-            pl-10
-            p-2
-            block
-            w-full
-            cursor-pointer
-          "
+          class="relative text-xl pl-10 p-2 block w-full cursor-pointer"
         >
           {{ item.ques }}
         </label>
@@ -61,8 +50,10 @@
           class="
             peer-checked:pt-3
             tracking-wider
-            peer-checked:h-auto peer-checked:opacity-100 peer-checked:px-10
+            peer-checked:h-full peer-checked:opacity-100 peer-checked:px-10
             !w-full
+            bg-white
+            dark:bg-darkPrimary
             h-0
             overflow-hidden
             opacity-0
