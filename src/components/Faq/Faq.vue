@@ -270,12 +270,12 @@ export default {
         },
         {
           ques: "What is a DEV token and what its benefits?",
-          ans: "The DEV Token is the utility token that allows the Dev Protocol ecosystem to exist, through it Creators and Patrons are rewarded.",
+          ans: "The DEV Token is the utility token that allows the Dev Protocol ecosystem to exist, through it, Creators and Patrons are rewarded.",
           lang: "English",
           tag: "stakers",
         },
         {
-          ques: "What is the benefits of using stakes.social?",
+          ques: "What are the benefits of using stakes.social?",
           ans: "For Patrons, using stakes social allows you to receive rewards while funding your favorite Creator; For Creators, using stakes social allows you to monetize your OSS Project and receive rewards from your Patrons.",
           lang: "English",
           tag: "stakers",
