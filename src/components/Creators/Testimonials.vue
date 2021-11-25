@@ -230,7 +230,7 @@ export default {
         },
         {
           name: "μ-zomia",
-          image: "/assets/m-zomia.png",
+          image: "/assets/m-zomia-rounded.png",
           description: `"DevProtocol is born out of the love of people supporting people. Once you understand that, there's no reason not to be part of the team."`,
           link: "https://twitter.com/zomia12",
         },
