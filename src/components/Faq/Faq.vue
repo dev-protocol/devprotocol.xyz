@@ -96,7 +96,7 @@ export default {
         },
         {
           ques: "What is the Dev Protocol?",
-          ans: "The Dev Protocol is a way for creators who run projects such as OSS and Open Access to earn income opportunities and achieve sustainability. The Dev Protocol aims to create a world where innovators can take on challenges and solve problems that might not be financially viable, but offer value. Creators who create technically socially valuable projects that might not be economically viable are now able to find an alternative way for funding. Reference article: https://initto.devprotocol.xyz/en/what-is-protocol/",
+          ans: "The Dev Protocol is a way for creators who run projects such as OSS and Open Access to earn income opportunities and achieve sustainability. The Dev Protocol aims to create a world where innovators can take on challenges and solve problems that might not be financially viable but offer value. Creators who create technically socially valuable projects that might not be economically viable are now able to find an alternative way for funding. Reference article: https://initto.devprotocol.xyz/en/what-is-protocol/",
           lang: "English",
           tag: "all",
         },
