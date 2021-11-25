@@ -101,7 +101,7 @@
       <div class="relative lg:flex lg:items-center">
         <a :href="currentItem.link" class="hidden lg:block lg:flex-shrink-0">
           <img
-            class="h-64 w-64 rounded-full xl:h-80 xl:w-80"
+            class="h-64 w-64 bg-white rounded-full xl:h-80 xl:w-80"
             :src="currentItem.image"
             alt=""
           />
@@ -149,7 +149,7 @@
                 <div class="flex">
                   <div class="flex-shrink-0 lg:hidden">
                     <img
-                      class="h-12 w-12 rounded-full"
+                      class="h-12 w-12 bg-white rounded-full"
                       :src="currentItem.image"
                       alt=""
                     />
