@@ -2,8 +2,7 @@
   <div class="flex flex-col justify-center pt-20 pb-10 md:pt-28">
     <p class="text-center font-display text-4xl">Frequently Asked Questions</p>
     <p class="text-center text-sm m-3">
-      If you don't find the answer to your questions, please contact any of our
-      moderators via
+      If you don't find the answer to your questions, please contact us via
       <a href="https://discord.gg/VwJp4KM" class="underline hover:text-blue-600"
         >Discord</a
       >.
