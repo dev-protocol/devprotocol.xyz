@@ -241,6 +241,12 @@ export default {
 It is a core feature of the HiÐΞ protocol and is a very important financial resource. As OSS creators, we feel free to use some DEV tokens for development and redistribute them in our services. I will continue to do my best for the further development of the DEV community that you have staked out for us."`,
           link: "https://twitter.com/HideProtocol",
         },
+        {
+          name: "ScytheSwap",
+          image: "/assets/scythe_swap.png",
+          description: `"Being a part of Dev Protocol has been an incredible experience. When I was on boarded to stakes.social I was exposed to an audience of OSS creators and enthusiasts alike who helped to fund our project while simultaneously engaging with us, creating long-term connections with some of the most intelligent developers in the world. Dev Protocol, and all that it offers to OSS contributors, along with its community are truly one of a kind."`,
+          link: "https://github.com/ScytheSwapProtocol",
+        },
       ],
       currentItem: {
         name: "Sindre",
