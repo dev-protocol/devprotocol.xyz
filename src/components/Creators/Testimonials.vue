@@ -244,8 +244,14 @@ It is a core feature of the HiÐΞ protocol and is a very important financial re
         {
           name: "ScytheSwap",
           image: "/assets/scythe_swap.png",
-          description: `"Being a part of Dev Protocol has been an incredible experience. When I was on boarded to stakes.social I was exposed to an audience of OSS creators and enthusiasts alike who helped to fund our project while simultaneously engaging with us, creating long-term connections with some of the most intelligent developers in the world. Dev Protocol, and all that it offers to OSS contributors, along with its community are truly one of a kind."`,
+          description: `"Being part of Dev Protocol not only means being able to sustainably raise capital for our immersive, revenue-generating VR real estate development projects, it means being part of a community of talented innovators with whom we can synergize to bring even more value to the protocol."`,
           link: "https://github.com/ScytheSwapProtocol",
+        },
+        {
+          name: "IslandViewDigital",
+          image: "/assets/Islandviewdigital.png",
+          description: `"Being a part of Dev Protocol has been an incredible experience. When I was on boarded to stakes.social I was exposed to an audience of OSS creators and enthusiasts alike who helped to fund our project while simultaneously engaging with us, creating long-term connections with some of the most intelligent developers in the world. Dev Protocol, and all that it offers to OSS contributors, along with its community are truly one of a kind."`,
+          link: "https://twitter.com/IslandVDigital",
         },
       ],
       currentItem: {
