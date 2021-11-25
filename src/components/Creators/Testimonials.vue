@@ -249,9 +249,15 @@ It is a core feature of the HiÐΞ protocol and is a very important financial re
         },
         {
           name: "IslandViewDigital",
-          image: "/assets/Islandviewdigital.png",
+          image: "/assets/islandviewdigital.jpg",
           description: `"Being a part of Dev Protocol has been an incredible experience. When I was on boarded to stakes.social I was exposed to an audience of OSS creators and enthusiasts alike who helped to fund our project while simultaneously engaging with us, creating long-term connections with some of the most intelligent developers in the world. Dev Protocol, and all that it offers to OSS contributors, along with its community are truly one of a kind."`,
           link: "https://twitter.com/IslandVDigital",
+        },
+        {
+          name: "Samuil / SQ-UI",
+          image: "/assets/samuil.jpg",
+          description: `""DEV protocol jump-started our project and helped us do what we love."`,
+          link: "https://twitter.com/samuil4",
         },
       ],
       currentItem: {
