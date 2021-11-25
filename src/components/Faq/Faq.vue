@@ -28,7 +28,7 @@
           class="
             absolute
             leading-normal
-            ml-4
+            ml-3
             z-10
             text-3xl
             duration-200
