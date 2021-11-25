@@ -1,6 +1,12 @@
 <template>
   <div class="flex flex-col justify-center pt-20 pb-10 md:pt-28">
     <p class="text-center text-4xl">Frequently Asked Questions</p>
+    <p class="text-center text-sm m-3">
+      If you don't find the answer to your questions, please contact us at
+      <a href="https://discord.gg/VwJp4KM" class="underline hover:text-blue-600"
+        >discord</a
+      >.
+    </p>
     <button
       @click="translate"
       class="
@@ -15,11 +21,11 @@
         rounded-lg
       "
     >
-      Transalate {{ lang === "English" ? "(JPN)" : "ENG" }}
+      Translate {{ lang === "English" ? "(JPN)" : "ENG" }}
     </button>
   </div>
   <div
-    class="grid md:grid-cols-2 justify-items-stretch md:-mt-20 lg:-mt-32 mb-28"
+    class="grid md:grid-cols-2 justify-items-stretch md:-mt-20 lg:-mt-40 mb-28"
   >
     <div v-for="(item, index) in tranlatedList" v-bind:key="index" class="my-2">
       <div class="mx-5 my-4 h-full bg-gray-300 rounded-md dark:bg-indigo-600">
