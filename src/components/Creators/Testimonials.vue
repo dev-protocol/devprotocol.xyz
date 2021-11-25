@@ -1,5 +1,6 @@
 <template>
-  <section class="bg-white dark:bg-darkPrimary overflow-hidden">
+  <section class="bg-white dark:bg-darkPrimary overflow-hidden text-center px-8">
+    <h2 class="mx-auto w-full font-display text-5xl m-8 dark:text-white">Community Partners</h2>
     <div
       class="
         relative
