@@ -21,7 +21,7 @@
         rounded-lg
       "
     >
-      Translate {{ lang === "English" ? "(JPN)" : "ENG" }}
+      Translate to {{ lang === "English" ? "Japanese" : "English" }}
     </button>
   </div>
   <div
