@@ -5,11 +5,22 @@
       dark:text-white
       sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3
       border-b-2
-      dark:border-b-0
-      dark:shadow-xl
+      dark:border-b-0 dark:shadow-xl
     "
   >
-    <div class="flex flex-wrap sm:flex-nowrap w-full items-center justify-between align-baseline px-4 py-3 sm:p-0">
+    <div
+      class="
+        flex flex-wrap
+        sm:flex-nowrap
+        w-full
+        items-center
+        justify-between
+        align-baseline
+        px-4
+        py-3
+        sm:p-0
+      "
+    >
       <!-- Dev Protocol Icon -->
       <a href="https://devprotocol.xyz" class="text-gray-900">
         <img src="/assets/logo.png" alt="DevProtocol" class="max-h-8" />
@@ -59,6 +70,32 @@
               class="sub-navbar-item"
               >Roadmap</a
             >
+              Overview
+              <img
+                src="/assets/dropdown-arrow.svg"
+                alt="arrow"
+                class="dropdown-arrow"
+              />
+            </button>
+            <!-- Background for the subnavbar 
+          So Clicking outside the navbar will close it -->
+            <button
+              v-if="isOpen[0]"
+              @click="isOpen[0] = false"
+              tabindex="-1"
+              class="navbar-item-background"
+            ></button>
+            <!-- Subnavbar block -->
+            <div v-if="isOpen[0]" class="sub-navbar-block">
+              <a href="/creators" class="sub-navbar-item">For Creators</a>
+              <a href="/patrons" class="sub-navbar-item">For Patrons</a>
+              <a href="/developers" class="sub-navbar-item">For Developers</a>
+              <a
+                href="https://trello.com/b/oFu5uWJF/roadmap"
+                class="sub-navbar-item"
+                >Roadmap</a
+              >
+            </div>
           </div>
         </div>
         <!-- DAO Section -->
@@ -92,6 +129,26 @@
             <a href="https://govern.devprotocol.xyz/" class="sub-navbar-item"
               >Voting Portal</a
             >
+              DAO
+              <img
+                src="/assets/dropdown-arrow.svg"
+                alt="arrow"
+                class="dropdown-arrow"
+              />
+            </button>
+            <!-- Background for the subnavbar 
+          So Clicking outside the navbar will close it -->
+            <button
+              v-if="isOpen[1]"
+              @click="isOpen[1] = false"
+              tabindex="-1"
+              class="navbar-item-background"
+            ></button>
+            <div v-if="isOpen[1]" class="sub-navbar-block">
+              <a href="https://govern.devprotocol.xyz/" class="sub-navbar-item"
+                >Voting Portal</a
+              >
+            </div>
           </div>
         </div>
         <!-- Community Section -->
@@ -115,15 +172,32 @@
           </button>
           <!-- Background for the subnavbar
           So Clicking outside the navbar will close it -->
-          <button
-            v-if="isOpen[2]"
-            @click="isOpen[2] = false"
-            tabindex="-1"
-            class="navbar-item-background"
-          ></button>
-          <div v-if="isOpen[2]" class="sub-navbar-block">
-            <a href="https://community.devprotocol.xyz/" class="sub-navbar-item"
-              >Forum</a
+            <button
+              v-if="isOpen[2]"
+              @click="isOpen[2] = false"
+              tabindex="-1"
+              class="navbar-item-background"
+            ></button>
+            <div v-if="isOpen[2]" class="sub-navbar-block">
+              <a
+                href="https://community.devprotocol.xyz/"
+                class="sub-navbar-item"
+                >Forum</a
+              >
+              <a href="https://github.com/community-builders" class="sub-navbar-item">Builders Program</a>
+            </div>
+          </div>
+          <!-- Help Section -->
+          <div class="relative">
+            <!-- Main Button with dropdown arrow 
+          On Click - when current dropdown needs to be opened change all other states to false-->
+            <button
+              @click="
+                isOpen[3]
+                  ? (isOpen[3] = false)
+                  : (isOpen = [false, false, false, true])
+              "
+              class="navbar-item"
             >
             <a href="#" class="sub-navbar-item">Builders Program</a>
             <a href="/community-partners" class="sub-navbar-item">Community Partners</a>
@@ -134,19 +208,28 @@
           <!-- Main Button with dropdown arrow
           On Click - when current dropdown needs to be opened change all other states to false-->
           <button
-            @click="
-              isOpen[3]
-                ? (isOpen[3] = false)
-                : (isOpen = [false, false, false, true])
+            @click="smIsOpen = !smIsOpen"
+            type="button"
+            class="
+              block
+              text-gray-800
+              dark:text-white
+              hover:text-black
+              focus:text-black focus:outline-none
             "
-            class="navbar-item"
           >
-            Help
-            <img
-              src="/assets/dropdown-arrow.svg"
-              alt="arrow"
-              class="dropdown-arrow"
-            />
+            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              <path
+                v-if="smIsOpen"
+                fill-rule="evenodd"
+                d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+              />
+              <path
+                v-if="!smIsOpen"
+                fill-rule="evenodd"
+                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+              />
+            </svg>
           </button>
           <!-- Background for the subnavbar
           So Clicking outside the navbar will close it -->
@@ -175,6 +258,23 @@
         <div class="sm:hidden relative">
           <a class="navbar-item" href="https://stakes.social/"> Launch App </a>
         </div>
+        <!-- Lauch Icon -->
+        <a
+          class="
+            bg-indigo-600
+            p-2
+            hidden
+            sm:flex
+            space-x-3
+            align-baseline
+            text-white
+            rounded-md
+            whitespace-nowrap
+          "
+          href="https://stakes.social/"
+        >
+          Launch App
+        </a>
       </div>
     </nav>
     <div class="flex">
@@ -205,16 +305,6 @@
         </svg>
       </button>
     </div>
-    <!-- Lauch Icon -->
-    <a
-      class="bg-indigo-600 p-2 hidden sm:flex space-x-3 align-baseline text-white rounded-md whitespace-nowrap"
-      href="https://stakes.social/"
-    >
-      Launch App
-    </a>
-  </div>
-    </div>
-
   </header>
 </template>
 
