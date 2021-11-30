@@ -6,25 +6,35 @@ const partners = [
     'name': 'The Algorithms',
     'image': 'https://github.com/TheAlgorithms.png',
     'link': 'https://the-algorithms.com',
-    'description': 'Open Source resource for learning Data Structures & Algorithms and their implementation in any Programming Language'
+    'description': 'Open Source resource for learning Data Structures & Algorithms and their implementation in any Programming Language',
+    'extraClass': 'rounded-full'
   },
   {
     'name': 'GitHub',
     'image': 'https://github.com/GitHub.png',
     'link': 'https://github.com',
-    'description': 'GitHub is one of the world’s largest community of developers. It’s an intricate platform that fosters collaboration and communication between developers.'
+    'description': 'GitHub is one of the world’s largest community of developers. It’s an intricate platform that fosters collaboration and communication between developers.',
+    'extraClass': 'rounded-full'
   },
   {
     'name': 'Web3Community',
     'image': 'https://github.com/Web3Community.png',
     'link': 'https://web3community.github.io',
-    'description': 'An Open Source Community that focuses on decentralized applications, web 3, and blockchain technologies 🚀'
-  }
+    'description': 'An Open Source Community that focuses on decentralized applications, web 3, and blockchain technologies 🚀',
+    'extraClass': 'rounded-full'
+  },
+  {
+    'name': 'Experify',
+    'image': '/assets/experify.png',
+    'link': 'https://www.facebook.com/Experify3DPrint',
+    'description': 'A 3D printing and 3D scanning service placed in Plovdiv. We provide wide variety of services and materials: prototyping, cosplay props, educational projects, robotics, etc.',
+    'extraClass': ''
+  },
 ]
 ---
 
 <Layout>
-<div class="mt-20 max-w-full text-center">
+<div class="mt-14 lg:mt-20 max-w-full text-center">
   <h2 class="mx-auto w-full font-display text-5xl m-8 dark:text-white">Community Partners</h2>
   <h4 class="mx-auto w-full font-display text-xl m-4 p-8 dark:text-gray-100">Community Partners help us educate people about web3 and, become a part of their creator success</h4>
   <ul
@@ -55,7 +65,7 @@ const partners = [
     >
       <div class="flex flex-col p-8">
         <img
-          class="w-32 h-32 flex-shrink-0 mx-auto rounded-full"
+          class={"w-32 h-32 flex-shrink-0 mx-auto " + partner.extraClass}
           src={partner.image}
           alt={`${partner.name}\'s Logo`}
         />
