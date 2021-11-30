@@ -138,7 +138,7 @@
                 class="sub-navbar-item"
                 >Forum</a
               >
-              <a href="#" class="sub-navbar-item">Builders Program</a>
+              <a href="https://github.com/community-builders" class="sub-navbar-item">Builders Program</a>
             </div>
           </div>
           <!-- Help Section -->
