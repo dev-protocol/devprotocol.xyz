@@ -139,6 +139,7 @@
                 >Forum</a
               >
               <a href="https://github.com/community-builders" class="sub-navbar-item">Builders Program</a>
+              <a href="/community-partners" class="sub-navbar-item">Community Partners</a>
             </div>
           </div>
           <!-- Help Section -->
