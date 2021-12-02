@@ -54,9 +54,9 @@
       </div>
     </div>
 
-    <div class="max-w-2xl overflow-x-auto mt-10">
-      <ul class="flex flex-nowrap mb-2.5">
-        <li v-for="(category, index) in categoriesArr" :key="index" class="mr-10 flex-shrink-0 text-xl">
+    <div class="md:max-w-2xl overflow-x-auto mt-10">
+      <ul class="flex flex-col text-center md:flex-row flex-nowrap mb-2.5">
+        <li v-for="(category, index) in categoriesArr" :key="index" class="pt-2 md:pt-0 md:mr-10 flex-shrink-0 text-xl">
           <button @click="changeCategory(category)" class="capitalize" :class="selectedCategory === category && 'border-b-4 border-indigo-600'">{{ category }}</button>
         </li>
       </ul>
@@ -67,7 +67,7 @@
     class="flex flex-col justify-center items-center md:-mt-20 lg:-mt-40 mb-28"
   >
       <div v-for="(item, index) in translatedList" v-bind:key="index"
-        class="mx-5 my-4 w-6/12 h-full max-w-2xl">
+        class="mx-5 my-4 md:w-6/12 md:max-w-2xl h-full w-11/12">
         <input type="checkbox" :id="'question' + index" class="peer hidden" />
         <div
           class="
@@ -97,7 +97,7 @@
             peer-checked:pt-3
             peer-checked:h-auto
             peer-checked:opacity-100
-            !w-full
+            w-full
             bg-white
             dark:bg-darkPrimary
             h-0
@@ -108,7 +108,7 @@
             ease-in-out
           "
         >
-          <p class="px-10">{{ item.answer }}</p>
+          <p class="px-10 break-words">{{ item.answer }}</p>
         </div>
       </div>
 
@@ -235,7 +235,6 @@ export default {
   },
   computed: {
     translatedList: function () {
-      // return this.questionAndAnswers.filter((item) => item.language === this.selectedLanguage);
       return this.categories[this.selectedCategory]
         .map((faqItem) => ({question: faqItem.question[this.selectedLanguage], answer: faqItem.answer[this.selectedLanguage]}));
     },
