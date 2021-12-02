@@ -66,7 +66,7 @@
   <div
     class="flex flex-col justify-center items-center md:-mt-20 lg:-mt-40 mb-28"
   >
-      <div v-for="(item, index) in translatedList" v-bind:key="index"
+      <div v-for="(item, index) in translatedList" v-bind:key="item.question + index"
         class="mx-5 my-4 md:w-6/12 md:max-w-2xl h-full w-11/12">
         <input type="checkbox" :id="'question' + index" class="peer hidden" />
         <div
