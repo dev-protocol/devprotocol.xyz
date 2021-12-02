@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-center items-center pt-20 pb-10 md:pt-28">
+  <div class="flex flex-col justify-center items-center pt-32 pb-10 md:pt-28">
     <h2 class="text-center mx-auto w-full font-display text-5xl dark:text-white">Frequently Asked Questions</h2>
     <p class="text-center text-sm m-3">
       If you don't find the answer to your questions, please contact us via
