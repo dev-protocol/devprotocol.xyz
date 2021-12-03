@@ -54,7 +54,7 @@
       </div>
     </div>
 
-    <div class="md:max-w-2xl overflow-x-auto mt-10">
+    <div class="md:max-w-4xl overflow-x-auto mt-10">
       <ul class="flex flex-col text-center md:flex-row flex-nowrap mb-2.5">
         <li v-for="(category, index) in categoriesArr" :key="index" class="pt-2 md:pt-0 md:mr-10 flex-shrink-0 text-xl">
           <button @click="changeCategory(category)" class="capitalize" :class="selectedCategory === category && 'border-b-4 border-indigo-600'">{{ category }}</button>
