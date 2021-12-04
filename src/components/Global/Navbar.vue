@@ -22,7 +22,7 @@
       "
     >
       <!-- Dev Protocol Icon -->
-      <a href="https://devprotocol.xyz" class="text-gray-900 p-4">
+      <a href="https://devprotocol.xyz" class="text-gray-900 md:p-4 py-4">
         <svg
           width="224"
           height="38.4"
@@ -94,7 +94,7 @@
         <div class="flex flex-col space-y-3 burger:space-y-0 burger:flex-row space-x-3">
           <!-- Overview Section -->
           <div class="relative">
-            <!-- Main Button with dropdown arrow 
+            <!-- Main Button with dropdown arrow
           On Click - when current dropdown needs to be opened change all other states to false-->
             <button
               @click="
@@ -111,7 +111,7 @@
                 class="dropdown-arrow"
               />
             </button>
-            <!-- Background for the subnavbar 
+            <!-- Background for the subnavbar
           So Clicking outside the navbar will close it -->
             <button
               v-if="isOpen[0]"
@@ -133,7 +133,7 @@
           </div>
           <!-- DAO Section -->
           <div class="relative">
-            <!-- Main Button with dropdown arrow 
+            <!-- Main Button with dropdown arrow
           On Click - when current dropdown needs to be opened change all other states to false-->
             <button
               @click="
@@ -150,7 +150,7 @@
                 class="dropdown-arrow"
               />
             </button>
-            <!-- Background for the subnavbar 
+            <!-- Background for the subnavbar
           So Clicking outside the navbar will close it -->
             <button
               v-if="isOpen[1]"
@@ -166,7 +166,7 @@
           </div>
           <!-- Community Section -->
           <div class="relative">
-            <!-- Main Button with dropdown arrow 
+            <!-- Main Button with dropdown arrow
           On Click - when current dropdown needs to be opened change all other states to false-->
             <button
               @click="
@@ -183,7 +183,7 @@
                 class="dropdown-arrow"
               />
             </button>
-            <!-- Background for the subnavbar 
+            <!-- Background for the subnavbar
           So Clicking outside the navbar will close it -->
             <button
               v-if="isOpen[2]"
@@ -209,7 +209,7 @@
           </div>
           <!-- Help Section -->
           <div class="relative">
-            <!-- Main Button with dropdown arrow 
+            <!-- Main Button with dropdown arrow
           On Click - when current dropdown needs to be opened change all other states to false-->
             <button
               @click="
@@ -226,7 +226,7 @@
                 class="dropdown-arrow"
               />
             </button>
-            <!-- Background for the subnavbar 
+            <!-- Background for the subnavbar
           So Clicking outside the navbar will close it -->
             <button
               v-if="isOpen[3]"
