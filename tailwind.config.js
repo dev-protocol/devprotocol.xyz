@@ -17,10 +17,13 @@ module.exports = {
       maxWidth: {
         para: '40ch',
         half: '50%'
+      },
+      screens: {
+        'burger': '800px'
       }
     }
   },
-  vairants: {
+  variants: {
     extend: {
       boxShadow: ['dark']
     }

@@ -7,7 +7,7 @@ module.exports = {
     /* ... */
   },
   plugins: [
-    /* ... */
+    'snowpack-plugin-dsv'
   ],
   packageOptions: {
     /* ... */

@@ -18,6 +18,7 @@
     "eslint-plugin-promise": "^5.1.1",
     "postcss": "^8.3.9",
     "remark-cli": "^10.0.0",
+    "snowpack-plugin-dsv": "^1.0.0",
     "tailwindcss": "^2.2.16"
   },
   "description": "Dev Protocol's open-source website, built with Astro",
