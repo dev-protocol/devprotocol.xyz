@@ -45,4 +45,28 @@ import L2 from '@components/Home/Banners/L2.astro'
       });
     });
   </script>
+  <script src="https://creator.bullz.com/static/js/bullz.js"></script>
+  <script>
+    document.addEventlistener("bullz-init", () => {
+      window.bullz.init({
+        organizationPublicld: "DEV PROTOCOL_619bbef3237f2c2d1f26ce9d",
+        facilitatorld: "DEV PROTOCOL_619bbef3237f2c2d1f26ce9d",
+        publisher: "Dev Protocol",
+        selector: "#plugin-selector-D001",
+        background: "https://stackroom.devprotocol.xyz/integration/wom/background.png",
+        logo: "https://stackroom.devprotocol.xyz/brand/dev-protocol__avatar-brandmark--white--w_980.png",
+        color: "white",
+        backgroundColor: "black",
+        remoteProduct: {
+          name: "Dev Tokens",
+          brand: "Dev Protocol",
+          publicld: "D001",
+          url: "https://devprotocol.xyz/",
+          imageUrl: "https://stackroom.devprotocol.xyz/integration/wom/background.png",
+        },
+        isDev: false,
+      });
+    });
+  </script>
+  <div id="plugin-selector-D001" style="width: 300px; height: 700px; overflow-y:auto;" />
 </Layout>
