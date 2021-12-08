@@ -34,6 +34,7 @@ import L2 from '@components/Home/Banners/L2.astro'
     <Blog></Blog>
   </aside>
   <div id="wom-viewer-plugin" style="width: 285px; height: 700px;" />
+  <div id="plugin-selector-D001" style="width: 300px; height: 700px; overflow-y:auto;" />
   <script defer src="https://viewer.womprotocol.io/static/js/wom.js"></script>
   <script defer src="https://creator.bullz.com/static/js/bullz.js"></script>
   <script>
@@ -47,7 +48,7 @@ import L2 from '@components/Home/Banners/L2.astro'
     });
   </script>
   <script>
-    document.addEventlistener("bullz-init", () => {
+    document.addEventListener("bullz-init", () => {
       window.bullz.init({
         organizationPublicld: "DEV PROTOCOL_619bbef3237f2c2d1f26ce9d",
         facilitatorld: "DEV PROTOCOL_619bbef3237f2c2d1f26ce9d",
@@ -68,5 +69,4 @@ import L2 from '@components/Home/Banners/L2.astro'
       });
     });
   </script>
-  <div id="plugin-selector-D001" style="width: 300px; height: 700px; overflow-y:auto;" />
 </Layout>
