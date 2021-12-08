@@ -1,0 +1,61 @@
+---
+const backers = [
+  {
+    name: 'Sios',
+    image: '/assets/sios.png',
+    link: 'https://us.sios.com/',
+    darkModeInvertColor: true
+  },
+  {
+    name: 'HashHub',
+    image: '/assets/hashhub.png',
+    link: 'https://hashhub.tokyo/en/',
+    darkModeInvertColor: true
+  },
+  {
+    name: 'Microsoft For Startups',
+    image: '/assets/msstartups.png',
+    link: 'https://startups.microsoft.com/',
+    darkModeInvertColor: true
+  },
+  {
+    name: 'Miraise',
+    image: '/assets/miraise.png',
+    link: 'https://www.miraise.vc/en',
+    darkModeInvertColor: true
+  },
+  {
+    name: 'Monex Ventures',
+    image: '/assets/monexventures.png',
+    link: 'https://www.monexgroup.jp/en/index.html',
+    darkModeInvertColor: true
+  },
+  {
+    name: 'B Cryptos',
+    image: '/assets/b-cryptos.png',
+    link: 'http://bcryptos.com',
+    darkModeInvertColor: false
+  },
+  {
+    name: 'KSK Angel Fund',
+    image: '/assets/ksk.png',
+    link: 'https://www.kskangel.com/',
+    darkModeInvertColor: true
+  }
+]
+---
+
+<section class="bg-gray-100 dark:bg-gray-600 p-5">
+  <h3 class="font-black font-display text-4xl my-8 text-center">Backed by</h3>
+  <div class="flex gap-4 flex-wrap justify-evenly py-4 items-center">
+    {backers.map(backer => (
+    <a
+      href={backer.link}
+      target="_blank"
+      class="no-underline filter grayscale py-4 lg:py-6 lg:px-2 hover:filter-none"
+    >
+      <img alt={backer.name} src={backer.image} class={`w-40 h-auto filter ${backer.darkModeInvertColor && 'dark:invert'}`} />
+    </a>
+    ))}
+  </div>
+</section>

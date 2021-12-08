@@ -1,0 +1,16 @@
+name: Greetings
+
+on: [pull_request_target, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: '<h1>Great to see you here!</h1> <br> Welcome to the community :tada: <br> Thank you for your valuable contributions! 🚀 We appreciate each and every contribution! 😄 <br> <h2>Join our amazing community 📢</h2> <br> Join our community to learn more about Blockchain, Web3, Dapps, and so much more 💻 <br><br> Here you can find all of our socials! 🐦 Share them with your friends and everyone you know. <br><br> - <a href="https://discord.gg/VwJp4KM">Discord server</a><br> - <a href="http://twitter.com/devprtcl">Twitter</a><br> - <a href="https://www.linkedin.com/company/dev-protocol">LinkedIn</a><br> - <a href="https://t.me/devprotocol">Telegram</a><br> - <a href="https://www.youtube.com/channel/UCN7m74tFgJJnoGL4zk6aJ6g">YouTube</a><br> - <a href="https://www.facebook.com/DevProtocol.xyz/">Facebook</a><br><br> We hope to see you there! 😁'
+          pr-message: '<h1>Great to see you here!</h1> <br><br> Welcome to the community :tada: <br> Thank you for your valuable contributions! 🚀 We appreciate each and every contribution! 😄 <br><br> <h2>Join our amazing community 📢</h2> <br><br> Join our community to learn more about Blockchain, Web3, Dapps, and so much more 💻 <br><br> Here you can find all of our socials! 🐦 Share them with your friends and everyone you know. <br><br> - <a href="https://discord.gg/VwJp4KM">Discord server</a> <br> - <a href="http://twitter.com/devprtcl">Twitter</a><br> - <a href="https://www.linkedin.com/company/dev-protocol">LinkedIn</a><br> -  <br> - <a href="https://t.me/devprotocol">Telegram</a><br> - a href="https://www.youtube.com/channel/UCN7m74tFgJJnoGL4zk6aJ6g">YouTube</a><br> <a href="https://www.facebook.com/DevProtocol.xyz/">Facebook</a>- <br><br> We hope to see you there! 😁'

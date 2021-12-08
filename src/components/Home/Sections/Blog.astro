@@ -1,0 +1,43 @@
+---
+const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/devprtcl')
+const data = await response.json()
+const blogs_data = data.items
+
+const f_blogs = blogs_data.slice(0,3)
+
+const blogs = f_blogs.map((blog) => {
+let act_des=blog.description
+let f_desc = (act_des.replace(/<[^>]+>/g, '')).replace(/\n/g, '')
+
+blog.desc = f_desc.substring(0, 100) + "..."
+
+return blog
+})
+---
+
+<section
+  class="bg-blue-500 h-auto px-10 lg:px-20 py-28 text-white flex flex-col"
+>
+  <h3 class="font-display text-4xl font-bold text-gray-100">Latest on Medium</h3>
+  <main class="flex flex-col lg:flex-row">
+    {blogs.map((blog) => (
+    <div class="flex flex-col mr-8" style="flex-basis: 100%">
+      <a href={blog.link} class="text-white no-underline">
+        <img src={blog.thumbnail} class="max-w-full pt-4 my-8" />
+        <h3 class="text-xl font-display font-bold pb-6">{blog.title}</h3>
+      </a>
+      <p class="text-left font-normal text-gray-100 mb-3">
+        {blog.desc}
+        <a href={blog.link} class="underline ml-1">Read more.</a>
+      </p>
+    </div>
+    ))}
+  </main>
+  <p align="center">
+    <a href="https://medium.com/devprtcl" class="mt-6 block">
+      <button class="bg-white font-display text-gray-900 py-2 px-6">
+        See more on Medium
+      </button>
+    </a>
+  </p>
+</section>

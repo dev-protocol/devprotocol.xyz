@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: E-mail contact
+    url: mailto:hi@devprotocol.xyz
+    about: Feel free to mail us regarding any issue or something related to Dev Protocol.
+  - name: Discord community
+    url: https://discord.gg/VwJp4KM
+    about: Contact us via our Discord community.

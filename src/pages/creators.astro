@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Default.astro'
+
+import Hero from '@components/Creators/Hero.astro'
+import UseCases from '@components/Creators/UseCases.astro'
+import StepbyStep from '@components/Creators/StepbyStep.astro'
+import Testimonials from '../components/Creators/Testimonials.vue'
+---
+
+<Layout metaTitle="Creators | Dev Protocol">
+  <Hero></Hero>
+  <UseCases></UseCases>
+  <Testimonials client:visible></Testimonials>
+  <StepbyStep></StepbyStep>
+</Layout>
