@@ -39,12 +39,20 @@ import L2 from '@components/Home/Banners/L2.astro'
   <script defer src="https://creator.bullz.com/static/js/bullz.js"></script>
   <script>
     document.addEventListener("wom-viewer-init", () => {
-      window.wom.init({
+      const params = {
         organizationPublicId: "DEV PROTOCOL_619bbef3237f2c2d1f26ce9d",
         selector: "#wom-viewer-plugin",
         remoteProductId: "D001",
-        isDev: false,
-      });
+        color: "black",
+        textColor: "white",
+      };
+      window.wom.check(params).then(values => {
+        console.log({values});
+        if (!values[0].isSuccess) {
+          return;
+        }
+        window.wom.init(params);
+      }).catch(console.error);
     });
   </script>
   <script>
