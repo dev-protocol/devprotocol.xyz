@@ -44,17 +44,39 @@ const partners = [
     'description': 'Intlify is a project that aims to improve Developer Experience in software internationalization. We will aim to improve the Developer Experience of internationalization by providing libraries, frameworks, and tools that break down barriers to internationalization.',
     'extraClass': 'rounded-full'
   },
+  {
+    'name': 'Code for Japan',
+    'image': '/assets/code_for_japan.jpg',
+    'link': 'https://www.code4japan.org/',
+    'description': 'Code for Japan is one of the largest communities of civic hackers in Japan. We organize hackathons to improve and promote civic tech and collaborate with local governments and communities.',
+    'extraClass': 'rounded-full'
+  },
 ]
 ---
 
 <Layout metaTitle="Community Partners | Dev Protocol">
-<div class="mt-28 lg:mt-20 max-w-full text-center">
-  <h2 class="mx-auto w-full font-display text-5xl m-8 dark:text-white">Community Partners</h2>
-  <h4 class="mx-auto w-full font-display text-xl m-4 p-8 dark:text-gray-100">Community Partners help us educate people about web3 and, become a part of their creator success</h4>
+<div class="flex flex-col md:gap-y-4 gap-y-8 mt-28 max-w-full text-center">
+  <h2 class="mx-auto w-full font-display text-5xl dark:text-white">Community Partners</h2>
+  <h4 class="mx-auto w-full font-display text-xl px-8 md:p-0 dark:text-gray-100">Community Partners help us educate people about web3 and, become a part of their creator success</h4>
+  <a href="#">
+      <button
+        class="
+          text-xl
+          select-none
+          bg-gray-300
+          dark:bg-indigo-600
+          w-max
+          p-2.5
+          rounded-lg
+        "
+      >Become a community partner</button>
+    </a>
   <ul
     role="list"
     class="
-      p-8
+      md:pt-2
+      pb-6
+      px-8
       flex
       flex-wrap
       min-w-min
