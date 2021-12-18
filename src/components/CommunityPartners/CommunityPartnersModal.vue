@@ -70,27 +70,27 @@
                 </div>
                 <div class="col-span-2 md:col-span-1">
                   <label for="founderName" class="community-partners-label">Founder Name</label>
-                  <input type="text" id="founderName" v-model="founderName" class="community-partners-input" required>
+                  <input type="text" id="founderName" v-model="founderName" class="community-partners-input" :class="isModalLoading && 'opacity-50'" :readonly="isModalLoading" required>
                 </div>
                 <div class="col-span-2 md:col-span-1">
                   <label for="communityName" class="community-partners-label">Community Name</label>
-                    <input type="text" id="communityName" v-model="communityName" class="community-partners-input" required>
+                    <input type="text" id="communityName" v-model="communityName" class="community-partners-input" :class="isModalLoading && 'opacity-50'" :readonly="isModalLoading" required>
                 </div>
                 <div class="col-span-2 md:col-span-1">
                   <label for="website" class="community-partners-label">Website</label>
-                  <input type="text" id="website" v-model="website" class="community-partners-input" required>
+                  <input type="text" id="website" v-model="website" class="community-partners-input" :class="isModalLoading && 'opacity-50'" :readonly="isModalLoading" required>
                 </div>
                 <div class="col-span-2 md:col-span-1">
                   <label for="email" class="community-partners-label">Email</label>
-                  <input type="email" id="email" v-model="email" class="community-partners-input" required>
+                  <input type="email" id="email" v-model="email" class="community-partners-input" :class="isModalLoading && 'opacity-50'" :readonly="isModalLoading" required>
                 </div>
                 <div class="col-span-2">
                   <label for="whyPartnerWithUs" class="community-partners-label">Why do you want to be partner with us?</label>
-                  <input type="text" id="whyPartnerWithUs" v-model="whyPartnerWithUs" class="community-partners-input" required>
+                  <input type="text" id="whyPartnerWithUs" v-model="whyPartnerWithUs" class="community-partners-input" :class="isModalLoading && 'opacity-50'" :readonly="isModalLoading" required>
                 </div>
                 <div class="col-span-2">
                   <label for="howYouHearAboutUs" class="community-partners-label">How did you hear about us?</label>
-                  <textarea id="howYouHearAboutUs" v-model="howYouHearAboutUs" rows="4" class="community-partners-input" required></textarea>
+                  <textarea id="howYouHearAboutUs" v-model="howYouHearAboutUs" rows="4" class="community-partners-input" :class="isModalLoading && 'opacity-50'" :readonly="isModalLoading" required></textarea>
                 </div>
                 <div class="flex items-center place-content-between mt-5 md:mt-0 md:place-content-end col-span-2 gap-6">
                   <img
