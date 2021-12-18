@@ -118,7 +118,7 @@
                     src="/assets/spinner.png"
                     alt="spinner"
                   />
-                  <button type="button" @click="toggleModal" class="community-partners-button bg-gray-100 hover:bg-gray-200 dark:bg-gray-600 dark:hover:bg-gray-700">Back</button>
+                  <button type="button" @click="toggleModal" class="community-partners-button bg-gray-200 hover:bg-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700">Back</button>
                   <button type="submit" class="community-partners-button text-white bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700">Submit</button>
                 </div>
               </div>
@@ -183,7 +183,7 @@ export default {
 }
 
 .community-partners-input {
-  @apply focus:outline-none focus:ring focus:border-indigo-500 bg-gray-50 border text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:text-white;
+  @apply focus:outline-none focus:ring focus:border-indigo-500 bg-gray-100 border text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:text-white;
 }
 
 .ease-out-overlay-enter-active,
