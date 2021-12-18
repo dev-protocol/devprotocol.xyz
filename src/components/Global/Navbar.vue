@@ -212,7 +212,7 @@
                 >Forum</a
               >
               <a
-                href="https://github.com/community-builders"
+                href="https://builders.devprotocol.xyz/"
                 class="sub-navbar-item"
                 >Builders Program</a
               >
