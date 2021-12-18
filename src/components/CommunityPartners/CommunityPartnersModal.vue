@@ -51,9 +51,9 @@
 
           <form class="dark:bg-gray-800" autocomplete="off" v-on:submit.prevent="handleFormSubmit">
             <div class="flex">
-              <div class="md:flex flex-col bg-indigo-700 dark:bg-indigo-800 w-1/3 hidden p-10 gap-6">
-              <p class="text-xl text-white">Contact Information</p>
-              <p class="text-lg text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar suscipit libero eu mattis.</p>
+              <div class="text-white md:flex flex-col bg-indigo-700 dark:bg-indigo-800 w-1/3 hidden p-10 gap-6">
+              <p class="text-xl ">Contact Information</p>
+              <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar suscipit libero eu mattis.</p>
               <div class="flex gap-4">
                 <img class="filter invert" src="/assets/phone.png" alt="phone icon" />
                 <p>+1 (555) 123-4567</p>
