@@ -3,6 +3,9 @@
     <CommunityPartnersModal
       :isModalOpen="isModalOpen"
       :toggleModal="toggleModal"
+      :isModalLoading="isModalLoading"
+      :isModalSuccessful="isModalSuccessful"
+      :isModalFailed="isModalFailed"
       :handleFormSubmitProp="handleFormSubmit"
     />
 
@@ -214,7 +217,8 @@ export default {
         }),
         body: JSON.stringify(data)
       });
-      return response.json(); // parses JSON response into native JavaScript objects
+      if (response.ok) return response.json();
+      throw new Error(response.status);
     },
     sheetDBCreateRow: async function(address, data) {
       return this.fetchSendPostData(this.sheetDbBaseUrl + address, {
@@ -229,6 +233,8 @@ export default {
         whyPartnerWithUs,
         howYouHearAboutUs
     }) {
+      this.isModalLoading = true;
+
       this.sheetDBCreateRow(this.sheetDbConfig.address, {
           'Founder Name': founderName,
           'Community Name': communityName,
@@ -237,8 +243,14 @@ export default {
           'Why do you want to be partner with us?': whyPartnerWithUs,
           'How did you hear about us?': howYouHearAboutUs,
       })
-      .then((data) => console.log(data))
-      .catch((err) => console.log(err));
+      .then((data) => {
+        this.isModalLoading = false;
+        this.isModalSuccessful = true;
+      })
+      .catch((err) => {
+        this.isModalLoading = false;
+        this.isModalFailed = true;
+      });
     }
   },
   components: {

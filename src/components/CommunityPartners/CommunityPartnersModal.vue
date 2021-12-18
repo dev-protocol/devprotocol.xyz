@@ -56,6 +56,15 @@
               <p class="text-lg text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar suscipit libero eu mattis.</p>
               </div>
               <div class="grid grid-cols-2 gap-6 md:w-2/3 p-10">
+                <!-- Feedback -->
+                <div v-show="isModalFailed" class="modal-alert text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800">
+                  <span class="font-bold">Error!</span> Something went wrong please try again.
+                </div>
+                <div v-show="isModalSuccessful" class="modal-alert text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800">
+                  <span class="font-bold">Success!</span> Your response has been submitted successfully.
+                </div>
+                <!-- ./Feedback -->
+
                 <div class="col-span-2 flex items-center">
                   <p class="h-8 text-xl">Send us a message</p>
                 </div>
@@ -83,7 +92,13 @@
                   <label for="howYouHearAboutUs" class="community-partners-label">How did you hear about us?</label>
                   <textarea id="howYouHearAboutUs" v-model="howYouHearAboutUs" rows="4" class="community-partners-input" required></textarea>
                 </div>
-                <div class="flex items-end place-content-between mt-5 md:mt-0 md:place-content-end col-span-2 gap-6">
+                <div class="flex items-center place-content-between mt-5 md:mt-0 md:place-content-end col-span-2 gap-6">
+                  <img
+                    v-show="isModalLoading"
+                    class="animate-spin filter dark:invert"
+                    src="/assets/spinner.png"
+                    alt="spinner"
+                  />
                   <button type="button" @click="toggleModal" class="community-partners-button bg-gray-100 hover:bg-gray-200 dark:bg-gray-600 dark:hover:bg-gray-700">Back</button>
                   <button type="submit" class="community-partners-button text-white bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700">Submit</button>
                 </div>
@@ -103,6 +118,9 @@ export default {
   name: "CommunityPartnersModal",
   props: {
     isModalOpen: Boolean,
+    isModalLoading: Boolean,
+    isModalFailed: Boolean,
+    isModalSuccessful: Boolean,
     toggleModal: Function,
     handleFormSubmitProp: Function
   },
@@ -133,6 +151,10 @@ export default {
 
 
 <style lang="postcss" scoped>
+.modal-alert {
+  @apply p-4 text-sm col-span-2;
+}
+
 .community-partners-button {
   @apply h-12 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-blue-800;
 }
