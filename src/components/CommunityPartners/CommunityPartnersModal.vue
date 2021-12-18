@@ -22,6 +22,7 @@
           <div
             v-show="isModalOpen"
             class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+            @click="toggleModal"
           ></div>
         </transition>
 
@@ -42,45 +43,49 @@
               shadow-xl
               transform
               transition-all
-              w-6/12
+              w-full
+              md:w-9/12
+              2xl:w-7/12
             "
           >
 
-          <form class="dark:bg-gray-800">
+          <form class="dark:bg-gray-800" autocomplete="off" v-on:submit.prevent="handleFormSubmit">
             <div class="flex">
-              <div class="flex flex-row bg-indigo-700 w-1/3">
+              <div class="md:flex flex-col bg-indigo-700 dark:bg-indigo-800 w-1/3 hidden p-10 gap-6">
+              <p class="text-xl text-white">Contact Information</p>
+              <p class="text-lg text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar suscipit libero eu mattis.</p>
               </div>
-              <div class="grid grid-cols-2 grid-rows-6 gap-6 w-2/3 p-6">
+              <div class="grid grid-cols-2 gap-6 md:w-2/3 p-10">
                 <div class="col-span-2 flex items-center">
-                  <p class="h-8">Send us a message</p>
+                  <p class="h-8 text-xl">Send us a message</p>
                 </div>
-                <div>
-                  <label for="founderName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Founder Name</label>
-                  <input type="text" id="founderName" v-model="founderName" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required="">
+                <div class="col-span-2 md:col-span-1">
+                  <label for="founderName" class="community-partners-label">Founder Name</label>
+                  <input type="text" id="founderName" v-model="founderName" class="community-partners-input" required>
                 </div>
-                <div>
-                  <label for="communityName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Community Name</label>
-                    <input type="text" id="communityName" v-model="communityName" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required="">
+                <div class="col-span-2 md:col-span-1">
+                  <label for="communityName" class="community-partners-label">Community Name</label>
+                    <input type="text" id="communityName" v-model="communityName" class="community-partners-input" required>
                 </div>
-                <div>
-                  <label for="website" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Website</label>
-                  <input type="text" id="website" v-model="website" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required="">
+                <div class="col-span-2 md:col-span-1">
+                  <label for="website" class="community-partners-label">Website</label>
+                  <input type="text" id="website" v-model="website" class="community-partners-input" required>
                 </div>
-                <div>
-                  <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email</label>
-                  <input type="email" id="email" v-model="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required="">
-                </div>
-                <div class="col-span-2">
-                  <label for="whyPartnerWithUs" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Why do you want to be partner with us?</label>
-                  <input type="text" id="whyPartnerWithUs" v-model="whyPartnerWithUs" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required="">
+                <div class="col-span-2 md:col-span-1">
+                  <label for="email" class="community-partners-label">Email</label>
+                  <input type="email" id="email" v-model="email" class="community-partners-input" required>
                 </div>
                 <div class="col-span-2">
-                  <label for="howYouHearAboutUs" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">How did you hear about us?</label>
-                  <input type="text" id="howYouHearAboutUs" v-model="howYouHearAboutUs" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required="">
+                  <label for="whyPartnerWithUs" class="community-partners-label">Why do you want to be partner with us?</label>
+                  <input type="text" id="whyPartnerWithUs" v-model="whyPartnerWithUs" class="community-partners-input" required>
                 </div>
-                <div class="flex items-center place-content-end col-span-2 gap-6">
-                  <button type="button" @click="toggleModal" class="h-12 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-blue-800">Back</button>
-                  <button type="button" @click="handleFormSubmit" class="h-12 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register new account</button>
+                <div class="col-span-2">
+                  <label for="howYouHearAboutUs" class="community-partners-label">How did you hear about us?</label>
+                  <textarea id="howYouHearAboutUs" v-model="howYouHearAboutUs" rows="4" class="community-partners-input" required></textarea>
+                </div>
+                <div class="flex items-end place-content-between mt-5 md:mt-0 md:place-content-end col-span-2 gap-6">
+                  <button type="button" @click="toggleModal" class="community-partners-button bg-gray-100 hover:bg-gray-200 dark:bg-gray-600 dark:hover:bg-gray-700">Back</button>
+                  <button type="submit" class="community-partners-button text-white bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700">Submit</button>
                 </div>
               </div>
             </div>
@@ -103,23 +108,23 @@ export default {
   },
   data() {
     return {
-      founderName: "founderName Test",
-      communityName: "communityName Test",
-      website: "website Test",
-      email: "email Test",
-      whyPartnerWithUs: "whyPartnerWithUs Test",
-      howYouHearAboutUs: "howYouHearAboutUs Test",
+      founderName: "",
+      communityName: "",
+      website: "",
+      email: "",
+      whyPartnerWithUs: "",
+      howYouHearAboutUs: "",
     };
   },
   methods: {
     handleFormSubmit: function () {
       this.handleFormSubmitProp({
-        founderName,
-        communityName,
-        website,
-        email,
-        whyPartnerWithUs,
-        howYouHearAboutUs
+        founderName: this.founderName,
+        communityName: this.communityName,
+        website: this.website,
+        email: this.email,
+        whyPartnerWithUs: this.whyPartnerWithUs,
+        howYouHearAboutUs: this.howYouHearAboutUs
       });
     }
   }
@@ -128,6 +133,18 @@ export default {
 
 
 <style lang="postcss" scoped>
+.community-partners-button {
+  @apply h-12 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-blue-800;
+}
+
+.community-partners-label {
+  @apply block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300;
+}
+
+.community-partners-input {
+  @apply focus:outline-none focus:ring focus:border-indigo-500 bg-gray-50 border text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:text-white;
+}
+
 .ease-out-overlay-enter-active,
 .ease-out-overlay-leave-active {
   @apply opacity-100 duration-300;

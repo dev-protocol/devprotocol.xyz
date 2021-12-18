@@ -179,6 +179,15 @@ export default {
         },
       ],
       isModalOpen: false,
+      isModalLoading: false,
+      isModalSuccessful: false,
+      isModalFailed: false,
+      sheetDbBaseUrl: 'https://sheetdb.io/api/v1/',
+      sheetDbConfig: {
+        address: import.meta.env.PUBLIC_SHEETDB_ADDRESS,
+        auth_login: import.meta.env.PUBLIC_SHEETDB_LOGIN,
+        auth_password: import.meta.env.PUBLIC_SHEETDB_PASSWORD,
+      },
     };
   },
   methods: {
@@ -196,6 +205,22 @@ export default {
 
       this.isModalOpen = !this.isModalOpen;
     },
+    fetchSendPostData: async function (url = '', data = {}) {
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: new Headers({
+            'Content-Type': 'application/json',
+            'Authorization': `Basic ${btoa(`${this.sheetDbConfig.auth_login}:${this.sheetDbConfig.auth_password}`)}`
+        }),
+        body: JSON.stringify(data)
+      });
+      return response.json(); // parses JSON response into native JavaScript objects
+    },
+    sheetDBCreateRow: async function(address, data) {
+      return this.fetchSendPostData(this.sheetDbBaseUrl + address, {
+        data: { ...data }
+      });
+    },
     handleFormSubmit: async function ({
         founderName,
         communityName,
@@ -204,7 +229,16 @@ export default {
         whyPartnerWithUs,
         howYouHearAboutUs
     }) {
-      // handle form submission here
+      this.sheetDBCreateRow(this.sheetDbConfig.address, {
+          'Founder Name': founderName,
+          'Community Name': communityName,
+          'Website': website,
+          'Email': email,
+          'Why do you want to be partner with us?': whyPartnerWithUs,
+          'How did you hear about us?': howYouHearAboutUs,
+      })
+      .then((data) => console.log(data))
+      .catch((err) => console.log(err));
     }
   },
   components: {
