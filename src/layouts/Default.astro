@@ -23,6 +23,33 @@ let { metaTitle } = Astro.props;
   <meta property="og:url" content="https://devprotocol.xyz/" />
   <meta property="og:image" content="/assets/og.png" />
   <meta property="og:description" content="Dev Protocol lets GitHub users tokenize their OSS projects in a few clicks. Creating an OSS token allows projects to access sustainable funding, create underlying economic models for their project, and distribute incentives at scale. For the first time, OSS projects have a scalable solution to unlock their value." />
+  <script src="https://creator.bullz.com/static/js/bullz.js"></script>
+  
+  <!-- WOM -->
+  <script defer type="text/javascript" src="https://viewer.womprotocol.io/static/js/wom.js"></script>
+  <script defer type="text/javascript" src="https://creator.bullz.com/static/js/bullz.js"></script>
+  <script>
+    document.addEventListener("bullz-init", () => {
+      window.bullz.init({
+        organizationPublicld: "DEV PROTOCOL_619bbef3237f2c2d1f26ce9d",
+        facilitatorld: "DEV PROTOCOL_619bbef3237f2c2d1f26ce9d",
+        publisher: "Dev Protocol",
+        selector: "#plugin-selector-D001",
+        background: "https://stackroom.devprotocol.xyz/integration/wom/background.png",
+        logo: "https://stackroom.devprotocol.xyz/brand/dev-protocol__avatar-brandmark--white--w_980.png",
+        color: "white",
+        backgroundColor: "black",
+        remoteProduct: {
+          name: "Dev Tokens",
+          brand: "Dev Protocol",
+          publicld: "D001",
+          url: "https://devprotocol.xyz/",
+          imageUrl: "https://stackroom.devprotocol.xyz/integration/wom/background.png",
+        },
+        isDev: false,
+      });
+    });
+  </script>
 </head>
 
 <body class="text-gray-900 font-body dark:bg-darkPrimary dark:text-white">
