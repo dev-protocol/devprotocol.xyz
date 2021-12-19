@@ -53,23 +53,19 @@
             <div class="flex">
               <div class="text-white md:flex flex-col bg-indigo-700 dark:bg-indigo-800 w-1/3 hidden p-10 gap-6">
               <p class="text-xl ">Contact Information</p>
-              <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar suscipit libero eu mattis.</p>
-              <div class="flex gap-4">
-                <img class="filter invert" src="/assets/phone.png" alt="phone icon" />
-                <p>+1 (555) 123-4567</p>
-              </div>
+              <p class="text-lg">For more information, please reach out to our support team.</p>
               <div class="flex gap-4">
                 <img class="filter invert" src="/assets/email.png" alt="email icon" />
                 <p>hi@devprotocol.xyz</p>
               </div>
               <div class="flex gap-8">
-                <a href="#">
-                  <img class="filter invert" src="/assets/facebook.png" alt="facebook icon" />
+                <a href="https://discord.com/invite/VwJp4KM">
+                  <img class="filter invert" src="/assets/discord.png" alt="discord icon" />
                 </a>
-                <a href="#">
+                <a href="https://github.com/dev-protocol">
                   <img class="filter invert" src="/assets/github.png" alt="github icon" />
                 </a>
-                <a href="#">
+                <a href="https://twitter.com/devprtcl">
                   <img class="filter invert brightness-0" src="/assets/twitter.svg" alt="twitter icon" />
                 </a>
               </div>
