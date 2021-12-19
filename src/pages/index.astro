@@ -36,9 +36,11 @@ import L2 from '@components/Home/Banners/L2.astro'
   <section class="flex pb-28 md:py-8 flex-wrap items-center justify-around">
     <div id="wom-recorder" style="width: 300px; height: 700px; overflow-y:auto;" />
     <div id="wom-viewer-plugin" style="width: 285px; height: 700px;" />
+    <div id="wom-channel-viewer-plugin" style="width: 500px; height: 700px;"></div>
   </section>
   <script defer src="https://creator.bullz.com/static/js/bullz.js"></script>
   <script defer src="https://viewer.womprotocol.io/static/js/wom.js"></script>
+  <script defer src="https://channel-viewer.womprotocol.io/static/js/wom.js"></script>
   <script>
     document.addEventListener('bullz-recorder-init', () => {
       window.bullz.init({
@@ -80,6 +82,24 @@ import L2 from '@components/Home/Banners/L2.astro'
       }).catch(console.error)
 
       window.wom.init(params);
+    })
+  </script>
+  <script>
+    document.addEventListener('wom-channel-viewer-init', async () => {
+        const params = {
+            merchantId: 'DEV PROTOCOL_619bbef3237f2c2d1f26ce9d',
+            selector: '#wom-channel-viewer-plugin',
+            channelId: '619ee5ce237f2c2d1f31d15d',
+            color: 'black',
+            textColor: 'white'
+        };
+        const result = await window.womChannelViewer.check(params).catch(err => {
+          console.error(err)
+          return undefined
+        })
+        if (result && result[0].isSuccess) {
+          window.womChannelViewer.init(params)
+        }
     })
   </script>
 </Layout>
