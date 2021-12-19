@@ -51,7 +51,7 @@
 
           <form class="dark:bg-gray-800" autocomplete="off" v-on:submit.prevent="handleFormSubmit">
             <div class="flex">
-              <div class="text-white md:flex flex-col bg-indigo-700 dark:bg-indigo-800 w-1/3 hidden p-10 gap-6">
+              <div class="text-white md:flex flex-col bg-indigo-700 dark:bg-indigo-800 w-1/3 hidden p-10 gap-7">
               <p class="text-xl ">Contact Information</p>
               <p class="text-lg">For more information, please reach out to our support team.</p>
               <div class="flex gap-4">
