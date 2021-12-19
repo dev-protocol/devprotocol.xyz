@@ -64,7 +64,7 @@ import L2 from '@components/Home/Banners/L2.astro'
     })
   </script>
   <script>
-    document.addEventListener('wom-viewer-init', () => {
+    document.addEventListener('wom-viewer-init', async () => {
       const params = {
         organizationPublicId: 'DEV PROTOCOL_619bbef3237f2c2d1f26ce9d',
         selector: '#wom-viewer-plugin',
@@ -73,15 +73,13 @@ import L2 from '@components/Home/Banners/L2.astro'
         textColor: 'white',
       }
 
-      window.wom.check(params).then(values => {
-        console.log({values});
-
-        if (!values[0].isSuccess) {
-          return console.log('womjs config success');
-        }
-      }).catch(console.error)
-
-      window.wom.init(params);
+      const result = await window.wom.check(params).catch(err => {
+        console.error('error on wom-viewer-init', err)
+        return undefined
+      })
+      if (result && result[0].isSuccess) {
+        window.wom.init(params)
+      }
     })
   </script>
   <script>
@@ -92,9 +90,10 @@ import L2 from '@components/Home/Banners/L2.astro'
             channelId: '619ee5ce237f2c2d1f31d15d',
             color: 'black',
             textColor: 'white'
-        };
+        }
+
         const result = await window.womChannelViewer.check(params).catch(err => {
-          console.error(err)
+          console.error('error on wom-channel-viewer-init', err)
           return undefined
         })
         if (result && result[0].isSuccess) {
