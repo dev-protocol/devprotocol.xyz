@@ -7,6 +7,7 @@
       :isModalSuccessful="isModalSuccessful"
       :isModalFailed="isModalFailed"
       :handleFormSubmitProp="handleFormSubmit"
+      ref="modal"
     />
 
     <h2 class="mx-auto w-full font-display text-5xl dark:text-white">
@@ -246,6 +247,7 @@ export default {
       .then((data) => {
         this.isModalLoading = false;
         this.isModalSuccessful = true;
+        this.$refs.modal.clearForm();
       })
       .catch((err) => {
         this.isModalLoading = false;

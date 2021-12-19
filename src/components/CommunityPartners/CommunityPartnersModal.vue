@@ -163,6 +163,14 @@ export default {
         whyPartnerWithUs: this.whyPartnerWithUs,
         howYouHearAboutUs: this.howYouHearAboutUs
       });
+    },
+    clearForm: function () {
+      this.founderName = "";
+      this.communityName = "";
+      this.website = "";
+      this.email = "";
+      this.whyPartnerWithUs = "";
+      this.howYouHearAboutUs = "";
     }
   }
 };
