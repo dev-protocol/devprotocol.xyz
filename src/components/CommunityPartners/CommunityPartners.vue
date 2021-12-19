@@ -134,7 +134,7 @@ export default {
         },
         {
           name: "GitHub",
-          image: "https://github.com/GitHub.png",
+          image: "https://github.com/github.png",
           link: "https://github.com",
           description:
             "GitHub is one of the world’s largest community of developers. It’s an intricate platform that fosters collaboration and communication between developers.",
