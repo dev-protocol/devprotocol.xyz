@@ -60,7 +60,7 @@
               </div>
               <div class="flex gap-4">
                 <img class="filter invert" src="/assets/email.png" alt="email icon" />
-                <p>support@devprotocol.com</p>
+                <p>hi@devprotocol.xyz</p>
               </div>
               <div class="flex gap-8">
                 <a href="#">
