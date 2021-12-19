@@ -3,7 +3,11 @@
     class="
       text-black
       dark:text-white
-      burger:flex burger:justify-between burger:items-center burger:px-4 burger:py-3
+      burger:flex
+      burger:justify-between
+      burger:items-center
+      burger:px-4
+      burger:py-3
       border-b-2
       dark:border-b-0 dark:shadow-xl
     "
@@ -88,10 +92,19 @@
 
       <!-- all dropdown icons -->
       <nav
-        :class="smIsOpen ? 'block w-full pt-4 order-1 burger:order-none' : 'hidden'"
+        :class="
+          smIsOpen ? 'block w-full pt-4 order-1 burger:order-none' : 'hidden'
+        "
         class="px-2 pt-2 pb-4 burger:flex burger:p-0"
       >
-        <div class="flex flex-col space-y-3 burger:space-y-0 burger:flex-row space-x-3">
+        <div
+          class="
+            flex flex-col
+            space-y-3
+            burger:space-y-0 burger:flex-row
+            space-x-3
+          "
+        >
           <!-- Overview Section -->
           <div class="relative">
             <!-- Main Button with dropdown arrow
@@ -124,6 +137,7 @@
               <a href="/creators" class="sub-navbar-item">For Creators</a>
               <a href="/patrons" class="sub-navbar-item">For Patrons</a>
               <a href="/developers" class="sub-navbar-item">For Developers</a>
+              <a href="/about" class="sub-navbar-item">About</a>
               <a
                 href="https://trello.com/b/oFu5uWJF/roadmap"
                 class="sub-navbar-item"
@@ -198,7 +212,7 @@
                 >Forum</a
               >
               <a
-                href="https://github.com/community-builders"
+                href="https://builders.devprotocol.xyz/"
                 class="sub-navbar-item"
                 >Builders Program</a
               >
