@@ -77,7 +77,7 @@
               <div class="grid grid-cols-2 gap-6 md:w-2/3 p-10">
                 <!-- Feedback -->
                 <div v-show="isModalFailed" class="modal-alert text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800">
-                  <span class="font-bold">Error!</span> Something went wrong please try again.
+                  <span class="font-bold">Error!</span> Something went wrong, please try again.
                 </div>
                 <div v-show="isModalSuccessful" class="modal-alert text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800">
                   <span class="font-bold">Success!</span> Your response has been submitted successfully.
