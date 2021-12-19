@@ -109,7 +109,7 @@
                 </div>
                 <div class="col-span-2">
                   <label for="howYouHearAboutUs" class="community-partners-label">How did you hear about us?</label>
-                  <textarea id="howYouHearAboutUs" v-model="howYouHearAboutUs" rows="4" class="community-partners-input" :class="isModalLoading && 'opacity-50'" :readonly="isModalLoading" required></textarea>
+                  <textarea id="howYouHearAboutUs" v-model="howYouHearAboutUs" rows="4" class="community-partners-input" :class="isModalLoading && 'opacity-50'" :readonly="isModalLoading"  required></textarea>
                 </div>
                 <div class="flex items-center place-content-between mt-5 md:mt-0 md:place-content-end col-span-2 gap-6">
                   <img
@@ -119,7 +119,7 @@
                     alt="spinner"
                   />
                   <button type="button" @click="toggleModal" class="community-partners-button bg-gray-200 hover:bg-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700">Back</button>
-                  <button type="submit" class="community-partners-button text-white bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700">Submit</button>
+                  <button type="submit" class="community-partners-button text-white bg-blue-700 hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700" :class="isModalLoading && 'opacity-50'" :disabled="isModalLoading">Submit</button>
                 </div>
               </div>
             </div>
