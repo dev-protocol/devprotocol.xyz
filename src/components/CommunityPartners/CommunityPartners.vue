@@ -165,7 +165,7 @@ export default {
           extraClass: "",
         },
         {
-          name: "intlify",
+          name: "Intlify",
           image: "https://github.com/intlify.png",
           link: "https://intlify.dev/",
           description:
