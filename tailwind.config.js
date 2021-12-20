@@ -19,7 +19,7 @@ module.exports = {
         half: '50%'
       },
       screens: {
-        'burger': '800px'
+        burger: '800px'
       }
     }
   },
