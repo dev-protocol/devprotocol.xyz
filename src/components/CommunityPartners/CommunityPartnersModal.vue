@@ -51,26 +51,30 @@
 
           <form class="dark:bg-gray-800" autocomplete="off" v-on:submit.prevent="handleFormSubmit">
             <div class="flex">
-              <div class="text-white md:flex flex-col bg-indigo-700 dark:bg-indigo-800 w-1/3 hidden p-10 gap-7">
+              <div class="text-white md:flex flex-col bg-indigo-700 dark:bg-indigo-800 w-1/3 hidden p-8 2xl:p-10 gap-7">
               <p class="text-xl ">Contact Information</p>
-              <p class="text-lg">For more information, please reach out to our support team.</p>
-              <div class="flex gap-4">
+              <p class="text-lg">Have any questions/comments? Reach out to our team members via
+                <a href="https://discord.gg/VwJp4KM"
+                  class="underline underline-offset-4 hover:decoration-2">
+                  discord</a>.
+              </p>
+              <div class="flex flex-wrap gap-4">
                 <img class="filter invert" src="/assets/email.png" alt="email icon" />
                 <p>hi@devprotocol.xyz</p>
               </div>
               <div class="flex gap-8">
                 <a href="https://discord.com/invite/VwJp4KM">
-                  <img class="filter invert" src="/assets/discord.png" alt="discord icon" />
+                  <img class="w-6 h-6" src="/assets/discord.svg" alt="discord icon" />
                 </a>
                 <a href="https://github.com/dev-protocol">
-                  <img class="filter invert" src="/assets/github.png" alt="github icon" />
+                  <img class="w-6 h-6" src="/assets/github.png" alt="github icon" />
                 </a>
                 <a href="https://twitter.com/devprtcl">
-                  <img class="filter invert brightness-0" src="/assets/twitter.svg" alt="twitter icon" />
+                  <img class="w-6 pt-1 filter invert brightness-0" src="/assets/twitter.svg" alt="twitter icon" />
                 </a>
               </div>
               </div>
-              <div class="grid grid-cols-2 gap-6 md:w-2/3 p-10">
+              <div class="grid grid-cols-2 gap-6 md:w-2/3 p-8 2xl:p-10 w-full">
                 <!-- Feedback -->
                 <div v-show="isModalFailed" class="modal-alert text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800">
                   <span class="font-bold">Error!</span> Something went wrong, please try again.
