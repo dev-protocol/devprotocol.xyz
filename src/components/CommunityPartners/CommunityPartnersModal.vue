@@ -100,7 +100,7 @@
                   <input type="email" id="email" v-model="email" class="community-partners-input" :class="isModalLoading && 'opacity-50'" :readonly="isModalLoading" required>
                 </div>
                 <div class="col-span-2">
-                  <label for="whyPartnerWithUs" class="community-partners-label">Why do you want to be partner with us?</label>
+                  <label for="whyPartnerWithUs" class="community-partners-label">Why do you want to partner with us?</label>
                   <input type="text" id="whyPartnerWithUs" v-model="whyPartnerWithUs" class="community-partners-input" :class="isModalLoading && 'opacity-50'" :readonly="isModalLoading" required>
                 </div>
                 <div class="col-span-2">
