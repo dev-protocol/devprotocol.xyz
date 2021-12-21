@@ -188,7 +188,7 @@ export default {
       isModalFailed: false,
       sheetDbBaseUrl: 'https://sheetdb.io/api/v1/',
       sheetDbConfig: {
-        address: import.meta.env.PUBLIC_SHEETDB_ADDRESS,
+        address: import.meta.env.PUBLIC_SHEETDB_API_ID,
         auth_login: import.meta.env.PUBLIC_SHEETDB_LOGIN,
         auth_password: import.meta.env.PUBLIC_SHEETDB_PASSWORD,
       },
