@@ -241,7 +241,7 @@ export default {
           'Community Name': communityName,
           'Website': website,
           'Email': email,
-          'Why do you want to be partner with us?': whyPartnerWithUs,
+          'Why do you want to partner with us?': whyPartnerWithUs,
           'How did you hear about us?': howYouHearAboutUs,
       })
       .then((data) => {
