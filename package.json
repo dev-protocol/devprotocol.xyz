@@ -9,17 +9,17 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/renderer-vue": "^0.1.9",
-    "astro": "^0.20.9",
-    "eslint": "^7.32.0",
+    "@astrojs/renderer-vue": "^0.2.1",
+    "astro": "^0.21.13",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.5.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.1",
-    "postcss": "^8.3.9",
-    "remark-cli": "^10.0.0",
-    "snowpack-plugin-dsv": "^1.0.0",
-    "tailwindcss": "^2.2.16"
+    "eslint-plugin-promise": "^6.0.0",
+    "postcss": "^8.4.5",
+    "remark-cli": "^10.0.1",
+    "tailwindcss": "^3.0.7"
   },
   "description": "Dev Protocol's open-source website, built with Astro",
   "repository": "https://github.com/web3community/devprotocol.xyz.git",
