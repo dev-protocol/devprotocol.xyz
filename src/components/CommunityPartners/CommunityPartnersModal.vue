@@ -56,7 +56,7 @@
               <p class="text-lg">Have any questions/comments? Reach out to our team members via
                 <a href="https://discord.gg/VwJp4KM"
                   class="underline underline-offset-4 hover:decoration-2">
-                  discord</a>.
+                  Discord</a>.
               </p>
               <div class="flex flex-wrap gap-4">
                 <img class="filter invert" src="/assets/email.png" alt="email icon" />
@@ -85,7 +85,7 @@
                 <!-- ./Feedback -->
 
                 <div class="col-span-2 flex items-center">
-                  <p class="h-8 text-xl">Send us a message</p>
+                  <p class="h-8 text-xl">Application Form</p>
                 </div>
                 <div class="col-span-2 md:col-span-1">
                   <label for="founderName" class="community-partners-label">Founder Name</label>
