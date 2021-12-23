@@ -60,7 +60,7 @@
               </p>
               <div class="flex flex-wrap gap-4">
                 <img class="filter invert" src="/assets/email.png" alt="email icon" />
-                <p>hi@devprotocol.xyz</p>
+                <p>community@devprotocol.xyz</p>
               </div>
               <div class="flex gap-8">
                 <a href="https://discord.com/invite/VwJp4KM">
