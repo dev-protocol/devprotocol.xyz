@@ -56,7 +56,7 @@
               <p class="text-lg">Have any questions/comments? Reach out to our team members via
                 <a href="https://discord.gg/VwJp4KM"
                   class="underline underline-offset-4 hover:decoration-2">
-                  discord</a>.
+                  Discord</a>.
               </p>
               <div class="flex flex-wrap gap-4">
                 <img class="filter invert" src="/assets/email.png" alt="email icon" />
