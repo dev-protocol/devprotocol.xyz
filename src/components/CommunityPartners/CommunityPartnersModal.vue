@@ -85,7 +85,7 @@
                 <!-- ./Feedback -->
 
                 <div class="col-span-2 flex items-center">
-                  <p class="h-8 text-xl">Send us a message</p>
+                  <p class="h-8 text-xl">Application Form</p>
                 </div>
                 <div class="col-span-2 md:col-span-1">
                   <label for="founderName" class="community-partners-label">Founder Name</label>
