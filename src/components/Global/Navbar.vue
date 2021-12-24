@@ -219,6 +219,9 @@
               <a href="/community-partners" class="sub-navbar-item"
                 >Community Partners</a
               >
+              <a href="https://shop.devprotocol.xyz/" class="sub-navbar-item"
+                >DEV Shop</a
+              >
             </div>
           </div>
           <!-- Help Section -->
