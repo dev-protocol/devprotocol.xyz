@@ -220,7 +220,7 @@
                 >Community Partners</a
               >
               <a href="https://shop.devprotocol.xyz/" class="sub-navbar-item"
-                >DEV Shop</a
+                >Community Shop</a
               >
             </div>
           </div>
