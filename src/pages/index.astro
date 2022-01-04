@@ -33,4 +33,54 @@ import L2 from '@components/Home/Banners/L2.astro'
     <Backers></Backers>
     <Blog></Blog>
   </aside>
+
+<!--  <section class="flex pb-28 md:py-8 flex-wrap items-center justify-around">
+    <div id="wom-recorder" style="width: 300px; height: 700px; overflow-y:auto;" />
+    <div id="wom-viewer-plugin" style="width: 285px; height: 700px;" />
+  </section>
+  <script defer src="https://creator.bullz.com/static/js/bullz.js"></script>
+  <script defer src="https://viewer.womprotocol.io/static/js/wom.js"></script>
+  <script>
+    document.addEventListener('bullz-recorder-init', () => {
+      window.bullz.init({
+        organizationPublicId: 'DEV PROTOCOL_619bbef3237f2c2d1f26ce9d',
+        facilitatorld: 'DEV PROTOCOL_619bbef3237f2c2d1f26ce9d',
+        publisher: 'Dev Protocol',
+        selector: '#wom-recorder',
+        background: 'https://stackroom.devprotocol.xyz/integration/wom/background.png',
+        logo: 'https://stackroom.devprotocol.xyz/brand/dev-protocol__avatar-brandmark--white--w_980.png',
+        color: 'white',
+        backgroundColor: 'black',
+        remoteProduct: {
+          name: 'Dev Tokens',
+          brand: 'Dev Protocol',
+          publicld: 'D001',
+          url: 'https://devprotocol.xyz/',
+          imageUrl: 'https://stackroom.devprotocol.xyz/integration/wom/background.png',
+        },
+        isDev: true,
+      })
+    })
+  </script>
+  <script>
+    document.addEventListener('wom-viewer-init', () => {
+      const params = {
+        organizationPublicId: 'DEV PROTOCOL_619bbef3237f2c2d1f26ce9d',
+        selector: '#wom-viewer-plugin',
+        remoteProductId: 'D001',
+        color: 'black',
+        textColor: 'white',
+      }
+
+      window.wom.check(params).then(values => {
+        console.log({values});
+
+        if (!values[0].isSuccess) {
+          return console.log('womjs config success');
+        }
+      }).catch(console.error)
+
+      window.wom.init(params);
+    })
+  </script> -->
 </Layout>
