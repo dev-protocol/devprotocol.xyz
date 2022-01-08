@@ -1,8 +1,6 @@
 ---
 import Footer from '@components/Global/Footer.astro'
 
-import Wom from '@components/Global/Wom.astro'
-
 import Navigation from '../components/Global/Navigation.vue'
 
 let { metaTitle } = Astro.props;
@@ -32,9 +30,6 @@ let { metaTitle } = Astro.props;
   <main class="md:grid md:grid-flow-row gap-y-20 lg:gap-y-40">
     <slot />
   </main>
-  <Wom />
-  <script defer src="https://creator.bullz.com/static/js/bullz.js"></script>
-  <script defer src="https://viewer.womprotocol.io/static/js/wom.js"></script>
   <Footer></Footer>
 </body>
 
