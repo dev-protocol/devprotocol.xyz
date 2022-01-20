@@ -63,14 +63,14 @@
                 <p>community@devprotocol.xyz</p>
               </div>
               <div class="flex gap-8">
-                <a href="https://discord.com/invite/VwJp4KM">
-                  <img class="w-6 h-6" src="/assets/discord.svg" alt="discord icon" />
+                <a href="https://discord.gg/VwJp4KM">
+                  <img class="w-6 h-6" src="/assets/discord.svg" alt="Discord icon" />
                 </a>
                 <a href="https://github.com/dev-protocol">
-                  <img class="w-6 h-6" src="/assets/github.png" alt="github icon" />
+                  <img class="w-6 h-6" src="/assets/github.png" alt="GitHub icon" />
                 </a>
                 <a href="https://twitter.com/devprtcl">
-                  <img class="w-6 pt-1 filter invert brightness-0" src="/assets/twitter.svg" alt="twitter icon" />
+                  <img class="w-6 pt-1 filter invert brightness-0" src="/assets/twitter.svg" alt="Twitter icon" />
                 </a>
               </div>
               </div>
