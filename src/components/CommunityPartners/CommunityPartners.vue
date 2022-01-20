@@ -142,9 +142,9 @@ export default {
           extraClass: "rounded-full",
         },
         {
-          name: "Web3Community",
-          image: "https://github.com/Web3Community.png",
-          link: "https://web3community.github.io",
+          name: "WebXDAO",
+          image: "https://github.com/WebXDAO.png",
+          link: "https://webxdao.github.io",
           description:
             "An Open Source Community that focuses on decentralized applications, web 3, and blockchain technologies 🚀",
           extraClass: "rounded-full",
