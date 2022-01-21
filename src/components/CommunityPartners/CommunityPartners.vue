@@ -146,7 +146,7 @@ export default {
           image: "https://github.com/WebXDAO.png",
           link: "https://webxdao.github.io",
           description:
-            "An Open Source Community that focuses on decentralized applications, web 3, and blockchain technologies 🚀",
+            "An Open Source Community that focuses on the future of the web",
           extraClass: "rounded-full",
         },
         {
