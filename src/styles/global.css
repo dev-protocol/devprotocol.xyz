@@ -185,3 +185,26 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.carousel__slide {
+  padding: 5px;
+}
+
+.carousel__prev,
+.carousel__next {
+  width: 4rem !important;
+  height: 4rem !important;
+  border-radius: 100% !important;
+  box-sizing: content-box;
+  border: 5px solid !important;
+  user-select: none !important;
+}
+
+@media (max-width: 767px) {
+  .carousel__prev,
+  .carousel__next {
+    width: 3rem !important;
+    height: 3rem !important;
+    border-radius: 100% !important;
+  }
+}
