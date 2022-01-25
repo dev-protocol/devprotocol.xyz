@@ -103,24 +103,27 @@ export default defineComponent({
       },
 
       breakpoints: {
+      },
+    };
+  },
+  mounted(){
+    this.breakpoints = {
         700: {
           itemsToShow: 1,
           snapAlign: "center",
         },
 
-        // 1024 and up
         900: {
           itemsToShow: 2,
           snapAlign: "center",
         },
 
-        // 1024 and up
         1024: {
           itemsToShow: 3,
           snapAlign: "start",
         },
-      },
-    };
-  },
+
+    }
+  }
 });
 </script>
