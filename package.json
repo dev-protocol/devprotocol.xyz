@@ -9,8 +9,8 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/renderer-vue": "^0.2.1",
-    "astro": "^0.21.13",
+    "@astrojs/renderer-vue": "^0.3.0",
+    "astro": "^0.22.18",
     "autoprefixer": "^10.4.0",
     "eslint": "^8.5.0",
     "eslint-config-standard": "^16.0.3",
