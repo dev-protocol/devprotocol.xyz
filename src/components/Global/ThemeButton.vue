@@ -63,31 +63,31 @@ export default {
   },
   methods: {
     toggleDarkMode() {
-      // var checkbox = document.getElementById('#toggle')
-      if (this.isDarkMode) {
-        localStorage.removeItem("theme");
-        this.isDarkMode = false;
-        document.documentElement.classList.remove("dark");
-      } else {
-        document.documentElement.classList.add("dark");
+      var currentTheme = document.documentElement.getAttribute('data-theme');
+      var targetTheme = 'light';
+      if(currentTheme==='light'){
+        targetTheme='dark';
+        document.documentElement.classList.add('dark');
         this.isDarkMode = true;
-        localStorage.setItem("theme", "dark");
+      }else{
+        document.documentElement.classList.remove('dark');
+        this.isDarkMode=false;
       }
+      document.documentElement.setAttribute('data-theme',targetTheme);
+      localStorage.setItem('theme',targetTheme);
     },
   },
   mounted() {
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
+    var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    if (storedTheme){
+      document.documentElement.setAttribute('data-theme', storedTheme)
       document.documentElement.classList.add("dark");
-      this.isDarkMode = true;
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      this.isDarkMode = false;
-      localStorage.removeItem("theme");
+      if(storedTheme==='light'){
+        this.isDarkMode = false;
+        document.documentElement.classList.remove('dark');
+      }
+      else
+        this.isDarkMode = true;
     }
   },
 };

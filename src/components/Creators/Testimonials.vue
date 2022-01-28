@@ -1,28 +1,13 @@
 <template>
-  <section class="bg-white dark:bg-darkPrimary overflow-hidden text-center px-8">
-    <h2 class="mx-auto w-full font-display text-5xl m-8 dark:text-white">Testimonials</h2>
+  <section class="dp-testimonial">
+    <h2 class="mx-auto w-full font-display text-5xl m-8 dark:text-white">
+      Testimonials
+    </h2>
     <div
-      class="
-        relative
-        max-w-7xl
-        mx-auto
-        pt-20
-        pb-12
-        px-4
-        sm:px-6
-        lg:px-8 lg:py-20
-      "
+      class="relative max-w-7xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20"
     >
       <svg
-        class="
-          absolute
-          top-full
-          left-0
-          transform
-          translate-x-80
-          -translate-y-24
-          lg:hidden
-        "
+        class="absolute top-full left-0 transform translate-x-80 -translate-y-24 lg:hidden"
         width="784"
         height="404"
         fill="none"
@@ -56,16 +41,7 @@
       </svg>
 
       <svg
-        class="
-          hidden
-          lg:block
-          absolute
-          right-full
-          top-1/2
-          transform
-          translate-x-1/2
-          -translate-y-1/2
-        "
+        class="hidden lg:block absolute right-full top-1/2 transform translate-x-1/2 -translate-y-1/2"
         width="404"
         height="784"
         fill="none"
@@ -109,17 +85,7 @@
 
         <div class="relative lg:ml-10">
           <svg
-            class="
-              absolute
-              top-0
-              left-0
-              transform
-              -translate-x-8 -translate-y-24
-              h-36
-              w-36
-              text-indigo-200
-              opacity-50
-            "
+            class="absolute top-0 left-0 transform -translate-x-8 -translate-y-24 h-36 w-36 text-indigo-200 opacity-50"
             stroke="currentColor"
             fill="none"
             viewBox="0 0 144 144"
@@ -131,15 +97,7 @@
             />
           </svg>
           <blockquote class="relative">
-            <div
-              class="
-                text-2xl
-                leading-9
-                font-medium
-                text-gray-900
-                dark:text-gray-100
-              "
-            >
+            <div class="dp-testimonial__description">
               <p>
                 {{ currentItem.description }}
               </p>
@@ -156,16 +114,7 @@
                   </div>
                   <div class="ml-4 lg:ml-0">
                     <div
-                      class="
-                        text-xl
-                        font-medium
-                        text-gray-900
-                        dark:text-gray-100
-                        underline
-                        inline-flex
-                        items-center
-                        justify-around
-                      "
+                      class="text-xl font-medium text-gray-900 dark:text-gray-100 underline inline-flex items-center justify-around"
                     >
                       {{ currentItem.name }}
                     </div>
@@ -175,35 +124,13 @@
             </footer>
             <div class="py-8 flex justify-between items-center">
               <p
-                class="
-                  pl-0
-                  px-4
-                  lg:px-8
-                  lg:pl-0
-                  underline
-                  font-bold
-                  mt-6
-                  font-mono
-                  justify-self-end
-                  cursor-pointer
-                "
+                class="pl-0 px-4 lg:px-8 lg:pl-0 underline font-bold mt-6 font-mono justify-self-end cursor-pointer"
                 v-on:click="setCurrentItem(prevItem())"
               >
                 &lt; Previous
               </p>
               <p
-                class="
-                  pr-0
-                  px-4
-                  lg:px-8
-                  lg:pr-0
-                  underline
-                  font-bold
-                  mt-6
-                  font-mono
-                  justify-self-end
-                  cursor-pointer
-                "
+                class="pr-0 px-4 lg:px-8 lg:pr-0 underline font-bold mt-6 font-mono justify-self-end cursor-pointer"
                 v-on:click="setCurrentItem(nextItem())"
               >
                 Next &gt;

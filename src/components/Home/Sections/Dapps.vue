@@ -103,7 +103,12 @@ export default defineComponent({
       },
 
       breakpoints: {
-        700: {
+        
+      },
+    };
+  },
+  mounted(){
+    this.breakpoints = {700: {
           itemsToShow: 1,
           snapAlign: "center",
         },
@@ -118,10 +123,8 @@ export default defineComponent({
         1024: {
           itemsToShow: 3,
           snapAlign: "start",
-        },
-      },
-    };
-  },
+        },}
+  }
 });
 </script>
 <style>

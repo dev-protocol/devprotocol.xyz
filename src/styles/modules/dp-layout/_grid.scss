@@ -1,0 +1,16 @@
+@use '../../../../node_modules/@devprotocol/hashi';
+
+@mixin use() {
+    .grid-center {
+        width: 100%;
+        min-height: 100%;
+        display: grid;
+        place-items: center;
+        gap: 80px;
+
+        @include hashi.theme-breakpoint-create('large'){
+            gap: 160px;
+        }
+        
+    }
+}

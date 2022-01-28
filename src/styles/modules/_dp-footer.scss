@@ -1,0 +1,71 @@
+@use "../../../node_modules/@devprotocol/hashi";
+
+@mixin render() {
+  .dp-footer {
+    // background: hashi.theme-token-get("neutral-600");
+    background: black;
+    color: white;
+    padding: 1rem 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    padding: 2.5rem 3.5rem;
+
+    @include hashi.theme-breakpoint-create("large") {
+      padding: 5rem 7rem;
+    }
+
+    .dp-footer__left {
+      display: flex;
+      flex-direction: column;
+
+      @include hashi.theme-breakpoint-create("large") {
+        margin-left: 0;
+        margin-right: 0;
+        grid-column: span 6 / span 6;
+      }
+
+      .dp-footer__section {
+        li {
+          list-style: none;
+        }
+      }
+    }
+
+    .dp-footer__right {
+      display: flex;
+      margin-top: 3.5rem;
+      font-weight: 600;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      @include hashi.theme-breakpoint-create("small") {
+        justify-content: space-around;
+      }
+
+      @include hashi.theme-breakpoint-create("large") {
+        margin-top: 0;
+        grid-column: span 6 / span 6;
+      }
+
+      .footer__col {
+        line-height: 2.5rem;
+        margin-left: hashi.theme-token-get("margin-sm");
+      }
+
+      .footer__link {
+        font-family: "IBM Plex Mono";
+        opacity: 0.7;
+        font-weight: 600;
+        --tw-text-opacity: 1;
+        color: rgb(156 163 175 / var(--tw-text-opacity));
+        &:hover {
+          --tw-text-opacity: 1;
+          color: rgb(255 255 255 / var(--tw-text-opacity));
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,198 @@
+@use "../../../node_modules/@devprotocol/hashi";
+
+@mixin render() {
+  .dp-hero {
+    display: flex;
+    margin-top: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    @include hashi.theme-breakpoint-create("large") {
+      margin-top: hashi.theme-token-get("margin-none");
+      text-align: left;
+      flex-direction: row-reverse;
+    }
+    .dp-hero_left {
+      margin-left: 3rem;
+      margin-right: 3rem;
+      padding: hashi.theme-token-get("padding-lg");
+      @include hashi.theme-breakpoint-create("large") {
+        max-width: 50%;
+      }
+
+      h3 {
+        font-family: hashi.theme-token-get("family-header");
+        line-height: 1;
+        font-size: 3.75rem;
+        font-weight: 900;
+        margin-top: hashi.theme-token-get("margin-lg");
+      }
+
+      p {
+        max-width: 65ch;
+        margin: 1.5rem 0;
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+      }
+      a {
+        margin-top: 1.5rem;
+        margin-left: 0px;
+        margin-right: 1rem;
+
+        button {
+          background-color: #000;
+          color: #fff;
+          padding: 0.5rem 1.5rem;
+          border-radius: 0.25rem;
+          font-size: 1.125rem;
+          line-height: 1.75rem;
+        }
+      }
+    }
+  }
+
+  .dp-usecases {
+    display: flex;
+    padding: 1rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include hashi.theme-breakpoint-create("medium") {
+      text-align: left;
+    }
+    .dp-heading {
+      font-family: hashi.theme-token-get("family-header");
+      font-weight: 900;
+      font-size: 3.75rem;
+      line-height: 1;
+      margin-bottom: 4rem;
+    }
+    .dp-wrapper {
+      display: flex;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @include hashi.theme-breakpoint-create("medium") {
+        justify-content: flex-start;
+      }
+      @include hashi.theme-breakpoint-create("large") {
+        flex-direction: row;
+      }
+
+      .dp-usecase {
+        display: flex;
+        padding: 1rem;
+        padding-left: 0;
+        margin: 1rem;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        h4 {
+          margin-top: 1.25rem;
+          margin-bottom: 2.5rem;
+          font-size: 2.25rem;
+          line-height: 2.5rem;
+          font-weight: 900;
+        }
+        p {
+          max-width: 40ch;
+          font-size: 1.125rem;
+          line-height: 1.75rem;
+        }
+      }
+    }
+  }
+
+  .dp-stepbystep {
+    display: flex;
+    padding: 1rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include hashi.theme-breakpoint-create("medium") {
+      text-align: left;
+    }
+    .dp-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .dp-heading {
+        font-family: hashi.theme-token-get("family-header");
+        font-weight: 900;
+        font-size: 3.75rem;
+        line-height: 1;
+        margin-bottom: 4rem;
+      }
+    }
+    .dp-step {
+      position: relative;
+      padding-bottom: 2rem;
+
+      .dp-step_icon {
+        position: absolute;
+        top: 1.25rem;
+        left: 1.25rem;
+        margin-left: -1px;
+        background-color: #e5e7eb;
+        width: 0.125rem;
+        height: 100%;
+      }
+
+      .dp-step__text {
+        flex: 1 1 0%;
+        min-width: 0px;
+        .dp-step__head {
+          font-family: hashi.theme-token-get("family-header");
+          font-weight: 900;
+          font-size: 2.25rem;
+          line-height: 2.5rem;
+          margin-top: 1.25rem;
+          margin-bottom: 2.5rem;
+        }
+        .dp-step__description {
+          line-height: 1.5rem;
+          max-width: 40ch;
+        }
+      }
+    }
+  }
+
+  .dp-testimonial {
+    background-color: white;
+    overflow: hidden;
+    text-align: center;
+    padding: 0 2rem;
+
+    @include hashi.dark-mode {
+      --tw-bg-opacity: 1;
+      background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+    }
+
+    .dp-testimonial__description {
+      @include hashi.dark-mode {
+        --tw-bg-opacity: 1;
+        color: rgb(243 244 246 / var(--tw-text-opacity));
+      }
+      color: #111827;
+
+      p {
+        font-size: hashi.theme-token-get("size-h3");
+        line-height: 2.5rem;
+        font-weight: 500;
+      }
+    }
+  }
+}

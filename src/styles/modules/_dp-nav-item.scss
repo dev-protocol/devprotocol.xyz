@@ -1,0 +1,34 @@
+@use 'node_modules/@devprotocol/hashi';
+
+@mixin render() {
+    .dp-nav-item {
+        height: 100%;
+        padding: hashi.theme-token-get('padding-md') hashi.theme-token-get('padding-lg');
+        color: #fff;
+        border: 1px solid rgba(0 0 0 / 18%);
+        @include hashi.tools-prefix(transition, all 0.1s ease);
+        
+        &:hover {
+            .dp-nav-item__icon {
+                transform: translateX(hashi.theme-token-get-raw('padding-sm'));
+            }
+        }
+        
+        &__header {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            
+            > * + * {
+                margin-left: hashi.theme-token-get('margin-xs');
+            }
+            
+            .dp-nav-item__icon {
+                display: grid;
+                place-items: center;
+                @include hashi.tools-prefix(transition, all 0.1s ease);
+            }
+        }
+    }
+}
