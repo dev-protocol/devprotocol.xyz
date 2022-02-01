@@ -142,9 +142,9 @@ export default {
           extraClass: "rounded-full",
         },
         {
-          name: "WebX DAO",
+          name: "WebXDAO",
           image: "https://github.com/WebXDAO.png",
-          link: "https://web3community.github.io",
+          link: "https://webxdao.github.io",
           description:
             "An Open Source Community that focuses on the future of the web",
           extraClass: "rounded-full",
