@@ -181,6 +181,14 @@ export default {
             "Code for Japan is one of the largest communities of civic hackers in Japan. We organize hackathons to improve and promote civic tech and collaborate with local governments and communities.",
           extraClass: "rounded-full",
         },
+        {
+          name: "Chainwhiz",
+          image: "https://github.com/chainwhiz.png",
+          link: "https://www.chainwhiz.app/",
+          description:
+            "Chainwhiz provides developers a platform to discover, and solve open-source dapp bounties and earn bounty rewards. Join us and start building better Web3 goods.",
+          extraClass: "rounded-full",
+        },
       ],
       isModalOpen: false,
       isModalLoading: false,
