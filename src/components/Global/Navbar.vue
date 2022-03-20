@@ -22,7 +22,7 @@
       "
     >
       <!-- Dev Protocol Icon -->
-      <a href="https://devprotocol.xyz" class="text-gray-900 md:p-4 py-4">
+      <a href="/" class="text-gray-900 md:p-4 py-4">
         <svg
           width="224"
           height="38.4"

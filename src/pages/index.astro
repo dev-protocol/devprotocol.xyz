@@ -2,6 +2,7 @@
 import Layout from '../layouts/Default.astro'
 
 import Hero from '@components/Home/Hero.astro'
+import Vision from '@components/Home/Vision.astro'
 import Creators from '@components/Home/Heros/Creators.astro'
 import Patrons from '@components/Home/Heros/Patrons.astro'
 import DevToken from '@components/Home/Heros/DevToken.astro'
@@ -17,32 +18,21 @@ import L2 from '@components/Home/Banners/L2.astro'
 
 <Layout metaTitle="Home | Dev Protocol">
   <Hero></Hero>
+  <DevToken></DevToken>
+  <Vision></Vision>
   <L2></L2>
   <article>
     <Creators></Creators>
-    <hr class="h-2 mx-auto rounded-sm my-20" style="width: 70%" />
+    <hr class="h-2 mx-auto rounded-sm my-20 dark:border-gray-600" style="width: 70%" />
     <SuccessStories client:visible></SuccessStories>
-    <hr class="h-2 mx-auto rounded-sm my-20" style="width: 70%" />
+    <hr class="h-2 mx-auto rounded-sm my-20 dark:border-gray-600" style="width: 70%" />
     <Patrons></Patrons>
-    <hr class="h-2 mx-auto rounded-sm my-20" style="width: 70%" />
+    <hr class="h-2 mx-auto rounded-sm my-20 dark:border-gray-600" style="width: 70%" />
     <Dapps client:only></Dapps>
-    <hr class="h-2 mx-auto rounded-sm my-20" style="width: 70%" />
-    <DevToken></DevToken>
+    <hr class="h-2 mx-auto rounded-sm my-20 dark:border-gray-600" style="width: 70%" />
   </article>
   <aside>
     <Backers></Backers>
     <Blog></Blog>
   </aside>
-  <div id="wom-viewer-plugin" style="width: 285px; height: 700px;" />
-  <script src="https://viewer.womprotocol.io/static/js/wom.js"></script>
-  <script>
-    document.addEventListener("wom-viewer-init", () => {
-      window.wom.init({
-        organizationPublicId: "DEV PROTOCOL_619bbef3237f2c2d1f26ce9d",
-        selector: "#wom-viewer-plugin",
-        remoteProductId: "D001",
-        isDev: false,
-      });
-    });
-  </script>
 </Layout>
