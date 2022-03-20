@@ -36,7 +36,7 @@
             :href="currentItem.link"
             class="text-black no-underline dark:text-white"
           >
-            <h3 class="font-black font-display text-3xl my-8">
+            <h3 class="font-bold text-3xl my-8">
               {{ currentItem.title }}
             </h3>
           </a>

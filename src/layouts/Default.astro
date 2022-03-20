@@ -26,8 +26,8 @@ let { metaTitle } = Astro.props;
 </head>
 
 <body class="text-gray-900 font-body dark:bg-darkPrimary dark:text-white">
-  <Navigation client:load></Navigation>
-  <main class="md:grid md:grid-flow-row gap-y-20 lg:gap-y-40">
+  <Navigation client:visible></Navigation>
+  <main class="grid md:grid gap-y-20 lg:gap-y-40">
     <slot />
   </main>
   <Footer></Footer>
