@@ -11,7 +11,6 @@ import Backers from '@components/Home/Sections/Backers.astro'
 import Blog from '@components/Home/Sections/Blog.astro'
 
 import SuccessStories from '../components/Home/SuccessStories.vue'
-import Dapps from '../components/Home/Sections/Dapps.vue'
 
 import L2 from '@components/Home/Banners/L2.astro'
 ---
@@ -27,8 +26,6 @@ import L2 from '@components/Home/Banners/L2.astro'
     <SuccessStories client:visible></SuccessStories>
     <hr class="h-2 mx-auto rounded-sm my-20 dark:border-gray-600" style="width: 70%" />
     <Patrons></Patrons>
-    <hr class="h-2 mx-auto rounded-sm my-20 dark:border-gray-600" style="width: 70%" />
-    <Dapps client:only></Dapps>
     <hr class="h-2 mx-auto rounded-sm my-20 dark:border-gray-600" style="width: 70%" />
   </article>
   <aside>

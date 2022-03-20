@@ -4966,11 +4966,6 @@ vscode-uri@^3.0.2:
   resolved "https://registry.npmjs.org/vscode-uri/-/vscode-uri-3.0.2.tgz"
   integrity sha512-jkjy6pjU1fxUvI51P+gCsxg1u2n8LSt0W6KrCNQceaziKzff74GoWmjVG46KieVzybO1sttPQmYfrwSHey7GUA==
 
-vue3-carousel@^0.1.30:
-  version "0.1.32"
-  resolved "https://registry.npmjs.org/vue3-carousel/-/vue3-carousel-0.1.32.tgz"
-  integrity sha512-/SYlkCYsviUHANiCHoQoi3e5PXx+2+aUB5MfDhUcam4+T+RvhcHED+aR6SUA+uBHgbbb24JF1H7grEX8+nlu3g==
-
 vue@^3.2.22:
   version "3.2.26"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.2.26.tgz#5db575583ecae495c7caa5c12fd590dffcbb763e"
