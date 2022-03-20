@@ -160,7 +160,7 @@
 </template>
 
 <script>
-import langCsv from "./lang.csv";
+import langCsv from "./lang.json";
 
 export default {
   name: "FAQ",
