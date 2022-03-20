@@ -25,7 +25,5 @@
   "repository": "https://github.com/WebXDAO/devprotocol.xyz.git",
   "author": "WebXDAO",
   "license": "MIT",
-  "dependencies": {
-    "vue3-carousel": "^0.1.30"
-  }
+  "dependencies": {}
 }
