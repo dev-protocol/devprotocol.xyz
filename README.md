@@ -35,6 +35,20 @@ yarn
 yarn start
 ```
 
+## 🔖 Linting
+
+1. Execute linting and formatting with ESLint and Prettier
+
+```bash
+yarn lint
+```
+
+2. Astro files are ignored because `prettier-plugin-astro` is sometimes unable to parse them correctly. You can be Astro files targeted for linting by explicitly specifying a different ignore file as follows.
+
+```bash
+yarn prettier -w --ignore-path .gitignore src/components/**/*.astro
+```
+
 ## 📦 Requirements
 
 - The latest version of [Node.js](https://nodejs.org)
