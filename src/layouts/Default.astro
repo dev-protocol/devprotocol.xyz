@@ -3,34 +3,35 @@ import Footer from '@components/Global/Footer.astro'
 
 import Navigation from '../components/Global/Navigation.vue'
 
-let { metaTitle } = Astro.props;
+let { metaTitle } = Astro.props
 ---
 
-<html lang="en" >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{metaTitle}</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href={Astro.resolve('../styles/global.css')} />
+    <meta
+      name="description"
+      content="Dev Protocol lets GitHub users tokenize their OSS projects in a few clicks. Creating an OSS token allows projects to access sustainable funding, create underlying economic models for their project, and distribute incentives at scale. For the first time, OSS projects have a scalable solution to unlock their value."
+    />
+    <meta property="og:title" content={metaTitle} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://devprotocol.xyz/" />
+    <meta property="og:image" content="/assets/og.png" />
+    <meta
+      property="og:description"
+      content="Dev Protocol lets GitHub users tokenize their OSS projects in a few clicks. Creating an OSS token allows projects to access sustainable funding, create underlying economic models for their project, and distribute incentives at scale. For the first time, OSS projects have a scalable solution to unlock their value."
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title>{metaTitle}</title>
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <link
-  rel="stylesheet"
-  href={Astro.resolve("../styles/global.css")}
-  >
-  <meta name="description" content="Dev Protocol lets GitHub users tokenize their OSS projects in a few clicks. Creating an OSS token allows projects to access sustainable funding, create underlying economic models for their project, and distribute incentives at scale. For the first time, OSS projects have a scalable solution to unlock their value." />
-  <meta property="og:title" content={metaTitle} />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://devprotocol.xyz/" />
-  <meta property="og:image" content="/assets/og.png" />
-  <meta property="og:description" content="Dev Protocol lets GitHub users tokenize their OSS projects in a few clicks. Creating an OSS token allows projects to access sustainable funding, create underlying economic models for their project, and distribute incentives at scale. For the first time, OSS projects have a scalable solution to unlock their value." />
-</head>
-
-<body class="text-gray-900 font-body dark:bg-darkPrimary dark:text-white">
-  <Navigation client:visible></Navigation>
-  <main class="grid md:grid gap-y-20 lg:gap-y-40">
-    <slot />
-  </main>
-  <Footer></Footer>
-</body>
-
+  <body class="font-body text-gray-900 dark:bg-darkPrimary dark:text-white">
+    <Navigation client:visible />
+    <main class="grid md:grid gap-y-20 lg:gap-y-40">
+      <slot />
+    </main>
+    <Footer />
+  </body>
 </html>

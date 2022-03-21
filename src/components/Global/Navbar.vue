@@ -1,32 +1,12 @@
 <template>
   <header
-    class="
-      text-black
-      dark:text-white
-      burger:flex
-      burger:justify-between
-      burger:items-center
-      burger:px-4
-      burger:py-3
-      border-b-2
-      dark:border-b-0 dark:shadow-xl
-    "
+    class="border-b-2 text-black dark:border-b-0 dark:text-white dark:shadow-xl burger:flex burger:items-center burger:justify-between burger:px-4 burger:py-3"
   >
     <div
-      class="
-        flex flex-wrap
-        burger:flex-nowrap
-        w-full
-        items-center
-        justify-between
-        align-baseline
-        px-4
-        py-3
-        burger:p-0
-      "
+      class="flex w-full flex-wrap items-center justify-between px-4 py-3 align-baseline burger:flex-nowrap burger:p-0"
     >
       <!-- Dev Protocol Icon -->
-      <a href="/" class="text-gray-900 md:p-4 py-4">
+      <a href="/" class="py-4 text-gray-900 md:p-4">
         <svg
           width="224"
           height="38.4"
@@ -93,17 +73,12 @@
       <!-- all dropdown icons -->
       <nav
         :class="
-          smIsOpen ? 'block w-full pt-4 order-1 burger:order-none' : 'hidden'
+          smIsOpen ? 'order-1 block w-full pt-4 burger:order-none' : 'hidden'
         "
         class="px-2 pt-2 pb-4 burger:flex burger:p-0"
       >
         <div
-          class="
-            flex flex-col
-            space-y-3
-            burger:space-y-0 burger:flex-row
-            space-x-3
-          "
+          class="flex flex-col space-y-3 space-x-3 burger:flex-row burger:space-y-0"
         >
           <!-- Overview Section -->
           <div class="relative">
@@ -115,7 +90,7 @@
                   ? (isOpen[0] = false)
                   : (isOpen = [true, false, false, false])
               "
-              class="px-3 burger:px-0 navbar-item"
+              class="navbar-item px-3 burger:px-0"
             >
               Overview
               <img
@@ -267,7 +242,7 @@
               >
             </div>
           </div>
-          <div class="burger:hidden relative">
+          <div class="relative burger:hidden">
             <a class="navbar-item" href="https://stakes.social/">
               Launch App
             </a>
@@ -276,17 +251,11 @@
       </nav>
       <div class="flex">
         <ThemeButton />
-        <div class="burger:hidden visible">
+        <div class="visible burger:hidden">
           <button
             @click="smIsOpen = !smIsOpen"
             type="button"
-            class="
-              block
-              text-gray-800
-              dark:text-white
-              hover:text-black
-              focus:text-black focus:outline-none
-            "
+            class="block text-gray-800 hover:text-black focus:text-black focus:outline-none dark:text-white"
           >
             <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
               <path
@@ -304,17 +273,7 @@
         </div>
         <!-- Lauch Icon -->
         <a
-          class="
-            bg-indigo-600
-            p-2
-            hidden
-            burger:flex
-            space-x-3
-            align-baseline
-            text-white
-            rounded-md
-            whitespace-nowrap
-          "
+          class="hidden space-x-3 whitespace-nowrap rounded-md bg-indigo-600 p-2 align-baseline text-white burger:flex"
           href="https://stakes.social/"
         >
           Launch App
@@ -325,7 +284,7 @@
 </template>
 
 <script>
-import ThemeButton from "./ThemeButton.vue";
+import ThemeButton from './ThemeButton.vue'
 export default {
   data() {
     return {
@@ -333,10 +292,10 @@ export default {
       isOpen: [false, false, false, false],
       // state for mobile view (hamburger icon)
       smIsOpen: false,
-    };
+    }
   },
   components: {
     ThemeButton,
   },
-};
+}
 </script>

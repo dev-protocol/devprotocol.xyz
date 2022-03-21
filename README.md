@@ -2,12 +2,12 @@
 
 ## 🤓 Features
 
-*   Uses modern web technologies
-*   Source code has support for writing in **Vue**, **React**, **Svelte**, and/or **Preact**
-*   Source compiles into static HTML and CSS with no/little JavaScript
-*   Uses Tailwindcss for styling
-*   Handcrafted UI with UX in mind
-*   Accessible, Performant, and SEO Optimized
+- Uses modern web technologies
+- Source code has support for writing in **Vue**, **React**, **Svelte**, and/or **Preact**
+- Source compiles into static HTML and CSS with no/little JavaScript
+- Uses Tailwindcss for styling
+- Handcrafted UI with UX in mind
+- Accessible, Performant, and SEO Optimized
 
 ## 🤔 I want to see a deployed version
 
@@ -35,9 +35,23 @@ yarn
 yarn start
 ```
 
+## 🔖 Linting
+
+1. Execute linting and formatting with ESLint and Prettier
+
+```bash
+yarn lint
+```
+
+2. Astro files are ignored because `prettier-plugin-astro` is sometimes unable to parse them correctly. You can be Astro files targeted for linting by explicitly specifying a different ignore file as follows.
+
+```bash
+yarn prettier -w --ignore-path .gitignore src/components/**/*.astro
+```
+
 ## 📦 Requirements
 
-*   The latest version of [Node.js](https://nodejs.org)
+- The latest version of [Node.js](https://nodejs.org)
 
 ## ⌚ Coming Soon
 
