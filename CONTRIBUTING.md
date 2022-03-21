@@ -30,17 +30,17 @@ Since the new GitHub Issue forms we only suggest you to include most information
 
 Unsure where to begin contributing to this project? You can start by looking through these beginner-friendly issues:
 
-*   [Beginner issues](https://github.com/WebXDAO/devprotocol.xyz/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) - issues which should only require a few lines of code, and a test or two.
-*   [Help wanted issues](https://github.com/WebXDAO/devprotocol.xyz/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) - issues which should be a bit more involved than `beginner` issues.
+- [Beginner issues](https://github.com/WebXDAO/devprotocol.xyz/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) - issues which should only require a few lines of code, and a test or two.
+- [Help wanted issues](https://github.com/WebXDAO/devprotocol.xyz/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) - issues which should be a bit more involved than `beginner` issues.
 
 ### 📣 Pull Requests
 
 The process described here has several goals:
 
-*   Maintain the project's quality
-*   Fix problems that are important to users
-*   Engage the community in working toward the best possible!
-*   Enable a sustainable system for maintainers to review contributions
+- Maintain the project's quality
+- Fix problems that are important to users
+- Engage the community in working toward the best possible!
+- Enable a sustainable system for maintainers to review contributions
 
 Please follow all instructions in [the template](https://github.com/WebXDAO/devprotocol.xyz/blob/main/.github/pull_request_template.md)
 
@@ -48,26 +48,26 @@ Please follow all instructions in [the template](https://github.com/WebXDAO/devp
 
 **How you can add more value to your contribution logs:**
 
-*   Use the present tense. (Example: "Add feature" instead of "Added feature")
-*   Use the imperative mood. (Example: "Move item to...", instead of "Moves item to...")
-*   Limit the first line (also called the Subject Line) to *50 characters or less*.
-*   Capitalize the Subject Line.
-*   Separate subject from body with a blank line.
-*   Do not end the subject line with a period.
-*   Wrap the body at *72 characters*.
-*   Use the body to explain the *what*, *why*, *vs*, and *how*.
-*   Reference [issues](https://github.com/WebXDAO/devprotocol.xyz/issues) and [pull requests](https://github.com/WebXDAO/devprotocol.xyz/pulls) liberally after the first line.
-*   Follow the [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) guidelines
+- Use the present tense. (Example: "Add feature" instead of "Added feature")
+- Use the imperative mood. (Example: "Move item to...", instead of "Moves item to...")
+- Limit the first line (also called the Subject Line) to _50 characters or less_.
+- Capitalize the Subject Line.
+- Separate subject from body with a blank line.
+- Do not end the subject line with a period.
+- Wrap the body at _72 characters_.
+- Use the body to explain the _what_, _why_, _vs_, and _how_.
+- Reference [issues](https://github.com/WebXDAO/devprotocol.xyz/issues) and [pull requests](https://github.com/WebXDAO/devprotocol.xyz/pulls) liberally after the first line.
+- Follow the [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) guidelines
 
 ## How to Contribute 🚀
 
-*   Please create an [issue](https://github.com/WebXDAO/devprotocol.xyz/issues) before creating a pull request.
+- Please create an [issue](https://github.com/WebXDAO/devprotocol.xyz/issues) before creating a pull request.
 
-*   Fork the repository and create a branch for any issue that you are working on.
+- Fork the repository and create a branch for any issue that you are working on.
 
-*   Create a pull request which will be promptly reviewed and suggestions would be added to improve it.
+- Create a pull request which will be promptly reviewed and suggestions would be added to improve it.
 
-*   Add Screenshots to help us know what changes you have done.
+- Add Screenshots to help us know what changes you have done.
 
 ## How to make a pull request 🤔
 
@@ -91,10 +91,10 @@ Kindly give your branch a more descriptive name like `feat-optimize-images` inst
 
 You could follow this convention. Some ideas to get you started:
 
-*   Feature Updates: `feat-<2-3-Words-Description>-<ISSUE_NO>`
-*   Bug Fixes: `fix-<2-3-Words-Description>-<ISSUE_NO>`
-*   Documentation: `docs-<2-3-Words-Description>-<ISSUE_NO>`
-*   And so on...
+- Feature Updates: `feat-<2-3-Words-Description>-<ISSUE_NO>`
+- Bug Fixes: `fix-<2-3-Words-Description>-<ISSUE_NO>`
+- Documentation: `docs-<2-3-Words-Description>-<ISSUE_NO>`
+- And so on...
 
 ```bash
 git checkout -b your-branch-name
@@ -109,7 +109,7 @@ git add . # Stages all the changes
 git commit -m "<your_commit_message>"
 ```
 
-*Follow our commit guide from above*
+_Follow our commit guide from above_
 
 **7.** Push your local commits to the remote repository.
 
@@ -125,12 +125,12 @@ git push origin your-branch-name
 
 ### ✅ Good Practice
 
-*   Comment on the issue to get assigned
-*   Create an issue before you make a Pull Request
+- Comment on the issue to get assigned
+- Create an issue before you make a Pull Request
 
 ### ❌ Bad Practice
 
-*   Creating pull requests without issue assignment will not be accepted and will be closed.
+- Creating pull requests without issue assignment will not be accepted and will be closed.
 
 **No idea what Hacktoberfest is? Visit their website [here](https://hacktoberfest.digitalocean.com) to know more about the event.**
 
@@ -138,5 +138,5 @@ After this, the project maintainers will review the changes and will merge your 
 
 ## 📈 Getting started
 
-*   😕 Not sure where to start? Join our community on [Discord](https://discord.gg/VwJp4KM)
-*   ✨ You can also take part in our [Community Discussions](https://github.com/WebXDAO/devprotocol.xyz/discussions)
+- 😕 Not sure where to start? Join our community on [Discord](https://discord.gg/VwJp4KM)
+- ✨ You can also take part in our [Community Discussions](https://github.com/WebXDAO/devprotocol.xyz/discussions)

@@ -16,20 +16,29 @@ import L2 from '@components/Home/Banners/L2.astro'
 ---
 
 <Layout metaTitle="Home | Dev Protocol">
-  <Hero></Hero>
-  <DevToken></DevToken>
-  <Vision></Vision>
-  <L2></L2>
+  <Hero />
+  <DevToken />
+  <Vision />
+  <L2 />
   <article>
-    <Creators></Creators>
-    <hr class="h-2 mx-auto rounded-sm my-20 dark:border-gray-600" style="width: 70%" />
-    <SuccessStories client:visible></SuccessStories>
-    <hr class="h-2 mx-auto rounded-sm my-20 dark:border-gray-600" style="width: 70%" />
-    <Patrons></Patrons>
-    <hr class="h-2 mx-auto rounded-sm my-20 dark:border-gray-600" style="width: 70%" />
+    <Creators />
+    <hr
+      class="h-2 mx-auto rounded-sm my-20 dark:border-gray-600"
+      style="width: 70%"
+    />
+    <SuccessStories client:visible />
+    <hr
+      class="h-2 mx-auto rounded-sm my-20 dark:border-gray-600"
+      style="width: 70%"
+    />
+    <Patrons />
+    <hr
+      class="h-2 mx-auto rounded-sm my-20 dark:border-gray-600"
+      style="width: 70%"
+    />
   </article>
   <aside>
-    <Backers></Backers>
-    <Blog></Blog>
+    <Backers />
+    <Blog />
   </aside>
 </Layout>
