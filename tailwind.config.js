@@ -26,7 +26,9 @@ module.exports = {
         burger: '800px',
       },
       backgroundImage: {
-        'texture-gradient': 'url(/assets/texture-gradient.jpg)',
+        'texture-gradient-dark': 'url(/assets/texture/texture-iohaoQrlPrY.jpg)',
+        'texture-gradient-light':
+          'url(/assets/texture/texture-EoAUMbv_KAw.jpg)',
       },
       animation: {
         'floating-one': 'fl1 3s linear infinite alternate',
