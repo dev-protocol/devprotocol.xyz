@@ -11,6 +11,8 @@ module.exports = {
         darkPrimary: '#0d0f12',
         darkSecondary: '#1E3A8A',
         darkThird: '#1F2937',
+        transparentBlack: 'rgb(0 0 0 / 24%)',
+        transparentWhite: 'rgb(255 255 255 / 24%)',
       },
       fontFamily: {
         mono: ['IBM Plex Mono', 'monospace'],
@@ -22,6 +24,9 @@ module.exports = {
       },
       screens: {
         burger: '800px',
+      },
+      backgroundImage: {
+        'texture-gradient': 'url(/assets/texture-gradient.jpg)',
       },
       animation: {
         'floating-one': 'fl1 3s linear infinite alternate',
