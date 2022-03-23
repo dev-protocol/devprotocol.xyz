@@ -2,6 +2,8 @@
 import Layout from '../layouts/Default.astro'
 
 import Hero from '@components/Home/Hero.astro'
+import Why from '@components/Home/Heros/Why.astro'
+import How from '@components/Home/Heros/How.astro'
 import Vision from '@components/Home/Vision.astro'
 import Creators from '@components/Home/Heros/Creators.astro'
 import Patrons from '@components/Home/Heros/Patrons.astro'
@@ -18,27 +20,25 @@ import L2 from '@components/Home/Banners/L2.astro'
 <Layout metaTitle="Dev Protocol | An open protocol for free assets">
   <Hero />
   <DevToken />
-  <Vision />
-  <L2 />
-  <article>
+  <article class="grid gap-y-20 lg:gap-y-40">
+    <div class="grid gap-18 md:gap-32 my-18">
+      <Why />
+      <How />
+    </div>
+    <Vision />
+    <L2 />
     <Creators />
-    <hr
-      class="h-2 mx-auto rounded-sm my-20 dark:border-gray-600"
-      style="width: 70%"
+    <hr class="h-2 mx-auto rounded-sm dark:border-gray-600" style="width: 70%"
     />
     <SuccessStories client:visible />
-    <hr
-      class="h-2 mx-auto rounded-sm my-20 dark:border-gray-600"
-      style="width: 70%"
+    <hr class="h-2 mx-auto rounded-sm dark:border-gray-600" style="width: 70%"
     />
     <Patrons />
-    <hr
-      class="h-2 mx-auto rounded-sm my-20 dark:border-gray-600"
-      style="width: 70%"
+    <hr class="h-2 mx-auto rounded-sm dark:border-gray-600" style="width: 70%"
     />
   </article>
   <aside>
     <Backers />
-    <Blog />
+    <Blog client:only />
   </aside>
 </Layout>
