@@ -242,11 +242,6 @@
               >
             </div>
           </div>
-          <div class="relative burger:hidden">
-            <a class="navbar-item" href="https://stakes.social/">
-              Launch App
-            </a>
-          </div>
         </div>
       </nav>
       <div class="flex">
@@ -271,13 +266,6 @@
             </svg>
           </button>
         </div>
-        <!-- Lauch Icon -->
-        <a
-          class="hidden space-x-3 whitespace-nowrap rounded-md bg-indigo-600 p-2 align-baseline text-white burger:flex"
-          href="https://stakes.social/"
-        >
-          Launch App
-        </a>
       </div>
     </div>
   </header>

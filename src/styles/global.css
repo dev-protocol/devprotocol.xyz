@@ -115,16 +115,16 @@
 
 @layer components {
   .navbar-item {
-    @apply relative z-10 mx-1 flex items-center overflow-hidden text-sm focus:border-white focus:outline-none md:text-base;
+    @apply relative z-10 mx-1 flex items-center overflow-hidden text-xl focus:border-white focus:outline-none;
   }
   .navbar-item-background {
     @apply fixed inset-0 h-full w-full cursor-default overscroll-none bg-black opacity-50;
   }
   .sub-navbar-block {
-    @apply fixed z-40 mt-2 flex flex-col rounded-lg bg-white p-1 shadow-xl dark:bg-darkThird;
+    @apply fixed z-40 mt-2 flex flex-col overflow-clip rounded-lg bg-white shadow-xl dark:bg-darkThird;
   }
   .sub-navbar-item {
-    @apply block p-1 text-gray-800 hover:bg-indigo-500 hover:text-white dark:text-gray-300;
+    @apply block p-4 text-xl text-gray-800 hover:bg-indigo-500 hover:text-white dark:text-gray-300;
   }
   .dropdown-arrow {
     @apply mx-1 h-3 w-3 text-black dark:invert md:h-4 md:w-4;
