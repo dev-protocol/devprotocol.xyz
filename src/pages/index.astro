@@ -7,7 +7,8 @@ import How from '@components/Home/Heros/How.astro'
 import Vision from '@components/Home/Vision.astro'
 import Creators from '@components/Home/Heros/Creators.astro'
 import Patrons from '@components/Home/Heros/Patrons.astro'
-import DevToken from '@components/Home/Heros/DevToken.astro'
+import Tokens from '@components/Home/Heros/Tokens/Tokens.astro'
+import Apps from '@components/Home/Apps/Apps.astro'
 
 import Backers from '@components/Home/Sections/Backers.astro'
 import Blog from '@components/Home/Sections/Blog.astro'
@@ -19,23 +20,24 @@ import L2 from '@components/Home/Banners/L2.astro'
 
 <Layout metaTitle="Dev Protocol | An open protocol for free assets">
   <Hero />
-  <DevToken />
-  <article class="grid gap-y-20 lg:gap-y-40 mt-10 lg:mt-20">
-    <div class="grid gap-18 md:gap-32 my-18">
+  <Tokens />
+  <article class="mt-10 lg:mt-20">
+    <div class="grid gap-18 md:gap-32 my-28">
       <Why />
       <How />
     </div>
     <Vision />
-    <L2 />
-    <Creators />
-    <hr class="h-2 mx-auto rounded-sm dark:border-gray-600" style="width: 70%"
-    />
-    <SuccessStories client:visible />
-    <hr class="h-2 mx-auto rounded-sm dark:border-gray-600" style="width: 70%"
-    />
-    <Patrons />
-    <hr class="h-2 mx-auto rounded-sm dark:border-gray-600" style="width: 70%"
-    />
+    <Apps />
+    <div class="grid gap-y-20 mt-20">
+      <L2 />
+      <Creators />
+      <hr class="h-2 mx-auto rounded-sm dark:border-gray-600" style="width: 70%"
+      />
+      <SuccessStories client:visible />
+      <hr class="h-2 mx-auto rounded-sm dark:border-gray-600" style="width: 70%"
+      />
+      <Patrons />
+    </div>
   </article>
   <aside>
     <Backers />

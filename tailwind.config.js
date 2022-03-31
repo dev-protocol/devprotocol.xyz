@@ -29,6 +29,14 @@ module.exports = {
         'texture-gradient-dark': 'url(/assets/texture/texture-iohaoQrlPrY.jpg)',
         'texture-gradient-light':
           'url(/assets/texture/texture-EoAUMbv_KAw.jpg)',
+        'texture-gradient-light-alt':
+          'url(/assets/texture/texture-bvruqj_Rp-M.jpg)',
+        'texture-mars': 'url(/assets/texture/texture-TnudzJxjVCI.jpg)',
+        'texture-brilliant': 'url(/assets/texture/texture-zYD_XzNyRyo.jpg)',
+        'texture-gradient-dark-alt':
+          'url(/assets/texture/texture-NgLtdWk-6FI.jpg)',
+        'texture-bubble-light': 'url(/assets/texture/texture-0If4NyeDOpU.jpg)',
+        'texture-bubble-dark': 'url(/assets/texture/texture-AyN_yGdfqqI.jpg)',
       },
       animation: {
         'floating-one': 'fl1 3s linear infinite alternate',
