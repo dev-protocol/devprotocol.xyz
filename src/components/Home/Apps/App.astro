@@ -1,0 +1,18 @@
+---
+const { avatar, title, desc, link } = Astro.props
+---
+
+<a
+  href={link}
+  target="_blank"
+  rel="norefferer noopener"
+  class="border rounded-xl p-4 md:p-6 border-black/20 dark:border-white/20 hover:bg-white/10 transition-colors"
+>
+  <section class="grid grid-cols-[1fr,5fr] gap-8">
+    <img src={avatar} class="rounded-lg" />
+    <div>
+      <header class="mb-4 font-bold text-2xl">{title}</header>
+      <p class="text-gray-700 dark:text-gray-400 lg:text-lg">{desc}</p>
+    </div>
+  </section>
+</a>

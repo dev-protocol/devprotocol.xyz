@@ -11,8 +11,6 @@ module.exports = {
         darkPrimary: '#0d0f12',
         darkSecondary: '#1E3A8A',
         darkThird: '#1F2937',
-        transparentBlack: 'rgb(0 0 0 / 24%)',
-        transparentWhite: 'rgb(255 255 255 / 24%)',
       },
       fontFamily: {
         mono: ['IBM Plex Mono', 'monospace'],
@@ -29,6 +27,7 @@ module.exports = {
         'texture-gradient-dark': 'url(/assets/texture/texture-iohaoQrlPrY.jpg)',
         'texture-gradient-light':
           'url(/assets/texture/texture-EoAUMbv_KAw.jpg)',
+        maxie: 'url(/assets/art/art--maxie--baby.png)',
       },
       animation: {
         'floating-one': 'fl1 3s linear infinite alternate',

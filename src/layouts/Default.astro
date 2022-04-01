@@ -3,7 +3,7 @@ import Footer from '@components/Global/Footer.astro'
 
 import Navigation from '../components/Global/Navigation.vue'
 
-let { metaTitle } = Astro.props
+const { metaTitle } = Astro.props
 ---
 
 <html lang="en">
@@ -19,11 +19,27 @@ let { metaTitle } = Astro.props
     />
     <meta property="og:title" content={metaTitle} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://devprotocol.xyz/" />
-    <meta property="og:image" content="/assets/og.png" />
+    <meta property="og:url" content={Astro.request.canonicalURL.href} />
+    <meta
+      property="og:image"
+      content={`${Astro.request.canonicalURL.origin}/assets/og.png`}
+    />
     <meta
       property="og:description"
       content="DEV is building a sustainable ecosystem for free assets by tokenization."
+    />
+    <meta property="og:site_name" content="Dev Protocol" />
+    <meta name="twitter:site" content="@devprtcl" />
+    <meta name="twitter:creator" content="@devprtcl" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={metaTitle} />
+    <meta
+      name="twitter:description"
+      content="Niwa is a place where the creators build a DAO."
+    />
+    <meta
+      name="twitter:image"
+      content={`${Astro.request.canonicalURL.origin}/assets/og.png`}
     />
   </head>
 
@@ -31,7 +47,7 @@ let { metaTitle } = Astro.props
     class="font-body text-gray-900 dark:bg-darkPrimary dark:text-white mt-24"
   >
     <Navigation client:visible />
-    <main class="grid gap-y-20 lg:gap-y-40">
+    <main>
       <slot />
     </main>
     <Footer />

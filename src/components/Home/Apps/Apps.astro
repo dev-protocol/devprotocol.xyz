@@ -1,0 +1,45 @@
+---
+import App from './App.astro'
+---
+
+<section
+  id="apps"
+  class="relative overflow-hidden bg-pink-100 dark:bg-neutral-900	grid items-center justify-items-center py-10 md:py-20 px-2"
+>
+  <div
+    class="absolute bg-[#836de9] dark:bg-[#824f5e] -mt-[32rem] w-2/3 h-52 blur-[6rem] md:h-72 md:blur-[7rem]"
+  >
+  </div>
+  <h3
+    class="font-bold relative xl:text-5xl lg:text-4xl text-3xl text-center mb-6 "
+  >
+    Apps
+  </h3>
+  <p
+    class="relative font-bold text-black/60 dark:text-white/60 xl:text-2xl lg:text-xl text-center"
+  >
+    Tokenize, support, and enjoy its collaborative world through these apps.
+  </p>
+  <div
+    class="container mx-auto relative grid gap-6 md:gap-12 md:grid-cols-2 justify-items-center my-10 md:my-20"
+  >
+    <App
+      avatar="/assets/avatar--niwa.png"
+      title="Niwa"
+      desc="Tokenize your project and launch the DAO."
+      link="https://niwa.xyz"
+    />
+    <App
+      avatar="/assets/avatar--culture-clubs.png"
+      title="Cultute Clubs"
+      desc="Support creators and enjoy the rewards."
+      link="https://clubs.stakes.social"
+    />
+  </div>
+  <aside class="-mb-5 md:-mb-10 text-center text-black/60 dark:text-white/60">
+    <p>
+      Visit <a href="/developers" class="underline">developer resources</a> to build
+      apps in the DEV ecosystem.
+    </p>
+  </aside>
+</section>
