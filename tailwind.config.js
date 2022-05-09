@@ -30,9 +30,8 @@ module.exports = {
         maxie: 'url(/assets/art/art--maxie--baby.png)',
       },
       animation: {
-        'floating-one': 'fl1 3s linear infinite alternate',
-        'floating-two': 'fl2 3s linear infinite alternate',
-        'hero-slot': 'hero-slot 12s linear infinite',
+        'floating-one': 'fl1 2s linear infinite alternate',
+        'floating-two': 'fl2 2s linear infinite alternate',
       },
       keyframes: {
         fl1: {
@@ -44,26 +43,6 @@ module.exports = {
           '0%': { borderRadius: '40% 40% 50% 40%/30% 50% 40% 80%' },
           '33%': { borderRadius: '80% 30% 50% 50%/50%' },
           '100%': { borderRadius: '50% 50% 50% 70%/50% 50% 70% 60%' },
-        },
-        'hero-slot': {
-          '0%': {
-            content: "'Open Source'",
-          },
-          '20%': {
-            content: "'Research'",
-          },
-          '40%': {
-            content: "'Creative Commons'",
-          },
-          '60%': {
-            content: "'Local Community'",
-          },
-          '80%': {
-            content: "'Public Goods'",
-          },
-          '100%': {
-            content: "'Open Source'",
-          },
         },
       },
     },
