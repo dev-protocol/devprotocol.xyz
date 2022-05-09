@@ -19,17 +19,19 @@ import SuccessStories from '../components/Home/SuccessStories.vue'
 import L2 from '@components/Home/Banners/L2.astro'
 ---
 
-<Layout metaTitle="Dev Protocol | Decentralized funding for sustainable creator economy">
+<Layout
+  metaTitle="Dev Protocol | Decentralized funding for sustainable creator economy"
+>
   <Hero />
-  <DevToken />
-  <MaxieToken />
+  <Apps />
   <article class="mt-10 lg:mt-20">
     <div class="grid gap-18 md:gap-32 my-28">
       <Why />
       <How />
     </div>
+    <DevToken />
+    <MaxieToken />
     <Vision />
-    <Apps />
     <div class="grid gap-y-20 mt-20">
       <L2 />
       <Creators />
