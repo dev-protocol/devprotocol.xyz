@@ -17,9 +17,9 @@ Contributors guide: https://github.com/WebXDAO/devprotocol.xyz/blob/main/CONTRIB
 
 **I agree to the following :-**
 
-* [ ]   Added description of the change
-* [ ]   I've read the [contributing guidelines](https://github.com/WebXDAO/devprotocol.xyz/blob/main/CONTRIBUTING.md)
-* [ ]   Search previous suggestions before making a new PR, as yours may be a duplicate.
-* [ ]   I acknowledge that all my contributions will be made under the project's license.
+- [ ] Added description of the change
+- [ ] I've read the [contributing guidelines](https://github.com/WebXDAO/devprotocol.xyz/blob/main/CONTRIBUTING.md)
+- [ ] Search previous suggestions before making a new PR, as yours may be a duplicate.
+- [ ] I acknowledge that all my contributions will be made under the project's license.
 
 Notes (**optional**): <!-- Please add a one-line description for developers or pull request viewers -->

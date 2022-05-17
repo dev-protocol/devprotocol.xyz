@@ -2,35 +2,45 @@
 import Layout from '../layouts/Default.astro'
 
 import Hero from '@components/Home/Hero.astro'
+import Why from '@components/Home/Heros/Why.astro'
+import How from '@components/Home/Heros/How.astro'
 import Creators from '@components/Home/Heros/Creators.astro'
 import Patrons from '@components/Home/Heros/Patrons.astro'
-import DevToken from '@components/Home/Heros/DevToken.astro'
+import DevToken from '@components/Home/Heros/Tokens/DevToken.astro'
+import MaxieToken from '@components/Home/Heros/Tokens/MaxieToken.astro'
+import Apps from '@components/Home/Apps/Apps.astro'
 
 import Backers from '@components/Home/Sections/Backers.astro'
 import Blog from '@components/Home/Sections/Blog.astro'
 
 import SuccessStories from '../components/Home/SuccessStories.vue'
-import Dapps from '../components/Home/Sections/Dapps.vue'
 
 import L2 from '@components/Home/Banners/L2.astro'
 ---
 
-<Layout metaTitle="Home | Dev Protocol">
-  <Hero></Hero>
-  <L2></L2>
-  <article>
-    <Creators></Creators>
-    <hr class="h-2 mx-auto rounded-sm my-20" style="width: 70%" />
-    <SuccessStories client:visible></SuccessStories>
-    <hr class="h-2 mx-auto rounded-sm my-20" style="width: 70%" />
-    <Patrons></Patrons>
-    <hr class="h-2 mx-auto rounded-sm my-20" style="width: 70%" />
-    <Dapps client:load></Dapps>
-    <hr class="h-2 mx-auto rounded-sm my-20" style="width: 70%" />
-    <DevToken></DevToken>
+<Layout metaTitle="Dev Protocol | Sustainable creator economy">
+  <Hero />
+  <Apps />
+  <article class="mt-10 lg:mt-20">
+    <div class="grid gap-18 md:gap-32 my-28">
+      <Why />
+      <How />
+    </div>
+    <DevToken />
+    <MaxieToken />
+    <div class="grid gap-y-20 mt-20">
+      <L2 />
+      <Creators />
+      <hr class="h-2 mx-auto rounded-sm dark:border-gray-600" style="width: 70%"
+      />
+      <SuccessStories client:visible />
+      <hr class="h-2 mx-auto rounded-sm dark:border-gray-600" style="width: 70%"
+      />
+      <Patrons />
+    </div>
   </article>
   <aside>
-    <Backers></Backers>
-    <Blog></Blog>
+    <Backers />
+    <Blog client:only />
   </aside>
 </Layout>

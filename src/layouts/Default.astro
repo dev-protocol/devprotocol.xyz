@@ -3,34 +3,53 @@ import Footer from '@components/Global/Footer.astro'
 
 import Navigation from '../components/Global/Navigation.vue'
 
-let { metaTitle } = Astro.props;
+const { metaTitle } = Astro.props
 ---
 
-<html lang="en" >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{metaTitle}</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href={Astro.resolve('../styles/global.css')} />
+    <meta
+      name="description"
+      content="Our mission is empowering all creators for sustainable challenges. Decentralized funding for sustainable creator economy is here.👾 "
+    />
+    <meta property="og:title" content={metaTitle} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.request.canonicalURL.href} />
+    <meta
+      property="og:image"
+      content={`${Astro.request.canonicalURL.origin}/assets/og.png`}
+    />
+    <meta
+      property="og:description"
+      content="Decentralized funding, Social tokens, DAOs and everything you need for a sustainable creator economy is here.👾"
+    />
+    <meta property="og:site_name" content="Dev Protocol" />
+    <meta name="twitter:site" content="@devprtcl" />
+    <meta name="twitter:creator" content="@devprtcl" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={metaTitle} />
+    <meta
+      name="twitter:description"
+      content="Decentralized funding, Social tokens, DAOs and everything you need for a sustainable creator economy is here.👾"
+    />
+    <meta
+      name="twitter:image"
+      content={`${Astro.request.canonicalURL.origin}/assets/og.png`}
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title>{metaTitle}</title>
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <link
-  rel="stylesheet"
-  href={Astro.resolve("../styles/global.css")}
+  <body
+    class="font-body text-gray-900 dark:bg-darkPrimary dark:text-white mt-24"
   >
-  <meta name="description" content="Dev Protocol lets GitHub users tokenize their OSS projects in a few clicks. Creating an OSS token allows projects to access sustainable funding, create underlying economic models for their project, and distribute incentives at scale. For the first time, OSS projects have a scalable solution to unlock their value." />
-  <meta property="og:title" content={metaTitle} />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://devprotocol.xyz/" />
-  <meta property="og:image" content="/assets/og.png" />
-  <meta property="og:description" content="Dev Protocol lets GitHub users tokenize their OSS projects in a few clicks. Creating an OSS token allows projects to access sustainable funding, create underlying economic models for their project, and distribute incentives at scale. For the first time, OSS projects have a scalable solution to unlock their value." />
-</head>
-
-<body class="text-gray-900 font-body dark:bg-darkPrimary dark:text-white">
-  <Navigation client:load></Navigation>
-  <main class="md:grid md:grid-flow-row gap-y-20 lg:gap-y-40">
-    <slot />
-  </main>
-  <Footer></Footer>
-</body>
-
+    <Navigation client:visible />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
 </html>
