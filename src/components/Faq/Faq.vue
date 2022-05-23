@@ -66,7 +66,7 @@
   </div>
 
   <div
-    class="mb-28 flex flex-col items-center justify-center md:-mt-20 lg:-mt-40"
+    class="mb-28 flex flex-col items-center justify-center"
   >
     <div
       v-for="(item, index) in translatedList"
