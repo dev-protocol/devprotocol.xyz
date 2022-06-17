@@ -197,9 +197,7 @@
               <a href="https://shop.devprotocol.xyz/" class="sub-navbar-item"
                 >Community Shop</a
               >
-              <a href="/stats" class="sub-navbar-item"
-                >Stats</a
-              >
+              <a href="/stats" class="sub-navbar-item">Stats</a>
             </div>
           </div>
           <!-- Help Section -->
