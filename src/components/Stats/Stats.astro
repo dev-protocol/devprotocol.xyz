@@ -1,0 +1,29 @@
+---
+import Chart from './Chart.astro'
+---
+
+<div class="mt-28 flex max-w-full flex-col gap-y-8 text-center md:gap-y-4">
+  <div>
+    <h2 class="font-display mx-auto w-full text-5xl dark:text-white">Stats</h2>
+    <h4
+      class="font-display mx-auto w-full px-8 text-xl dark:text-gray-100 md:p-0"
+    >
+      hoge hoge
+    </h4>
+    <Chart client:load />
+    <h3 class="font-display mx-auto w-full text-3xl dark:text-white">
+      What comes next:
+    </h3>
+    <ul>
+      <li>hoge hoge</li>
+      <li>hoge hoge</li>
+    </ul>
+    <a class="m-auto w-fit" href="#">
+      <button
+        class="w-max select-none rounded-lg bg-gray-300 p-2.5 text-xl dark:bg-indigo-600"
+      >
+        See community activities on Discord
+      </button>
+    </a>
+  </div>
+</div>
