@@ -23,80 +23,154 @@
 </ul>
 
 <script>
-  const margin = { top: 10, right: 30, bottom: 30, left: 60 }
-  const width = 600 - margin.left - margin.right
-  const height = 400 - margin.top - margin.bottom
-  let axisX, axisY
+  var margin = { top: 60, right: 230, bottom: 50, left: 50 },
+    width = 800 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom
 
-  const svg = d3
+  // append the svg object to the body of the page
+  var svg = d3
     .select('#dev_chart')
     .append('svg')
     .attr('width', width + margin.left + margin.right)
     .attr('height', height + margin.top + margin.bottom)
     .append('g')
-    .attr('transform', `translate(${margin.left},${margin.top})`)
+    .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
 
-  const addLine = (data, needsAxis, color) => {
+  d3.json('./src/script/data/data.json').then(function (_data) {
     // format data
-    _data = []
-    data.forEach((d) => {
-      _data.push({
-        date: new Date(Number(d.timestamp) * 1000),
-        value: d.amount,
-      })
+    data = []
+    _data.forEach((d) => {
+      data.push({ ...d, date: d3.timeParse('%Y-%m-%d')(d.date) })
     })
 
-    // axis
-    if (needsAxis) {
-      axisX = d3
-        .scaleTime()
-        .domain(
-          d3.extent(_data, function (d) {
-            return d.date
-          })
-        )
-        .range([0, width])
-      svg
-        .append('g')
-        .attr('transform', `translate(0, ${height})`)
-        .call(d3.axisBottom(axisX))
+    // List of groups = header of the csv files
+    const keys = ['mainnet', 'arb', 'polygon']
 
-      axisY = d3
-        .scaleLinear()
-        .domain([
-          0,
-          d3.max(_data, function (d) {
-            return +d.value
-          }),
-        ])
-        .range([height, 0])
-      svg.append('g').call(d3.axisLeft(axisY))
+    // color palette
+    const color = d3.scaleOrdinal().domain(keys).range(d3.schemeSet2)
+
+    //stack the data?
+    const stackedData = d3.stack().keys(keys)(data)
+
+    // Add X axis
+    const x = d3
+      .scaleTime()
+      .domain(
+        d3.extent(data, function (d) {
+          return d.date
+        })
+      )
+      .range([0, width])
+    const xAxis = svg
+      .append('g')
+      .attr('transform', `translate(0, ${height})`)
+      .call(d3.axisBottom(x).ticks(5))
+
+    // Add Y axis
+    const y = d3
+      .scaleLinear()
+      .domain([
+        0,
+        d3.max(_data, function (d) {
+          return +(d.mainnet + d.arb + d.polygon)
+        }),
+      ])
+      .range([height, 0])
+    svg.append('g').call(d3.axisLeft(y).ticks(5))
+
+    // Add a clipPath: everything out of this area won't be drawn.
+    const clip = svg
+      .append('defs')
+      .append('svg:clipPath')
+      .attr('id', 'clip')
+      .append('svg:rect')
+      .attr('width', width)
+      .attr('height', height)
+      .attr('x', 0)
+      .attr('y', 0)
+
+    // Create the scatter variable: where both the circles and the brush take place
+    const areaChart = svg.append('g').attr('clip-path', 'url(#clip)')
+
+    // Area generator
+    const area = d3
+      .area()
+      .x(function (d) {
+        return x(d.data.date)
+      })
+      .y0(function (d) {
+        return y(d[0])
+      })
+      .y1(function (d) {
+        return y(d[1])
+      })
+
+    // Show the areas
+    areaChart
+      .selectAll('mylayers')
+      .data(stackedData)
+      .join('path')
+      .attr('class', function (d) {
+        return 'myArea ' + d.key
+      })
+      .style('fill', function (d) {
+        return color(d.key)
+      })
+      .attr('d', area)
+
+    // What to do when one group is hovered
+    const highlight = function (event, d) {
+      console.log('call highlight')
+      // reduce opacity of all groups
+      d3.selectAll('.myArea').style('opacity', 0.1)
+      // expect the one that is hovered
+      d3.select('.' + d).style('opacity', 1)
     }
 
-    // line
+    // And when it is not hovered anymore
+    const noHighlight = function (event, d) {
+      console.log('call noHighlight')
+      d3.selectAll('.myArea').style('opacity', 1)
+    }
+
+    // Add one dot in the legend for each name.
+    const size = 20
     svg
-      .append('path')
-      .datum(_data)
-      .attr('fill', 'none')
-      .attr('stroke', color)
-      .attr('stroke-width', 1.5)
-      .attr(
-        'd',
-        d3
-          .line()
-          .x(function (d) {
-            return axisX(d.date)
-          })
-          .y(function (d) {
-            return axisY(d.value)
-          })
-      )
-  }
+      .selectAll('myrect')
+      .data(keys)
+      .join('rect')
+      .attr('x', 400)
+      .attr('y', function (d, i) {
+        return 10 + i * (size + 5)
+      }) // 100 is where the first dot appears. 25 is the distance between dots
+      .attr('width', size)
+      .attr('height', size)
+      .style('fill', function (d) {
+        return color(d)
+      })
+      .on('mouseover', highlight)
+      .on('mouseleave', noHighlight)
 
-  d3.json('./src/script/data/data.json').then(function (data) {
-    addLine(data, true, 'blue')
+    // Add one dot in the legend for each name.
+    svg
+      .selectAll('mylabels')
+      .data(keys)
+      .join('text')
+      .attr('x', 400 + size * 1.2)
+      .attr('y', function (d, i) {
+        return 10 + i * (size + 5) + size / 2
+      }) // 100 is where the first dot appears. 25 is the distance between dots
+      .style('fill', function (d) {
+        return color(d)
+      })
+      .text(function (d) {
+        return d
+      })
+      .attr('text-anchor', 'left')
+      .style('alignment-baseline', 'middle')
+      .on('mouseover', highlight)
+      .on('mouseleave', noHighlight)
   })
-
   // append the svg object to the body of the page
   const tokenSvg = d3
     .select('#token_chart')
