@@ -1,0 +1,497 @@
+[
+  {
+    "id": "0xac947714e8c32e529018d1c571e36012558b4620ecaeac9b5b5bd6417a3fe8d8",
+    "timestamp": "1641891017",
+    "amount": 25
+  },
+  {
+    "id": "0xba263cdfd65f666cd999ac5e5ee00438908769af5b26c784d863f52a3fd15c7a",
+    "timestamp": "1641976467",
+    "amount": 35
+  },
+  {
+    "id": "0x58894a82152b4165b46c0a7e03c0e65dcaf621804773d3d59dcad74e34b902e9",
+    "timestamp": "1641977961",
+    "amount": 37
+  },
+  {
+    "id": "0xb583d1023fa10c8e24b0409e89ad6f79e96e1bc498385edd48d859cec9785034",
+    "timestamp": "1642008343",
+    "amount": 57
+  },
+  {
+    "id": "0x589179ae375136871e99c51b4e3c7ffff63daaf55239d11e466b653117250286",
+    "timestamp": "1642031282",
+    "amount": 94.3
+  },
+  {
+    "id": "0x178210b161de91ee9e603241431858c6f06b26dd997b2b4085edd5d398528da7",
+    "timestamp": "1642033924",
+    "amount": 113.3
+  },
+  {
+    "id": "0x009f90c87038944afa55ee7c9f6686e003cc013174c328b59012c3f70f7e0018",
+    "timestamp": "1642034480",
+    "amount": 123.3
+  },
+  {
+    "id": "0x533ba728154714986580aa6fac3cc145f8a58cc1e3cf096daa20fd9ffba0c7f2",
+    "timestamp": "1642038492",
+    "amount": 147.3
+  },
+  {
+    "id": "0x3e874c3b5804375610360b8c25959a6efe3520299a23edc2a77f9b235c7755f8",
+    "timestamp": "1642038718",
+    "amount": 167.63577098334073
+  },
+  {
+    "id": "0xa982bf1ecb28cfb375c92d693eaba914208a614a9a7fe8ca16811b7f0ec12f60",
+    "timestamp": "1642042950",
+    "amount": 367.63577098334076
+  },
+  {
+    "id": "0xb9e7a39849c986a37bac27c554147ae13a9505d4e0017c3615b4eaf369617e7a",
+    "timestamp": "1642063572",
+    "amount": 427.32682876586966
+  },
+  {
+    "id": "0xad15ed169cedfc52f1e6bfc4d3b9d0d2ceac88027547d5ff55bd6820518353fe",
+    "timestamp": "1642064750",
+    "amount": 468.3639273966707
+  },
+  {
+    "id": "0x95985487bd6de9d9623cd3027f1131fc9b04b850d6a3d86173e43f2e4e33cfc2",
+    "timestamp": "1642069682",
+    "amount": 1468.3639273966708
+  },
+  {
+    "id": "0xbdac012b753fd9139e0ea524c39ce8c0af758b2fc24a92172cfc3c7ef7a51246",
+    "timestamp": "1642069769",
+    "amount": 2468.3639273966705
+  },
+  {
+    "id": "0x6bcaec4caa4958d2ac577797a1b2b88548486799a6aa7dbf99739b837cd022a8",
+    "timestamp": "1642073082",
+    "amount": 2668.3639273966705
+  },
+  {
+    "id": "0x1603508d64606ed675aebd455f0851ceede25f52487c9db9979d771af3e0cf20",
+    "timestamp": "1642074202",
+    "amount": 2694.3639273966705
+  },
+  {
+    "id": "0xaad3b81f89bb10c962e7a24c590935f863a8745e0f5477de2507356116ce675c",
+    "timestamp": "1642076516",
+    "amount": 3694.3639273966705
+  },
+  {
+    "id": "0x30e5871b1130949c2a625a9f469be99936211c8fbe8acaf8235b48088fd5e191",
+    "timestamp": "1642120059",
+    "amount": 3593.6357709833405
+  },
+  {
+    "id": "0x4e09b172de8a814d1972d41759bcb64c2f293c0eff6d763b84ad40b5cbce3468",
+    "timestamp": "1642145964",
+    "amount": 3594.1357709833405
+  },
+  {
+    "id": "0x462aaa916480f3dbd71fccaaf019a10ed170e028a4978c826637eed46e1747c4",
+    "timestamp": "1642707611",
+    "amount": 10594.135770983341
+  },
+  {
+    "id": "0xaf602c4f36706b45f128f3c1b31790804c4f2bd3bf4172d824866202e37f9059",
+    "timestamp": "1642707713",
+    "amount": 17944.13577098334
+  },
+  {
+    "id": "0x95754ba599113f4a29e75a203f9060c410539ee3ad24da63943f25a8553891a4",
+    "timestamp": "1642740422",
+    "amount": 17968.13577098334
+  },
+  {
+    "id": "0x65fc1ed36754a5e10396a834ca95cd1e0f912b68d4a947aef06f4efc68fe29d8",
+    "timestamp": "1642847154",
+    "amount": 17970.13577098334
+  },
+  {
+    "id": "0x42405d4e1491ffc3293fdf7e9479003c1cf65ebdd5ab45701b8198008698983d",
+    "timestamp": "1642850074",
+    "amount": 16970.13577098334
+  },
+  {
+    "id": "0xdcc6f3b0677d1a7dec1dea5a7023e43e2ce8e600af56ef8cbde3eeb2ebae60a4",
+    "timestamp": "1643125421",
+    "amount": 20970.13577098334
+  },
+  {
+    "id": "0xe9075bf401b25134de151236d7bc43ff1987a0294698929e94b939e72dd34807",
+    "timestamp": "1643170214",
+    "amount": 20989.13577098334
+  },
+  {
+    "id": "0x45b3cba8acbc3bbfc25ed1f031416fa3f67debea01a17c9a7ade30ae1adec6d8",
+    "timestamp": "1643170534",
+    "amount": 21008.13577098334
+  },
+  {
+    "id": "0x9711b9d37b9bbf8a4e42b298b330b33b1b5749e89ef09995b664ef88d46eb452",
+    "timestamp": "1643170696",
+    "amount": 21027.13577098334
+  },
+  {
+    "id": "0x1e28302f32fc41f7f04446008425f3abf3988d5c9adea88547e2443426805e99",
+    "timestamp": "1643170764",
+    "amount": 21048.13577098334
+  },
+  {
+    "id": "0x5bb91f7444688766623181bab8f463f586579195d5e461679ff0e4ebee8f2399",
+    "timestamp": "1643408977",
+    "amount": 28733.13577098334
+  },
+  {
+    "id": "0xe2e3b09b4f3252eb922fc53c1bc6aec6f8c9cd0ccf07aaf8d446415437d4791b",
+    "timestamp": "1643533442",
+    "amount": 28765.846770983342
+  },
+  {
+    "id": "0x572c1a853809dc2d5bd2a879f07dfc033fc2a811623c613c5560f3c771632899",
+    "timestamp": "1643539159",
+    "amount": 28798.846770983342
+  },
+  {
+    "id": "0x7faac266a8205f2b340f84e22d1570d132229e2c2b1ffcb4fa454258e815e42b",
+    "timestamp": "1643540439",
+    "amount": 28799.85177098334
+  },
+  {
+    "id": "0xcbad3bb2d70e0d96ff6f9ebc8bf71c0c8dcf533e96c61315c5577d3d59312e1f",
+    "timestamp": "1643542395",
+    "amount": 28800.85177098334
+  },
+  {
+    "id": "0x5cc74fb80128c0aece93cfbfcc1a8d5a703ede4200c0309107cb304f569beed8",
+    "timestamp": "1643542723",
+    "amount": 28824.85177098334
+  },
+  {
+    "id": "0x6b465ad2f0d00133666358d2c41bcad5987c95650af468dfa4f038593d24ccca",
+    "timestamp": "1643549828",
+    "amount": 28825.43277098334
+  },
+  {
+    "id": "0x51e669f92b1728c40cba78a03d12765c073995f2f7b458cbf3ddb22df4c6d782",
+    "timestamp": "1643553460",
+    "amount": 28876.90977098334
+  },
+  {
+    "id": "0x309084cadb5cd7cf750c1af565c4c233b49ea635e80e50cb28fd12802d11eadc",
+    "timestamp": "1643629696",
+    "amount": 28880.90977098334
+  },
+  {
+    "id": "0x036a0706cb7d60477e4c796a2c84ffef5d7e61caaf68c381670ce0eea647eab2",
+    "timestamp": "1643650485",
+    "amount": 28680.90977098334
+  },
+  {
+    "id": "0x153c069c959901abce552d9197c25e8b4a4543ac179e5ddd5b16cf409dbe107e",
+    "timestamp": "1643903264",
+    "amount": 28679.90977098334
+  },
+  {
+    "id": "0x8b385a82a9e01ce8cc272e84957854077e241c62bb6ce310378e60e39577b11c",
+    "timestamp": "1643903468",
+    "amount": 28699.90977098334
+  },
+  {
+    "id": "0x5b4bbadedda1b86c14951cf50cc9d9c40b2f9df852d6960d09a09319f50530e1",
+    "timestamp": "1643904932",
+    "amount": 28698.90977098334
+  },
+  {
+    "id": "0x5d7b45b22eeec6725896f49cb078c3e5916b6c698ed1177e595331659e5c6fe1",
+    "timestamp": "1643905212",
+    "amount": 28699.90977098334
+  },
+  {
+    "id": "0x905a8fea13c504c57f707c556bfe0bd9f5e418d854e03d41abc1d00fa56c618a",
+    "timestamp": "1643945893",
+    "amount": 20976.90977098334
+  },
+  {
+    "id": "0x3b8d53ee3002f3d52563096c4cb4096ae0d4ef711af527b790644c15af9f52af",
+    "timestamp": "1643949378",
+    "amount": 28700.90977098334
+  },
+  {
+    "id": "0x44b8271b9ef3fd23d37fe4ba6cce3a3fb738cf968415e08144f8677e3a5c9133",
+    "timestamp": "1643955080",
+    "amount": 28704.37977098334
+  },
+  {
+    "id": "0xf59baf188436885b12637daa7314506dfad50ac27e6079f4c4e7686ccfecde92",
+    "timestamp": "1644142245",
+    "amount": 28671.37977098334
+  },
+  {
+    "id": "0x3ab38256a847eb919ba6042635df3d144d12446bf2a159d5e4ec955f0f97cf2c",
+    "timestamp": "1644142991",
+    "amount": 28704.37977098334
+  },
+  {
+    "id": "0xf633b515bba50950db7dbf2883d25c0a85d028a7cfa28cb800f5aee539d4ee52",
+    "timestamp": "1644229342",
+    "amount": 20981.37977098334
+  },
+  {
+    "id": "0x282c376c91eaa9e87034606d82b661e18791d2786500f3f42c28897b8c2e7172",
+    "timestamp": "1644388481",
+    "amount": 20948.37977098334
+  },
+  {
+    "id": "0x0614297929ae2417288abe7c093b87c8db63ed82a5e80eb4df12d559736b016e",
+    "timestamp": "1644481014",
+    "amount": 21126.642845394526
+  },
+  {
+    "id": "0xf84ec50b95e3058d1cba0e5589a9c0b7dd90bea6dd76757c743adf013134e54a",
+    "timestamp": "1644682966",
+    "amount": 21127.642845394526
+  },
+  {
+    "id": "0x52ba0d2080a14eaf6933c80f06f7a5e142b047efb093912ece432987f6382fd9",
+    "timestamp": "1644923129",
+    "amount": 21161.780979586907
+  },
+  {
+    "id": "0x2611c637c6b445a12b9215dffa145274dc9dfd125cceb1035007f3c1866c9ccd",
+    "timestamp": "1644987112",
+    "amount": 21221.780979586907
+  },
+  {
+    "id": "0x46901c5882a122bca8f98b07c63b4e2c1ab7e32f3a82c957072fb71972931421",
+    "timestamp": "1645019276",
+    "amount": 21239.721979586906
+  },
+  {
+    "id": "0x90627365b82c2eaece66e64b9df47670606568b36d78ad6e7ecf969d48e845ab",
+    "timestamp": "1645072410",
+    "amount": 21239.721979586906
+  },
+  {
+    "id": "0xd4d5bf1413a5919a49b94be5fdb96260185d3844bef83f6d890d0058679504f5",
+    "timestamp": "1645072694",
+    "amount": 21289.721979586906
+  },
+  {
+    "id": "0x7d399e63b30b23c7dbaf379a226d86569f47a1ec7119aa357ea1eae89c1eec12",
+    "timestamp": "1645354522",
+    "amount": 21291.906979586907
+  },
+  {
+    "id": "0xe4280b3e00479ad8a7d94d3edc5bb47c75bc66ddfaba7c5a22f2dce342a0962d",
+    "timestamp": "1645520904",
+    "amount": 21298.906979586907
+  },
+  {
+    "id": "0x962d98e67d35aa910d0c3d6d9e4c9bafda430c117843f7998b11363cb787345d",
+    "timestamp": "1646123712",
+    "amount": 21299.456979586907
+  },
+  {
+    "id": "0x7c950c20e0b5a234402bea7a8709a9f41dc5c35c2dc7db09721822b6e7903806",
+    "timestamp": "1646191270",
+    "amount": 21301.456979586907
+  },
+  {
+    "id": "0x6d992d6ec73635f06d9eb186d4d1b13eb7e498d8d5ee6e9d5f8882feaad9f93e",
+    "timestamp": "1646309104",
+    "amount": 21306.456979586907
+  },
+  {
+    "id": "0x20bbb03afb31af0536e29f15f55cda3a1b032c536648b7463e2e8141bb11b6bd",
+    "timestamp": "1646519595",
+    "amount": 21316.456979586907
+  },
+  {
+    "id": "0x6253e2644960c181ee9766115eccd997fbf98f3d61099bf9d7df825ee654a7e4",
+    "timestamp": "1646563795",
+    "amount": 21420.13178419312
+  },
+  {
+    "id": "0x34a42e33c7237320b2568b6a8265b7e0cd9fc8a053957331852688c1401533a8",
+    "timestamp": "1646567735",
+    "amount": 21431.13178419312
+  },
+  {
+    "id": "0x32431a5d938030e138719cd563fe9244b9878816639383b6c8606045b4525890",
+    "timestamp": "1646913514",
+    "amount": 21432.21440419312
+  },
+  {
+    "id": "0x335bf5191f2c001c84e52eaada87cd71dc68c0b91a049e4fb6fc90817d211069",
+    "timestamp": "1646915482",
+    "amount": 21436.21553419312
+  },
+  {
+    "id": "0x11d7e324e549f5d5e49cd7a3ec2251f26e97d2235f3c1ccbf9529c664f0bea85",
+    "timestamp": "1647374847",
+    "amount": 21437.21553419312
+  },
+  {
+    "id": "0x759d3289a2843e42dda971369955e5d2907153bda852473835d73159236b2df9",
+    "timestamp": "1647376643",
+    "amount": 21445.59061419312
+  },
+  {
+    "id": "0xd6dc62116f30119f82be13a741aabc30f44178df783582a148e9d30ec03b38f5",
+    "timestamp": "1647378229",
+    "amount": 21449.72553419312
+  },
+  {
+    "id": "0x01245d0035fb1b9e3107d1a962e9b51d1f5a36783cdf85ae40d3f83a59af8e1e",
+    "timestamp": "1647726485",
+    "amount": 25449.72553419312
+  },
+  {
+    "id": "0xa8425516b3b2a7a16f98bd9a354c3e04b8cb2308b8feab28c7611be7cc723825",
+    "timestamp": "1647798004",
+    "amount": 25459.72553419312
+  },
+  {
+    "id": "0x380dbc21ec750380f376d2b4f773b0463098b4bcd61f53229d0a89ee462b4b67",
+    "timestamp": "1647798192",
+    "amount": 25469.72553419312
+  },
+  {
+    "id": "0x5053269b6cf66e6dac2c3c1f4a267bf2a879658c40285e5ffdea6e3aac602488",
+    "timestamp": "1647798290",
+    "amount": 25479.72553419312
+  },
+  {
+    "id": "0xd8b705eb3a37ad6383389f0927c0bc63576522125049fc865a9f2bd63a0716aa",
+    "timestamp": "1647798668",
+    "amount": 25489.72553419312
+  },
+  {
+    "id": "0x44abac0f24afc81c93443596d0393e85097b07e02c153ad4b99682518a1c9199",
+    "timestamp": "1648003245",
+    "amount": 25495.73070419312
+  },
+  {
+    "id": "0xf158730e77649d82fe8c66e4733218b12c2929b41497547b2a18132d3d2cfcc9",
+    "timestamp": "1648041048",
+    "amount": 25510.73070419312
+  },
+  {
+    "id": "0xa62728fb7c826798ec07f939dd5484c4bf0fd5778e5963135234159158e2a37c",
+    "timestamp": "1648259177",
+    "amount": 25520.73070419312
+  },
+  {
+    "id": "0x3b5924b719a405e1d70b2bd557b3e916769da9466234411d5a3ecc54f61f971b",
+    "timestamp": "1648260887",
+    "amount": 25820.73070419312
+  },
+  {
+    "id": "0x6a9c7476c66a636601962c7309108e1027c02c5d421af35c32c91a4142350db5",
+    "timestamp": "1648261189",
+    "amount": 26020.73070419312
+  },
+  {
+    "id": "0x3d8a5189386ec32b35675ef5c1bb7c3c91ffc18a566cf8a9eae8f6684d087ddf",
+    "timestamp": "1648261777",
+    "amount": 26030.73070419312
+  },
+  {
+    "id": "0x0660178ffe36aba693bd691d23d72a6ea8d1fd45f576ee5d4ffb85d8dc9e3189",
+    "timestamp": "1648365344",
+    "amount": 26040.73070419312
+  },
+  {
+    "id": "0x623034ff186739f632853f6e387389295a60dcd4870bda2e7158571859ed48bd",
+    "timestamp": "1648376333",
+    "amount": 26051.14776419312
+  },
+  {
+    "id": "0x55ac808bff468fcf3f00ee87af28555b6fce6fd69ffecbf4083af33eddd0cf60",
+    "timestamp": "1648515960",
+    "amount": 26061.14776419312
+  },
+  {
+    "id": "0xcdcea6672defbd1bfd4389eb099178be0c4f26a8a12010e64dd4d77c41086cd8",
+    "timestamp": "1648599747",
+    "amount": 26063.56355419312
+  },
+  {
+    "id": "0x365694623f43bc50bcb21e443f3e9692989b7f8097a352f2162c66c6f4ac5e79",
+    "timestamp": "1648644803",
+    "amount": 26029.56355419312
+  },
+  {
+    "id": "0xefa3d5f3bcca5a3949008acfab245a96fd099217468feee4d48aaa4a048c16e0",
+    "timestamp": "1649280373",
+    "amount": 26035.102783930648
+  },
+  {
+    "id": "0x588989237d44f93f6f4d0ef6108853bbad24dd02575cac4ff2a07bb12378f81a",
+    "timestamp": "1649291461",
+    "amount": 26046.974956972063
+  },
+  {
+    "id": "0xbdd0d3404798bd377e619b905ad317a33dd9a8ec8438d66721e2643c19f461cd",
+    "timestamp": "1649664755",
+    "amount": 26051.135920834127
+  },
+  {
+    "id": "0xcd6686d2419b9505a5b5840bc816bc1df58c7529b0155d5448849bd5fbc1af8e",
+    "timestamp": "1651322319",
+    "amount": 26120.135920834127
+  },
+  {
+    "id": "0xe4697eb778e64715abc9a88d9b0640322f25afc641467c9e51b146ba2b9deb07",
+    "timestamp": "1651412556",
+    "amount": 26249.135920834127
+  },
+  {
+    "id": "0xd3acc6fe5e4e9878c97c79674969974ba1fa1bb4337f4cdeeeb11fecea4f2c41",
+    "timestamp": "1651837120",
+    "amount": 26261.135920834127
+  },
+  {
+    "id": "0xe5eab8a0be486296d433ddab1191af2672b5345b63db09efd1259a13f6a34ad6",
+    "timestamp": "1652661010",
+    "amount": 26266.135920834127
+  },
+  {
+    "id": "0x3fd071e4751640d251930e5c58ae3812120f02845b59fbde4eb6aa417c2e335a",
+    "timestamp": "1653446243",
+    "amount": 26276.135920834127
+  },
+  {
+    "id": "0xb94ac81542fd1f249d78034066203f589fcc5eaf9f7a2232a1edcd0c12d789e3",
+    "timestamp": "1654006066",
+    "amount": 26476.147621160544
+  },
+  {
+    "id": "0x2c05ea2e190324c1e718c794245b8c17519330af0e060d3ecc6cd5d901a7f3da",
+    "timestamp": "1654013249",
+    "amount": 26476.147621160544
+  },
+  {
+    "id": "0x9aaaa3bfcda3bb1ff5ecb61baf011f011b78c629ce109e0a44542097fda25ae8",
+    "timestamp": "1654013297",
+    "amount": 26476.147621160544
+  },
+  {
+    "id": "0x90af0b4a3e8def7459bab03bffe6fe8ee8a129912198119396515550a5bb37e3",
+    "timestamp": "1654018459",
+    "amount": 26644.147621160544
+  },
+  {
+    "id": "0x6c78f655fe43d1c228282400524ed47c5af63a428c7c653e4ba0fdc73b191167",
+    "timestamp": "1654597277",
+    "amount": 26744.147621160544
+  }
+]

@@ -23,13 +23,12 @@
 </ul>
 
 <script>
-  // set the dimensions and margins of the graph
-  const margin = { top: 10, right: 30, bottom: 30, left: 60 },
-    width = 600 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom
+  const margin = { top: 10, right: 30, bottom: 30, left: 60 }
+  const width = 600 - margin.left - margin.right
+  const height = 400 - margin.top - margin.bottom
+  let axisX, axisY
 
-  // append the svg object to the body of the page
-  const devSvg = d3
+  const svg = d3
     .select('#dev_chart')
     .append('svg')
     .attr('width', width + margin.left + margin.right)
@@ -37,65 +36,73 @@
     .append('g')
     .attr('transform', `translate(${margin.left},${margin.top})`)
 
-  //Read the data
-  d3.csv(
-    'data.csv',
+  const addLine = (data, needsAxis, color) => {
+    // format data
+    _data = []
+    data.forEach((d) => {
+      _data.push({
+        date: new Date(Number(d.timestamp) * 1000),
+        value: d.amount,
+      })
+    })
 
-    // When reading the csv, I must format variables:
-    function (d) {
-      return { date: d3.timeParse('%Y-%m-%d')(d.date), value: d.value }
-    }
-  ).then(
-    // Now I can use this dataset:
-    function (data) {
-      data.date = d3.timeParse('%Y-%m-%d')(data.date)
-      data.value = +data.value
-      // Add X axis --> it is a date format
-      const x = d3
+    // axis
+    if (needsAxis) {
+      axisX = d3
         .scaleTime()
         .domain(
-          d3.extent(data, function (d) {
+          d3.extent(_data, function (d) {
             return d.date
           })
         )
         .range([0, width])
-      devSvg
+      svg
         .append('g')
         .attr('transform', `translate(0, ${height})`)
-        .call(d3.axisBottom(x))
+        .call(d3.axisBottom(axisX))
 
-      // Add Y axis
-      const y = d3
+      axisY = d3
         .scaleLinear()
         .domain([
           0,
-          d3.max(data, function (d) {
+          d3.max(_data, function (d) {
             return +d.value
           }),
         ])
         .range([height, 0])
-      devSvg.append('g').call(d3.axisLeft(y))
-
-      // Add the line
-      devSvg
-        .append('path')
-        .datum(data)
-        .attr('fill', 'none')
-        .attr('stroke', 'steelblue')
-        .attr('stroke-width', 1.5)
-        .attr(
-          'd',
-          d3
-            .line()
-            .x(function (d) {
-              return x(d.date)
-            })
-            .y(function (d) {
-              return y(d.value)
-            })
-        )
+      svg.append('g').call(d3.axisLeft(axisY))
     }
-  )
+
+    // line
+    svg
+      .append('path')
+      .datum(_data)
+      .attr('fill', 'none')
+      .attr('stroke', color)
+      .attr('stroke-width', 1.5)
+      .attr(
+        'd',
+        d3
+          .line()
+          .x(function (d) {
+            return axisX(d.date)
+          })
+          .y(function (d) {
+            return axisY(d.value)
+          })
+      )
+  }
+
+  d3.json('./src/data/mainnet.json').then(function (data) {
+    addLine(data, true, 'blue')
+    d3.json('./src/data/arbitrum.json').then(function (data) {
+      addLine(data, false, 'red')
+      d3.json('./src/data/polygon.json').then(function (data) {
+        addLine(data, false, 'green')
+      })
+    })
+  })
+
   // append the svg object to the body of the page
   const tokenSvg = d3
     .select('#token_chart')
@@ -104,64 +111,4 @@
     .attr('height', height + margin.top + margin.bottom)
     .append('g')
     .attr('transform', `translate(${margin.left},${margin.top})`)
-
-  //Read the data
-  d3.csv(
-    'data.csv',
-
-    // When reading the csv, I must format variables:
-    function (d) {
-      return { date: d3.timeParse('%Y-%m-%d')(d.date), value: d.value }
-    }
-  ).then(
-    // Now I can use this dataset:
-    function (data) {
-      data.date = d3.timeParse('%Y-%m-%d')(data.date)
-      data.value = +data.value
-      // Add X axis --> it is a date format
-      const x = d3
-        .scaleTime()
-        .domain(
-          d3.extent(data, function (d) {
-            return d.date
-          })
-        )
-        .range([0, width])
-      tokenSvg
-        .append('g')
-        .attr('transform', `translate(0, ${height})`)
-        .call(d3.axisBottom(x))
-
-      // Add Y axis
-      const y = d3
-        .scaleLinear()
-        .domain([
-          0,
-          d3.max(data, function (d) {
-            return +d.value
-          }),
-        ])
-        .range([height, 0])
-      tokenSvg.append('g').call(d3.axisLeft(y))
-
-      // Add the line
-      tokenSvg
-        .append('path')
-        .datum(data)
-        .attr('fill', 'none')
-        .attr('stroke', 'steelblue')
-        .attr('stroke-width', 1.5)
-        .attr(
-          'd',
-          d3
-            .line()
-            .x(function (d) {
-              return x(d.date)
-            })
-            .y(function (d) {
-              return y(d.value)
-            })
-        )
-    }
-  )
 </script>
