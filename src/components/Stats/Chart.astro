@@ -93,14 +93,8 @@
       )
   }
 
-  d3.json('./src/data/mainnet.json').then(function (data) {
+  d3.json('./src/script/data/data.json').then(function (data) {
     addLine(data, true, 'blue')
-    d3.json('./src/data/arbitrum.json').then(function (data) {
-      addLine(data, false, 'red')
-      d3.json('./src/data/polygon.json').then(function (data) {
-        addLine(data, false, 'green')
-      })
-    })
   })
 
   // append the svg object to the body of the page
