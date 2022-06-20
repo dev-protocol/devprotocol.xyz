@@ -101,7 +101,7 @@ const pickLasts = (items) =>
     })
   }
   fs.writeFileSync(
-    './src/script/data/dev_chart.json',
+    './public/data/dev_chart.json',
     JSON.stringify(graphData, null, '  ') + '\n'
   )
 })()
