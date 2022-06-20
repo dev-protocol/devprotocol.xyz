@@ -100,6 +100,18 @@ const pickLasts = (items) =>
     })
   }
   fs.writeFileSync(
+    './src/script/data/mainnet.json',
+    JSON.stringify(mainnet, null, '  ')
+  )
+  fs.writeFileSync(
+    './src/script/data/arb.json',
+    JSON.stringify(arb, null, '  ')
+  )
+  fs.writeFileSync(
+    './src/script/data/polygon.json',
+    JSON.stringify(polygon, null, '  ')
+  )
+  fs.writeFileSync(
     './src/script/data/dev_chart.json',
     JSON.stringify(graphData, null, '  ')
   )
