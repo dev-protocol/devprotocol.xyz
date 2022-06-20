@@ -1,6 +1,7 @@
 const BigNumber = require('bignumber.js')
 const R = require('ramda')
 const fs = require('fs')
+const fetch = require('node-fetch')
 
 // Define `fetchAll` function to fetch all data from TheGraph
 const fetchAll = async (endpoint) =>
@@ -100,19 +101,7 @@ const pickLasts = (items) =>
     })
   }
   fs.writeFileSync(
-    './src/script/data/mainnet.json',
-    JSON.stringify(mainnet, null, '  ')
-  )
-  fs.writeFileSync(
-    './src/script/data/arb.json',
-    JSON.stringify(arb, null, '  ')
-  )
-  fs.writeFileSync(
-    './src/script/data/polygon.json',
-    JSON.stringify(polygon, null, '  ')
-  )
-  fs.writeFileSync(
     './src/script/data/dev_chart.json',
-    JSON.stringify(graphData, null, '  ')
+    JSON.stringify(graphData, null, '  ') + '\n'
   )
 })()
