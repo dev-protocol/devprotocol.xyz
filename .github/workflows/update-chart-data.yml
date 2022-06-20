@@ -1,0 +1,26 @@
+name: Update Chart Data
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: yarn
+      - name: Run scripts
+        run: node src/script/getTotalDevAmount.js
+
+      - name: Create a pull request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Update dev_chart.json
+          title: Update dev_chart.json
+          labels: auto_merge
+          branch-suffix: 'short-commit-hash'
