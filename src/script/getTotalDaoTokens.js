@@ -40,7 +40,10 @@ const fetchAll = async (endpoint) =>
   })
 
 const dateToKey = (date) => {
-  return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDay() + 1}`
+  const year = String(date.getFullYear()).padStart(4, '0')
+  const month = String(date.getMonth() + 1).padStart(2, '0')
+  const day = String(date.getDay() + 1).padStart(2, '0')
+  return `${year}-${month}-${day}`
 }
 
 const byDay = R.groupBy((item) => {
@@ -99,6 +102,11 @@ const pickLasts = (items) =>
       polygon: p[i],
     })
   }
+  graphData.sort((a, b) => {
+    if (a.date > b.date) return 1
+    if (a.date < b.date) return -1
+    return 0
+  })
   fs.writeFileSync(
     './public/data/token_chart.json',
     JSON.stringify(graphData, null, '  ') + '\n'
