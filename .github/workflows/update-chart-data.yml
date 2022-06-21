@@ -13,9 +13,10 @@ jobs:
 
       - name: Install dependencies
         run: yarn
-      - name: Run scripts
+      - name: Run getTotalDevAmount.js
         run: node src/script/getTotalDevAmount.js
-
+      - name: Run getTotalDaoTokens.js
+        run: node src/script/getTotalDaoTokens.js
       - name: Create a pull request
         uses: peter-evans/create-pull-request@v3
         with:
