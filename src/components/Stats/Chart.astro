@@ -9,127 +9,135 @@
     class="flex flex-col mt-8 mx-4 px-4 py-4 bg-slate-50 rounded-xl border-2 dark:bg-slate-900"
   >
     <h3 class="text-xl dark:text-white text-center">Total minted DAO tokens</h3>
-    <div id="token_chart" class="w-[600px] h-[400px] text-center text-5xl ">
-      <p class="mt-40">comming soon...</p>
-    </div>
+    <div id="token_chart"></div>
   </li>
 </ul>
 
 <script>
-  const margin = { top: 50, right: 10, bottom: 30, left: 50 }
-  const width = 600 - margin.left - margin.right
-  const height = 400 - margin.top - margin.bottom
+  function chart(id) {
+    const margin = { top: 50, right: 10, bottom: 30, left: 50 }
+    const width = 600 - margin.left - margin.right
+    const height = 400 - margin.top - margin.bottom
 
-  const svg = d3
-    .select('#dev_chart')
-    .append('svg')
-    .attr('width', width + margin.left + margin.right)
-    .attr('height', height + margin.top + margin.bottom)
-    .append('g')
-    .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
-
-  d3.json('../data/dev_chart.json').then(function (_data) {
-    data = []
-    _data.forEach((d) => {
-      data.push({ ...d, date: d3.timeParse('%Y-%m-%d')(d.date) })
-    })
-
-    const keys = ['mainnet', 'arb', 'polygon']
-    const color = d3.scaleOrdinal().domain(keys).range(d3.schemePastel1)
-    const stackedData = d3.stack().keys(keys)(data)
-
-    const x = d3
-      .scaleTime()
-      .domain(
-        d3.extent(data, function (d) {
-          return d.date
-        })
-      )
-      .range([0, width])
-    const xAxis = svg
+    const svg = d3
+      .select(`#${id}`)
+      .append('svg')
+      .attr('width', width + margin.left + margin.right)
+      .attr('height', height + margin.top + margin.bottom)
       .append('g')
-      .attr('transform', `translate(0, ${height})`)
-      .call(d3.axisBottom(x).ticks(5))
+      .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
 
-    const y = d3
-      .scaleLinear()
-      .domain([
-        0,
-        d3.max(data, function (d) {
-          return +(d.mainnet + d.arb + d.polygon)
-        }),
-      ])
-      .range([height, 0])
-    svg.append('g').call(d3.axisLeft(y).ticks(5))
-
-    const areaChart = svg.append('g').attr('clip-path', 'url(#clip)')
-    const area = d3
-      .area()
-      .x(function (d) {
-        return x(d.data.date)
-      })
-      .y0(function (d) {
-        return y(d[0])
-      })
-      .y1(function (d) {
-        return y(d[1])
+    d3.json(`../data/${id}.json`).then(function (_data) {
+      data = []
+      _data.forEach((d) => {
+        data.push({ ...d, date: d3.timeParse('%Y-%m-%d')(d.date) })
       })
 
-    areaChart
-      .selectAll('mylayers')
-      .data(stackedData)
-      .join('path')
-      .attr('class', function (d) {
-        return 'myArea ' + d.key
-      })
-      .style('fill', function (d) {
-        return color(d.key)
-      })
-      .attr('d', area)
+      const keys = ['mainnet', 'arb', 'polygon']
+      const color = d3
+        .scaleOrdinal()
+        .domain(keys)
+        .range(['#FF3815', '#D500E6', '#5B8BF5'])
+      const stackedData = d3.stack().keys(keys)(data)
 
-    const highlight = function (event, d) {
-      d3.selectAll('.myArea').style('opacity', 0.1)
-      d3.select('.' + d).style('opacity', 1)
-    }
+      const x = d3
+        .scaleTime()
+        .domain(
+          d3.extent(data, function (d) {
+            return d.date
+          })
+        )
+        .range([0, width])
+      const xAxis = svg
+        .append('g')
+        .attr('transform', `translate(0, ${height})`)
+        .call(d3.axisBottom(x).ticks(5))
 
-    const noHighlight = function (event, d) {
-      d3.selectAll('.myArea').style('opacity', 1)
-    }
+      const y = d3
+        .scaleLinear()
+        .domain([
+          0,
+          d3.max(data, function (d) {
+            return +(d.mainnet + d.arb + d.polygon)
+          }),
+        ])
+        .range([height, 0])
+      svg.append('g').call(d3.axisLeft(y).ticks(5))
 
-    const size = 15
-    svg
-      .selectAll('myrect')
-      .data(keys)
-      .join('rect')
-      .attr('x', 20)
-      .attr('y', function (d, i) {
-        return i * (size + 5)
-      })
-      .attr('width', size)
-      .attr('height', size)
-      .style('fill', function (d) {
-        return color(d)
-      })
-      .on('mouseover', highlight)
-      .on('mouseleave', noHighlight)
+      const areaChart = svg.append('g').attr('clip-path', 'url(#clip)')
+      const area = d3
+        .area()
+        .x(function (d) {
+          return x(d.data.date)
+        })
+        .y0(function (d) {
+          return y(d[0])
+        })
+        .y1(function (d) {
+          return y(d[1])
+        })
 
-    svg
-      .selectAll('mylabels')
-      .data(keys)
-      .join('text')
-      .attr('x', 25 + size * 1.2)
-      .attr('y', function (d, i) {
-        return i * (size + 5) + size / 2
-      })
-      .style('fill', function (d) {
-        return color(d)
-      })
-      .text(function (d) {
-        return d
-      })
-      .attr('text-anchor', 'left')
-      .style('alignment-baseline', 'middle')
-      .on('mouseover', highlight)
-      .on('mouseleave', noHighlight)
-  })
+      areaChart
+        .selectAll('mylayers')
+        .data(stackedData)
+        .join('path')
+        .attr('class', function (d) {
+          return `${id}_area ${id}_${d.key}`
+        })
+        .style('fill', function (d) {
+          return color(d.key)
+        })
+        .style('opacity', 0.8)
+        .attr('d', area)
+
+      const highlight = function (event, d) {
+        d3.selectAll(`.${id}_area`).style('opacity', 0.1)
+        d3.select(`.${id}_${d}`).style('opacity', 0.8)
+      }
+
+      const noHighlight = function (event, d) {
+        d3.selectAll(`.${id}_area`).style('opacity', 0.8)
+      }
+
+      const size = 15
+      svg
+        .selectAll('myrect')
+        .data(keys)
+        .join('rect')
+        .attr('x', 20)
+        .attr('y', function (d, i) {
+          return i * (size + 5)
+        })
+        .attr('width', size)
+        .attr('height', size)
+        .style('fill', function (d) {
+          return color(d)
+        })
+        .style('opacity', 0.8)
+        .on('mouseover', highlight)
+        .on('mouseleave', noHighlight)
+
+      svg
+        .selectAll('mylabels')
+        .data(keys)
+        .join('text')
+        .attr('x', 25 + size * 1.2)
+        .attr('y', function (d, i) {
+          return i * (size + 5) + size / 2
+        })
+        .style('fill', function (d) {
+          return color(d)
+        })
+        .style('opacity', 0.8)
+        .text(function (d) {
+          return d
+        })
+        .attr('text-anchor', 'left')
+        .style('alignment-baseline', 'middle')
+        .on('mouseover', highlight)
+        .on('mouseleave', noHighlight)
+    })
+  }
+  chart('dev_chart')
+  chart('token_chart')
 </script>
