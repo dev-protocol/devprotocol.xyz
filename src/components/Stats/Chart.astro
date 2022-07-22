@@ -14,7 +14,7 @@
 </ul>
 
 <script>
-  function chart(id) {
+  function chart(id, startX, startY) {
     const margin = { top: 50, right: 10, bottom: 30, left: 50 }
     const width = 600 - margin.left - margin.right
     const height = 400 - margin.top - margin.bottom
@@ -42,13 +42,15 @@
 
       const x = d3
         .scaleTime()
-        .domain(
-          d3.extent(data, function (d) {
+        .domain([
+          startX,
+          d3.max(data, function (d) {
             return d.date
-          })
-        )
+          }),
+        ])
         .range([0, width])
-      const xAxis = svg
+
+      svg
         .append('g')
         .attr('transform', `translate(0, ${height})`)
         .call(d3.axisBottom(x).ticks(5))
@@ -56,12 +58,13 @@
       const y = d3
         .scaleLinear()
         .domain([
-          0,
+          startY,
           d3.max(data, function (d) {
             return +(d.mainnet + d.arb + d.polygon)
           }),
         ])
         .range([height, 0])
+
       svg.append('g').call(d3.axisLeft(y).ticks(5))
 
       const areaChart = svg.append('g').attr('clip-path', 'url(#clip)')
@@ -71,10 +74,10 @@
           return x(d.data.date)
         })
         .y0(function (d) {
-          return y(d[0])
+          return d[0] < startY ? y(startY) : y(d[0])
         })
         .y1(function (d) {
-          return y(d[1])
+          return d[1] < startY ? y(startY) : y(d[1])
         })
 
       areaChart
@@ -138,6 +141,6 @@
         .on('mouseleave', noHighlight)
     })
   }
-  chart('dev_chart')
-  chart('token_chart')
+  chart('dev_chart', new Date(2020, 0, 1), 0)
+  chart('token_chart', new Date(2020, 0, 1), 1560)
 </script>
