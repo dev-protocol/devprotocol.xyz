@@ -65,9 +65,7 @@
     </div>
   </div>
 
-  <div
-    class="mb-28 flex flex-col items-center justify-center"
-  >
+  <div class="mb-28 flex flex-col items-center justify-center">
     <div
       v-for="(item, index) in translatedList"
       v-bind:key="item.question + index"
