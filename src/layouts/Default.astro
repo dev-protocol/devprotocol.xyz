@@ -12,18 +12,15 @@ const { metaTitle } = Astro.props
     <meta name="viewport" content="width=device-width" />
     <title>{metaTitle}</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="stylesheet" href={Astro.resolve('../styles/global.css')} />
+    <link rel="stylesheet" href='../src/styles/global.css' />
     <meta
       name="description"
       content="Our mission is empowering all creators for sustainable challenges. Decentralized funding for sustainable creator economy is here.👾 "
     />
     <meta property="og:title" content={metaTitle} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={Astro.request.canonicalURL.href} />
-    <meta
-      property="og:image"
-      content={`${Astro.request.canonicalURL.origin}/assets/og.png`}
-    />
+    <meta property="og:url" content={Astro.url.href} />
+    <meta property="og:image" content={`${Astro.url.origin}/assets/og.png`} />
     <meta
       property="og:description"
       content="Decentralized funding, Social tokens, DAOs and everything you need for a sustainable creator economy is here.👾"
@@ -37,10 +34,7 @@ const { metaTitle } = Astro.props
       name="twitter:description"
       content="Decentralized funding, Social tokens, DAOs and everything you need for a sustainable creator economy is here.👾"
     />
-    <meta
-      name="twitter:image"
-      content={`${Astro.request.canonicalURL.origin}/assets/og.png`}
-    />
+    <meta name="twitter:image" content={`${Astro.url.origin}/assets/og.png`} />
     <script src="https://d3js.org/d3.v7.min.js"></script>
   </head>
 
