@@ -191,6 +191,9 @@
                 class="sub-navbar-item"
                 >Builders Program</a
               >
+              <a href="https://discord.gg/VwJp4KM" class="sub-navbar-item"
+                >Discord community</a
+              >
               <a href="/community-partners" class="sub-navbar-item"
                 >Community Partners</a
               >
