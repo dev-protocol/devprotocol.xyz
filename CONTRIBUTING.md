@@ -14,7 +14,7 @@ This project and everyone participating in it is governed by a [Code of Conduct]
 
 This section guides you through submitting a bug report. Following these guidelines helps maintainers and the community understand your report 📝, reproduce the behavior 💻 💻, and find related reports. 🔎
 
-Since the new GitHub Issue forms we only suggest you to include most information possible. But you can also **Perform a [cursory search](https://github.com/WebXDAO/devprotocol.xyz/issues)** to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
+Since the new GitHub Issue forms we only suggest you to include most information possible. But you can also **Perform a [cursory search](https://github.com/dev-protocol/devprotocol.xyz/issues)** to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
 
 > **Note:** If you find a **Closed** issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue in the body of your new one.
 
@@ -22,7 +22,7 @@ Since the new GitHub Issue forms we only suggest you to include most information
 
 This section guides you through submitting an enhancement suggestion, including completely new features and minor improvements to existing functionality. Following these guidelines helps maintainers and the community understand your suggestion 📝 and find related suggestions. 🔎
 
-Since the new GitHub Issue forms we only suggest you to include most information possible. But you can also **Perform a [cursory search](https://github.com/WebXDAO/devprotocol.xyz/issues)** to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
+Since the new GitHub Issue forms we only suggest you to include most information possible. But you can also **Perform a [cursory search](https://github.com/dev-protocol/devprotocol.xyz/issues)** to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
 
 > **Note:** If you find a **Closed** issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue in the body of your new one.
 
@@ -30,8 +30,8 @@ Since the new GitHub Issue forms we only suggest you to include most information
 
 Unsure where to begin contributing to this project? You can start by looking through these beginner-friendly issues:
 
-- [Beginner issues](https://github.com/WebXDAO/devprotocol.xyz/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) - issues which should only require a few lines of code, and a test or two.
-- [Help wanted issues](https://github.com/WebXDAO/devprotocol.xyz/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) - issues which should be a bit more involved than `beginner` issues.
+- [Beginner issues](https://github.com/dev-protocol/devprotocol.xyz/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) - issues which should only require a few lines of code, and a test or two.
+- [Help wanted issues](https://github.com/dev-protocol/devprotocol.xyz/issues?q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) - issues which should be a bit more involved than `beginner` issues.
 
 ### 📣 Pull Requests
 
@@ -42,7 +42,7 @@ The process described here has several goals:
 - Engage the community in working toward the best possible!
 - Enable a sustainable system for maintainers to review contributions
 
-Please follow all instructions in [the template](https://github.com/WebXDAO/devprotocol.xyz/blob/main/.github/pull_request_template.md)
+Please follow all instructions in [the template](https://github.com/dev-protocol/devprotocol.xyz/blob/main/.github/pull_request_template.md)
 
 ## Style Guide for Git Commit Messages :memo:
 
@@ -56,12 +56,12 @@ Please follow all instructions in [the template](https://github.com/WebXDAO/devp
 - Do not end the subject line with a period.
 - Wrap the body at _72 characters_.
 - Use the body to explain the _what_, _why_, _vs_, and _how_.
-- Reference [issues](https://github.com/WebXDAO/devprotocol.xyz/issues) and [pull requests](https://github.com/WebXDAO/devprotocol.xyz/pulls) liberally after the first line.
+- Reference [issues](https://github.com/dev-protocol/devprotocol.xyz/issues) and [pull requests](https://github.com/dev-protocol/devprotocol.xyz/pulls) liberally after the first line.
 - Follow the [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) guidelines
 
 ## How to Contribute 🚀
 
-- Please create an [issue](https://github.com/WebXDAO/devprotocol.xyz/issues) before creating a pull request.
+- Please create an [issue](https://github.com/dev-protocol/devprotocol.xyz/issues) before creating a pull request.
 
 - Fork the repository and create a branch for any issue that you are working on.
 
@@ -71,7 +71,7 @@ Please follow all instructions in [the template](https://github.com/WebXDAO/devp
 
 ## How to make a pull request 🤔
 
-**1.** Fork [this](https://github.com/WebXDAO/devprotocol.xyz) repository. Click on the <a  href="https://github.com/WebXDAO/devprotocol.xyz"><img  src="https://img.icons8.com/fluency/30/000000/code-fork.png"/></a> symbol at the top right corner.
+**1.** Fork [this](https://github.com/dev-protocol/devprotocol.xyz) repository. Click on the <a  href="https://github.com/dev-protocol/devprotocol.xyz"><img  src="https://img.icons8.com/fluency/30/000000/code-fork.png"/></a> symbol at the top right corner.
 
 **2.** Clone the forked repository.
 
@@ -139,4 +139,4 @@ After this, the project maintainers will review the changes and will merge your 
 ## 📈 Getting started
 
 - 😕 Not sure where to start? Join our community on [Discord](https://discord.gg/VwJp4KM)
-- ✨ You can also take part in our [Community Discussions](https://github.com/WebXDAO/devprotocol.xyz/discussions)
+- ✨ You can also take part in our [Community Discussions](https://github.com/dev-protocol/devprotocol.xyz/discussions)
