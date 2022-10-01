@@ -1,5 +1,5 @@
-import vue from '@astrojs/vue';
-import tailwind from '@astrojs/tailwind';
+import vue from '@astrojs/vue'
+import tailwind from '@astrojs/tailwind'
 
 export default {
   root: '.', // Where to resolve all URLs relative to. Useful if you have a monorepo project.
@@ -15,12 +15,12 @@ export default {
     port: 3000, // The port to run the dev server on.
   },
   integrations: [
-  tailwind({
+    tailwind({
       // Example: Provide a custom path to a Tailwind config file
       config: {
         path: './tailwind.config.cjs',
-        applyBaseStyles: false
-    },
+        applyBaseStyles: false,
+      },
     }),
     vue(),
   ],
