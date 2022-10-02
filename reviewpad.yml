@@ -2,21 +2,45 @@ api-version: reviewpad.com/v3.x
 
 labels:
   small:
-    color: "294b69"
+    description: 'Pull request with less than 10 changed lines'
+    color: '294b69'
   medium:
-    color: "a8c3f7"
+    description: 'Pull request with changed lines between 10 and 30'
+    color: 'a8c3f7'
   large:
-    color: "8a2138"
+    description: 'Pull request with more than 30 changed lines'
+    color: '8a2138'
 
 workflows:
   - name: label-pull-request-with-size
+    always-run: true
     if:
-      - rule: $size() <= 30
+      - rule: $size() <= 10
         extra-actions:
           - $addLabel("small")
-      - rule: $size() > 30 && $size() <= 100
+      - rule: $size() > 10 && $size() <= 30
         extra-actions:
           - $addLabel("medium")
-      - rule: $size() > 100
+      - rule: $size() > 30
         extra-actions:
           - $addLabel("large")
+
+  - name: first-time-contributor
+    always-run: true
+    if:
+      - rule: $pullRequestCountBy($author(), "all") == 1
+        extra-actions:
+          - '$commentOnce($sprintf("Welcome @%v! Thank you so much for your first pull request!", [$author()]))'
+
+      - rule: $pullRequestCountBy($author(), "all") == 10
+        extra-actions:
+          - $addLabel("kudos")
+          - $info("Kudos for your 10th pull request! You are awesome")
+
+  - name: waiting-for-reviewers
+    always-run: true
+    if:
+      - rule: $reviewers() == []
+        extra-actions:
+          - '$info("A maintainer will review your pull request soon!")'
+          - '$addLabel("waiting-for-reviewers")'

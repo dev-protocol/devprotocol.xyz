@@ -9,4 +9,4 @@ jobs:
       - name: Running reviewpad action
         uses: reviewpad/action@v3.x
         with:
-          token: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
