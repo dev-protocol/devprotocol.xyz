@@ -17,8 +17,8 @@ const fetchAll = async (endpoint) =>
                   timestamp
                   amount
               }
-          }`,
-        }),
+          }`
+        })
       })
       const json = await res.json()
       if (json.data.totalLockedAmounts.length) {
@@ -27,7 +27,7 @@ const fetchAll = async (endpoint) =>
           ({ timestamp, amount, id }) => ({
             id,
             timestamp,
-            amount: new BigNumber(amount).div(1e18).toNumber(),
+            amount: new BigNumber(amount).div(1e18).toNumber()
           })
         )
         data = [...data, ...items]
@@ -60,7 +60,7 @@ const pickLasts = (items) =>
     const dayItems = R.sort(diff, items[key])
     return {
       key,
-      amount: R.last(dayItems).amount,
+      amount: R.last(dayItems).amount
     }
   })
 
@@ -69,14 +69,14 @@ const pickLasts = (items) =>
   const promises = [
     'https://api.thegraph.com/subgraphs/name/dev-protocol/mainnet-v2',
     'https://api.thegraph.com/subgraphs/name/dev-protocol/arbitrum-one-v2',
-    'https://api.thegraph.com/subgraphs/name/dev-protocol/polygon-v2',
+    'https://api.thegraph.com/subgraphs/name/dev-protocol/polygon-v2'
   ].map(fetchAll)
   const [mainnet, arb, polygon] = await Promise.allSettled(promises)
 
   const picked = [
     pickLasts(byDay(mainnet.value)),
     pickLasts(byDay(arb.value)),
-    pickLasts(byDay(polygon.value)),
+    pickLasts(byDay(polygon.value))
   ]
   const labels = R.sort(
     diff,
@@ -100,7 +100,7 @@ const pickLasts = (items) =>
       date: labels[i],
       mainnet: m[i],
       arb: a[i],
-      polygon: p[i],
+      polygon: p[i]
     })
   }
   graphData.sort((a, b) => {

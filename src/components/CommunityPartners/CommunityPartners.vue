@@ -70,7 +70,7 @@ import CommunityPartnersModal from './CommunityPartnersModal.vue'
 
 export default {
   name: 'CommunityPartners',
-  data() {
+  data () {
     return {
       partners: [
         {
@@ -79,7 +79,7 @@ export default {
           link: 'https://the-algorithms.com',
           description:
             'Open Source resource for learning Data Structures & Algorithms and their implementation in any Programming Language',
-          extraClass: 'rounded-full',
+          extraClass: 'rounded-full'
         },
         {
           name: 'GitHub',
@@ -87,7 +87,7 @@ export default {
           link: 'https://github.com',
           description:
             'GitHub is one of the world’s largest community of developers. It’s an intricate platform that fosters collaboration and communication between developers.',
-          extraClass: 'rounded-full',
+          extraClass: 'rounded-full'
         },
         {
           name: 'WebXDAO',
@@ -95,7 +95,7 @@ export default {
           link: 'https://webxdao.github.io',
           description:
             'An Open Source Community that focuses on the future of the web',
-          extraClass: 'rounded-full',
+          extraClass: 'rounded-full'
         },
         {
           name: 'Experify',
@@ -103,7 +103,7 @@ export default {
           link: 'https://www.facebook.com/Experify3DPrint',
           description:
             'A 3D printing and 3D scanning service placed in Plovdiv. We provide wide variety of services and materials: prototyping, cosplay props, educational projects, robotics, etc.',
-          extraClass: '',
+          extraClass: ''
         },
         {
           name: 'Microsoft For Startups',
@@ -111,7 +111,7 @@ export default {
           link: 'https://startups.microsoft.com/',
           description:
             'We believe that entrepreneurship should be open to all and that anyone with an idea deserves a way to innovate and grow.  Founders Hub helps remove traditional barriers to building a tech company by democratizing historically inaccessible resources including expert mentorship.',
-          extraClass: '',
+          extraClass: ''
         },
         {
           name: 'Intlify',
@@ -119,7 +119,7 @@ export default {
           link: 'https://intlify.dev/',
           description:
             'Intlify is a project that aims to improve Developer Experience in software internationalization. We will aim to improve the Developer Experience of internationalization by providing libraries, frameworks, and tools that break down barriers to internationalization.',
-          extraClass: 'rounded-full',
+          extraClass: 'rounded-full'
         },
         {
           name: 'Code for Japan',
@@ -127,7 +127,7 @@ export default {
           link: 'https://www.code4japan.org/',
           description:
             'Code for Japan is one of the largest communities of civic hackers in Japan. We organize hackathons to improve and promote civic tech and collaborate with local governments and communities.',
-          extraClass: 'rounded-full',
+          extraClass: 'rounded-full'
         },
         {
           name: 'Chainwhiz',
@@ -135,8 +135,8 @@ export default {
           link: 'https://www.chainwhiz.app/',
           description:
             'Chainwhiz provides developers a platform to discover, and solve open-source dapp bounties and earn bounty rewards. Join us and start building better Web3 goods.',
-          extraClass: 'rounded-full',
-        },
+          extraClass: 'rounded-full'
+        }
       ],
       isModalOpen: false,
       isModalLoading: false,
@@ -146,8 +146,8 @@ export default {
       sheetDbConfig: {
         address: import.meta.env.PUBLIC_SHEETDB_API_ID,
         auth_login: import.meta.env.PUBLIC_SHEETDB_LOGIN,
-        auth_password: import.meta.env.PUBLIC_SHEETDB_PASSWORD,
-      },
+        auth_password: import.meta.env.PUBLIC_SHEETDB_PASSWORD
+      }
     }
   },
   methods: {
@@ -172,16 +172,16 @@ export default {
           'Content-Type': 'application/json',
           Authorization: `Basic ${btoa(
             `${this.sheetDbConfig.auth_login}:${this.sheetDbConfig.auth_password}`
-          )}`,
+          )}`
         }),
-        body: JSON.stringify(data),
+        body: JSON.stringify(data)
       })
       if (response.ok) return response.json()
       throw new Error(response.status)
     },
     sheetDBCreateRow: async function (address, data) {
       return this.fetchSendPostData(this.sheetDbBaseUrl + address, {
-        data: { ...data },
+        data: { ...data }
       })
     },
     handleFormSubmit: async function ({
@@ -190,7 +190,7 @@ export default {
       website,
       email,
       whyPartnerWithUs,
-      howYouHearAboutUs,
+      howYouHearAboutUs
     }) {
       this.isModalLoading = true
 
@@ -200,7 +200,7 @@ export default {
         Website: website,
         Email: email,
         'Why do you want to partner with us?': whyPartnerWithUs,
-        'How did you hear about us?': howYouHearAboutUs,
+        'How did you hear about us?': howYouHearAboutUs
       })
         .then((data) => {
           this.isModalLoading = false
@@ -210,11 +210,13 @@ export default {
         .catch((err) => {
           this.isModalLoading = false
           this.isModalFailed = true
+
+          console.error(err)
         })
-    },
+    }
   },
   components: {
-    CommunityPartnersModal,
-  },
+    CommunityPartnersModal
+  }
 }
 </script>

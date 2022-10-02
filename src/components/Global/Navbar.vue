@@ -275,16 +275,16 @@
 <script>
 import ThemeButton from './ThemeButton.vue'
 export default {
-  data() {
+  data () {
     return {
       // states for each of the 4 dropdowns
       isOpen: [false, false, false, false],
       // state for mobile view (hamburger icon)
-      smIsOpen: false,
+      smIsOpen: false
     }
   },
   components: {
-    ThemeButton,
-  },
+    ThemeButton
+  }
 }
 </script>

@@ -32,13 +32,13 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
-      isDarkMode: false,
+      isDarkMode: false
     }
   },
   methods: {
-    toggleDarkMode() {
+    toggleDarkMode () {
       // var checkbox = document.getElementById('#toggle')
       if (this.isDarkMode) {
         localStorage.removeItem('theme')
@@ -49,9 +49,9 @@ export default {
         this.isDarkMode = true
         localStorage.setItem('theme', 'dark')
       }
-    },
+    }
   },
-  mounted() {
+  mounted () {
     if (
       localStorage.theme === 'dark' ||
       (!('theme' in localStorage) &&
@@ -65,6 +65,6 @@ export default {
       this.isDarkMode = false
       localStorage.removeItem('theme')
     }
-  },
+  }
 }
 </script>

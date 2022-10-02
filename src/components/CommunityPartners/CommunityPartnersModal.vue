@@ -234,16 +234,16 @@ export default {
     isModalFailed: Boolean,
     isModalSuccessful: Boolean,
     toggleModal: Function,
-    handleFormSubmitProp: Function,
+    handleFormSubmitProp: Function
   },
-  data() {
+  data () {
     return {
       founderName: '',
       communityName: '',
       website: '',
       email: '',
       whyPartnerWithUs: '',
-      howYouHearAboutUs: '',
+      howYouHearAboutUs: ''
     }
   },
   methods: {
@@ -254,7 +254,7 @@ export default {
         website: this.website,
         email: this.email,
         whyPartnerWithUs: this.whyPartnerWithUs,
-        howYouHearAboutUs: this.howYouHearAboutUs,
+        howYouHearAboutUs: this.howYouHearAboutUs
       })
     },
     clearForm: function () {
@@ -264,8 +264,8 @@ export default {
       this.email = ''
       this.whyPartnerWithUs = ''
       this.howYouHearAboutUs = ''
-    },
-  },
+    }
+  }
 }
 </script>
 

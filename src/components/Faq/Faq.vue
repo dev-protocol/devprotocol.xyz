@@ -97,7 +97,7 @@ import langCsv from './lang.json'
 
 export default {
   name: 'FAQ',
-  data() {
+  data () {
     return {
       categories: {
         /*
@@ -134,11 +134,11 @@ export default {
        */
       columnHeaderLanguageNameConfig: {
         delimiter: '(',
-        substrEnd: 1,
-      },
+        substrEnd: 1
+      }
     }
   },
-  created() {
+  created () {
     langCsv
       // don't include fields that have empty values
       .filter(
@@ -165,7 +165,7 @@ export default {
 
         const faqObj = {
           answer: {},
-          question: {},
+          question: {}
         }
 
         Object.entries(langObj).forEach(([key, value]) => {
@@ -190,8 +190,7 @@ export default {
       this.selectedCategory = category
     },
     storeUniqueLanguageName: function (languageName) {
-      if (this.languagesArr.indexOf(languageName) === -1)
-        this.languagesArr.push(languageName)
+      if (this.languagesArr.indexOf(languageName) === -1) { this.languagesArr.push(languageName) }
     },
     extractLanguageName: function (keyLowerCased) {
       let languageName = keyLowerCased
@@ -212,15 +211,15 @@ export default {
     },
     toggleDropdown: function () {
       this.isDropdownActive = !this.isDropdownActive
-    },
+    }
   },
   computed: {
     translatedList: function () {
       return this.categories[this.selectedCategory].map((faqItem) => ({
         question: faqItem.question[this.selectedLanguage],
-        answer: faqItem.answer[this.selectedLanguage],
+        answer: faqItem.answer[this.selectedLanguage]
       }))
-    },
-  },
+    }
+  }
 }
 </script>

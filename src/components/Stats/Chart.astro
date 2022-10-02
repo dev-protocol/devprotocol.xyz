@@ -14,7 +14,7 @@
 </ul>
 
 <script>
-  function chart(id, startX, startY) {
+  function chart (id, startX, startY) {
     const margin = { top: 50, right: 10, bottom: 30, left: 50 }
     const width = 600 - margin.left - margin.right
     const height = 400 - margin.top - margin.bottom
@@ -46,7 +46,7 @@
           startX,
           d3.max(data, function (d) {
             return d.date
-          }),
+          })
         ])
         .range([0, width])
 
@@ -61,7 +61,7 @@
           startY,
           d3.max(data, function (d) {
             return +(d.mainnet + d.arb + d.polygon)
-          }),
+          })
         ])
         .range([height, 0])
 

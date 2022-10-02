@@ -147,64 +147,61 @@
 
 <script>
 export default {
-  name: 'Testimonial',
-  data() {
+  name: 'TestimonialComponent',
+  data () {
     return {
       items: [
         {
           name: 'Sindre',
           image: 'https://github.com/sindresorhus.png',
-          description: `I like how the Dev Protocol is improving open source sustainability in an innovative way`,
-          link: 'https://twitter.com/sindresorhus',
+          description: 'I like how the Dev Protocol is improving open source sustainability in an innovative way',
+          link: 'https://twitter.com/sindresorhus'
         },
         {
           name: 'μ-zomia',
           image: '/assets/m-zomia-rounded.jpg',
-          description: `DevProtocol is born out of the love of people supporting people. Once you understand that, there's no reason not to be part of the team.`,
-          link: 'https://twitter.com/zomia12',
+          description: 'DevProtocol is born out of the love of people supporting people. Once you understand that, there\'s no reason not to be part of the team.',
+          link: 'https://twitter.com/zomia12'
         },
         {
           name: 'HiDE',
           image: '/assets/hide.png',
           description: `DEV protocol is a sustainable source of funding for the community ecosystem that uses our services to operate.
 It is a core feature of the HiÐΞ protocol and is a very important financial resource. As OSS creators, we feel free to use some DEV tokens for development and redistribute them in our services. I will continue to do my best for the further development of the DEV community that you have staked out for us.`,
-          link: 'https://twitter.com/HideProtocol',
+          link: 'https://twitter.com/HideProtocol'
         },
         {
           name: 'ScytheSwap',
           image: '/assets/scythe_swap.png',
-          description: `Being a part of Dev Protocol has been an incredible experience. When I was on boarded to stakes.social I was exposed to an audience of OSS creators and enthusiasts alike who helped to fund our project while simultaneously engaging with us, creating long-term connections with some of the most intelligent developers in the world. Dev Protocol, and all that it offers to OSS contributors, along with its community are truly one of a kind.`,
-          link: 'https://github.com/ScytheSwapProtocol',
+          description: 'Being a part of Dev Protocol has been an incredible experience. When I was on boarded to stakes.social I was exposed to an audience of OSS creators and enthusiasts alike who helped to fund our project while simultaneously engaging with us, creating long-term connections with some of the most intelligent developers in the world. Dev Protocol, and all that it offers to OSS contributors, along with its community are truly one of a kind.',
+          link: 'https://github.com/ScytheSwapProtocol'
         },
         {
           name: 'IslandViewDigital',
           image: '/assets/islandviewdigital.jpg',
-          description: `Being part of Dev Protocol not only means being able to sustainably raise capital for our immersive, revenue-generating VR real estate development projects, it means being part of a community of talented innovators with whom we can synergize to bring even more value to the protocol.`,
-          link: 'https://twitter.com/IslandVDigital',
+          description: 'Being part of Dev Protocol not only means being able to sustainably raise capital for our immersive, revenue-generating VR real estate development projects, it means being part of a community of talented innovators with whom we can synergize to bring even more value to the protocol.',
+          link: 'https://twitter.com/IslandVDigital'
         },
         {
           name: 'Samuil / SQ-UI',
           image: '/assets/samuil.jpg',
-          description: `DEV protocol jump-started our project and helped us do what we love.`,
-          link: 'https://twitter.com/samuil4',
-        },
+          description: 'DEV protocol jump-started our project and helped us do what we love.',
+          link: 'https://twitter.com/samuil4'
+        }
       ],
       currentItem: {
         name: 'Sindre',
         image: 'https://github.com/sindresorhus.png',
-        description: `I like how the Dev Protocol is improving open source sustainability in an innovative way`,
-        link: 'https://twitter.com/sindresorhus',
-      },
+        description: 'I like how the Dev Protocol is improving open source sustainability in an innovative way',
+        link: 'https://twitter.com/sindresorhus'
+      }
     }
   },
-  mounted() {
-    setInterval(() => setCurrentItem(nextItem()), 5000)
-  },
   methods: {
-    setCurrentItem(item) {
+    setCurrentItem (item) {
       this.currentItem = item
     },
-    nextItem() {
+    nextItem () {
       let nextItem
       this.items.forEach((item, index) => {
         if (item.name == this.currentItem.name) {
@@ -217,7 +214,7 @@ It is a core feature of the HiÐΞ protocol and is a very important financial re
       })
       return nextItem
     },
-    prevItem() {
+    prevItem () {
       let prevItem
       this.items.forEach((item, index) => {
         if (item.name == this.currentItem.name) {
@@ -229,8 +226,11 @@ It is a core feature of the HiÐΞ protocol and is a very important financial re
         }
       })
       return prevItem
-    },
+    }
   },
+  mounted () {
+    setInterval(() => setCurrentItem(nextItem()), 5000)
+  }
 }
 </script>
 
