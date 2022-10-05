@@ -1,494 +1,494 @@
 [
   {
-    date: '2020-01-02',
-    mainnet: 0,
-    arb: 0,
-    polygon: 0
+    "date": "2020-01-02",
+    "mainnet": 0,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2020-02-06',
-    mainnet: 752,
-    arb: 0,
-    polygon: 0
+    "date": "2020-02-06",
+    "mainnet": 752,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2020-02-07',
-    mainnet: 752,
-    arb: 0,
-    polygon: 0
+    "date": "2020-02-07",
+    "mainnet": 752,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2020-03-02',
-    mainnet: 1572,
-    arb: 0,
-    polygon: 0
+    "date": "2020-03-02",
+    "mainnet": 1572,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2020-03-03',
-    mainnet: 1574,
-    arb: 0,
-    polygon: 0
+    "date": "2020-03-03",
+    "mainnet": 1574,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2020-03-06',
-    mainnet: 1571,
-    arb: 0,
-    polygon: 0
+    "date": "2020-03-06",
+    "mainnet": 1571,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2020-05-02',
-    mainnet: 1571,
-    arb: 0,
-    polygon: 0
+    "date": "2020-05-02",
+    "mainnet": 1571,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2020-08-01',
-    mainnet: 1571,
-    arb: 0,
-    polygon: 0
+    "date": "2020-08-01",
+    "mainnet": 1571,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2020-08-06',
-    mainnet: 1571,
-    arb: 0,
-    polygon: 0
+    "date": "2020-08-06",
+    "mainnet": 1571,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2020-09-03',
-    mainnet: 1584,
-    arb: 0,
-    polygon: 0
+    "date": "2020-09-03",
+    "mainnet": 1584,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2020-09-05',
-    mainnet: 1580,
-    arb: 0,
-    polygon: 0
+    "date": "2020-09-05",
+    "mainnet": 1580,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2020-09-06',
-    mainnet: 1580,
-    arb: 0,
-    polygon: 0
+    "date": "2020-09-06",
+    "mainnet": 1580,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2020-09-07',
-    mainnet: 1580,
-    arb: 0,
-    polygon: 0
+    "date": "2020-09-07",
+    "mainnet": 1580,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2020-10-03',
-    mainnet: 1587,
-    arb: 0,
-    polygon: 0
+    "date": "2020-10-03",
+    "mainnet": 1587,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2020-10-06',
-    mainnet: 1587,
-    arb: 0,
-    polygon: 0
+    "date": "2020-10-06",
+    "mainnet": 1587,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2020-11-03',
-    mainnet: 1588,
-    arb: 0,
-    polygon: 0
+    "date": "2020-11-03",
+    "mainnet": 1588,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2020-12-01',
-    mainnet: 1589,
-    arb: 0,
-    polygon: 0
+    "date": "2020-12-01",
+    "mainnet": 1589,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2020-12-06',
-    mainnet: 1589,
-    arb: 0,
-    polygon: 0
+    "date": "2020-12-06",
+    "mainnet": 1589,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-02-01',
-    mainnet: 1589,
-    arb: 0,
-    polygon: 0
+    "date": "2021-02-01",
+    "mainnet": 1589,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-02-05',
-    mainnet: 1589,
-    arb: 0,
-    polygon: 0
+    "date": "2021-02-05",
+    "mainnet": 1589,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-03-01',
-    mainnet: 1599,
-    arb: 0,
-    polygon: 0
+    "date": "2021-03-01",
+    "mainnet": 1599,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-03-03',
-    mainnet: 1594,
-    arb: 0,
-    polygon: 0
+    "date": "2021-03-03",
+    "mainnet": 1594,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-03-04',
-    mainnet: 1598,
-    arb: 0,
-    polygon: 0
+    "date": "2021-03-04",
+    "mainnet": 1598,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-03-05',
-    mainnet: 1599,
-    arb: 0,
-    polygon: 0
+    "date": "2021-03-05",
+    "mainnet": 1599,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-03-06',
-    mainnet: 1599,
-    arb: 0,
-    polygon: 0
+    "date": "2021-03-06",
+    "mainnet": 1599,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-04-01',
-    mainnet: 1606,
-    arb: 0,
-    polygon: 0
+    "date": "2021-04-01",
+    "mainnet": 1606,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-04-02',
-    mainnet: 1606,
-    arb: 0,
-    polygon: 0
+    "date": "2021-04-02",
+    "mainnet": 1606,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-04-03',
-    mainnet: 1606,
-    arb: 0,
-    polygon: 0
+    "date": "2021-04-03",
+    "mainnet": 1606,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-04-05',
-    mainnet: 1601,
-    arb: 0,
-    polygon: 0
+    "date": "2021-04-05",
+    "mainnet": 1601,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-05-01',
-    mainnet: 1607,
-    arb: 0,
-    polygon: 0
+    "date": "2021-05-01",
+    "mainnet": 1607,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-05-02',
-    mainnet: 1612,
-    arb: 0,
-    polygon: 0
+    "date": "2021-05-02",
+    "mainnet": 1612,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-05-03',
-    mainnet: 1608,
-    arb: 0,
-    polygon: 0
+    "date": "2021-05-03",
+    "mainnet": 1608,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-05-04',
-    mainnet: 1608,
-    arb: 0,
-    polygon: 0
+    "date": "2021-05-04",
+    "mainnet": 1608,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-05-05',
-    mainnet: 1610,
-    arb: 0,
-    polygon: 0
+    "date": "2021-05-05",
+    "mainnet": 1610,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-05-07',
-    mainnet: 1606,
-    arb: 0,
-    polygon: 0
+    "date": "2021-05-07",
+    "mainnet": 1606,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-06-01',
-    mainnet: 1630,
-    arb: 0,
-    polygon: 0
+    "date": "2021-06-01",
+    "mainnet": 1630,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-06-02',
-    mainnet: 1628,
-    arb: 0,
-    polygon: 0
+    "date": "2021-06-02",
+    "mainnet": 1628,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-06-03',
-    mainnet: 1610,
-    arb: 0,
-    polygon: 0
+    "date": "2021-06-03",
+    "mainnet": 1610,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-06-04',
-    mainnet: 1614,
-    arb: 0,
-    polygon: 0
+    "date": "2021-06-04",
+    "mainnet": 1614,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-06-06',
-    mainnet: 1629,
-    arb: 0,
-    polygon: 0
+    "date": "2021-06-06",
+    "mainnet": 1629,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-07-02',
-    mainnet: 1635,
-    arb: 0,
-    polygon: 0
+    "date": "2021-07-02",
+    "mainnet": 1635,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-07-03',
-    mainnet: 1635,
-    arb: 0,
-    polygon: 0
+    "date": "2021-07-03",
+    "mainnet": 1635,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-07-04',
-    mainnet: 1635,
-    arb: 0,
-    polygon: 0
+    "date": "2021-07-04",
+    "mainnet": 1635,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-07-05',
-    mainnet: 1635,
-    arb: 0,
-    polygon: 0
+    "date": "2021-07-05",
+    "mainnet": 1635,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-08-01',
-    mainnet: 1640,
-    arb: 0,
-    polygon: 0
+    "date": "2021-08-01",
+    "mainnet": 1640,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-08-02',
-    mainnet: 1638,
-    arb: 0,
-    polygon: 0
+    "date": "2021-08-02",
+    "mainnet": 1638,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-08-05',
-    mainnet: 1642,
-    arb: 0,
-    polygon: 0
+    "date": "2021-08-05",
+    "mainnet": 1642,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-08-06',
-    mainnet: 1639,
-    arb: 0,
-    polygon: 0
+    "date": "2021-08-06",
+    "mainnet": 1639,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-09-01',
-    mainnet: 1639,
-    arb: 0,
-    polygon: 0
+    "date": "2021-09-01",
+    "mainnet": 1639,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-09-03',
-    mainnet: 1639,
-    arb: 0,
-    polygon: 0
+    "date": "2021-09-03",
+    "mainnet": 1639,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-10-07',
-    mainnet: 1639,
-    arb: 0,
-    polygon: 0
+    "date": "2021-10-07",
+    "mainnet": 1639,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-11-01',
-    mainnet: 1646,
-    arb: 14,
-    polygon: 0
+    "date": "2021-11-01",
+    "mainnet": 1646,
+    "arb": 14,
+    "polygon": 0
   },
   {
-    date: '2021-11-02',
-    mainnet: 1639,
-    arb: 0,
-    polygon: 0
+    "date": "2021-11-02",
+    "mainnet": 1639,
+    "arb": 0,
+    "polygon": 0
   },
   {
-    date: '2021-11-04',
-    mainnet: 1639,
-    arb: 11,
-    polygon: 0
+    "date": "2021-11-04",
+    "mainnet": 1639,
+    "arb": 11,
+    "polygon": 0
   },
   {
-    date: '2021-11-05',
-    mainnet: 1646,
-    arb: 11,
-    polygon: 0
+    "date": "2021-11-05",
+    "mainnet": 1646,
+    "arb": 11,
+    "polygon": 0
   },
   {
-    date: '2021-11-06',
-    mainnet: 1646,
-    arb: 12,
-    polygon: 0
+    "date": "2021-11-06",
+    "mainnet": 1646,
+    "arb": 12,
+    "polygon": 0
   },
   {
-    date: '2021-11-07',
-    mainnet: 1646,
-    arb: 13,
-    polygon: 0
+    "date": "2021-11-07",
+    "mainnet": 1646,
+    "arb": 13,
+    "polygon": 0
   },
   {
-    date: '2021-12-07',
-    mainnet: 1646,
-    arb: 14,
-    polygon: 0
+    "date": "2021-12-07",
+    "mainnet": 1646,
+    "arb": 14,
+    "polygon": 0
   },
   {
-    date: '2022-01-02',
-    mainnet: 1646,
-    arb: 14,
-    polygon: 0
+    "date": "2022-01-02",
+    "mainnet": 1646,
+    "arb": 14,
+    "polygon": 0
   },
   {
-    date: '2022-01-02',
-    mainnet: 1646,
-    arb: 14,
-    polygon: 0
+    "date": "2022-01-02",
+    "mainnet": 1646,
+    "arb": 14,
+    "polygon": 0
   },
   {
-    date: '2022-01-03',
-    mainnet: 1646,
-    arb: 15,
-    polygon: 8
+    "date": "2022-01-03",
+    "mainnet": 1646,
+    "arb": 15,
+    "polygon": 8
   },
   {
-    date: '2022-01-04',
-    mainnet: 1646,
-    arb: 15,
-    polygon: 3
+    "date": "2022-01-04",
+    "mainnet": 1646,
+    "arb": 15,
+    "polygon": 3
   },
   {
-    date: '2022-01-05',
-    mainnet: 1646,
-    arb: 15,
-    polygon: 6
+    "date": "2022-01-05",
+    "mainnet": 1646,
+    "arb": 15,
+    "polygon": 6
   },
   {
-    date: '2022-02-01',
-    mainnet: 1646,
-    arb: 15,
-    polygon: 6
+    "date": "2022-02-01",
+    "mainnet": 1646,
+    "arb": 15,
+    "polygon": 6
   },
   {
-    date: '2022-02-05',
-    mainnet: 1646,
-    arb: 15,
-    polygon: 6
+    "date": "2022-02-05",
+    "mainnet": 1646,
+    "arb": 15,
+    "polygon": 6
   },
   {
-    date: '2022-03-01',
-    mainnet: 1646,
-    arb: 15,
-    polygon: 12
+    "date": "2022-03-01",
+    "mainnet": 1646,
+    "arb": 15,
+    "polygon": 12
   },
   {
-    date: '2022-03-02',
-    mainnet: 1646,
-    arb: 15,
-    polygon: 12
+    "date": "2022-03-02",
+    "mainnet": 1646,
+    "arb": 15,
+    "polygon": 12
   },
   {
-    date: '2022-03-02',
-    mainnet: 1646,
-    arb: 15,
-    polygon: 12
+    "date": "2022-03-02",
+    "mainnet": 1646,
+    "arb": 15,
+    "polygon": 12
   },
   {
-    date: '2022-03-03',
-    mainnet: 1646,
-    arb: 15,
-    polygon: 13
+    "date": "2022-03-03",
+    "mainnet": 1646,
+    "arb": 15,
+    "polygon": 13
   },
   {
-    date: '2022-03-05',
-    mainnet: 1646,
-    arb: 15,
-    polygon: 13
+    "date": "2022-03-05",
+    "mainnet": 1646,
+    "arb": 15,
+    "polygon": 13
   },
   {
-    date: '2022-04-02',
-    mainnet: 1646,
-    arb: 15,
-    polygon: 12
+    "date": "2022-04-02",
+    "mainnet": 1646,
+    "arb": 15,
+    "polygon": 12
   },
   {
-    date: '2022-04-02',
-    mainnet: 1646,
-    arb: 15,
-    polygon: 12
+    "date": "2022-04-02",
+    "mainnet": 1646,
+    "arb": 15,
+    "polygon": 12
   },
   {
-    date: '2022-04-03',
-    mainnet: 1646,
-    arb: 15,
-    polygon: 12
+    "date": "2022-04-03",
+    "mainnet": 1646,
+    "arb": 15,
+    "polygon": 12
   },
   {
-    date: '2022-04-05',
-    mainnet: 1646,
-    arb: 15,
-    polygon: 18
+    "date": "2022-04-05",
+    "mainnet": 1646,
+    "arb": 15,
+    "polygon": 18
   },
   {
-    date: '2022-05-02',
-    mainnet: 1646,
-    arb: 15,
-    polygon: 42
+    "date": "2022-05-02",
+    "mainnet": 1646,
+    "arb": 15,
+    "polygon": 42
   },
   {
-    date: '2022-05-03',
-    mainnet: 1646,
-    arb: 15,
-    polygon: 38
+    "date": "2022-05-03",
+    "mainnet": 1646,
+    "arb": 15,
+    "polygon": 38
   },
   {
-    date: '2022-05-04',
-    mainnet: 1646,
-    arb: 15,
-    polygon: 31
+    "date": "2022-05-04",
+    "mainnet": 1646,
+    "arb": 15,
+    "polygon": 31
   },
   {
-    date: '2022-05-05',
-    mainnet: 1646,
-    arb: 15,
-    polygon: 39
+    "date": "2022-05-05",
+    "mainnet": 1646,
+    "arb": 15,
+    "polygon": 39
   },
   {
-    date: '2022-05-06',
-    mainnet: 1646,
-    arb: 21,
-    polygon: 20
+    "date": "2022-05-06",
+    "mainnet": 1646,
+    "arb": 21,
+    "polygon": 20
   },
   {
-    date: '2022-05-06',
-    mainnet: 1646,
-    arb: 21,
-    polygon: 20
+    "date": "2022-05-06",
+    "mainnet": 1646,
+    "arb": 21,
+    "polygon": 20
   },
   {
-    date: '2022-05-07',
-    mainnet: 1646,
-    arb: 21,
-    polygon: 40
+    "date": "2022-05-07",
+    "mainnet": 1646,
+    "arb": 21,
+    "polygon": 40
   },
   {
-    date: '2022-06-05',
-    mainnet: 1646,
-    arb: 21,
-    polygon: 40
+    "date": "2022-06-05",
+    "mainnet": 1646,
+    "arb": 21,
+    "polygon": 40
   }
 ]
