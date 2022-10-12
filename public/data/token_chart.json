@@ -486,9 +486,51 @@
     "polygon": 40
   },
   {
-    "date": "2022-06-05",
+    "date": "2022-06-01",
+    "mainnet": 1646,
+    "arb": 21,
+    "polygon": 45
+  },
+  {
+    "date": "2022-06-02",
+    "mainnet": 1649,
+    "arb": 21,
+    "polygon": 45
+  },
+  {
+    "date": "2022-06-04",
     "mainnet": 1646,
     "arb": 21,
     "polygon": 40
+  },
+  {
+    "date": "2022-06-05",
+    "mainnet": 1646,
+    "arb": 21,
+    "polygon": 46
+  },
+  {
+    "date": "2022-08-02",
+    "mainnet": 1649,
+    "arb": 21,
+    "polygon": 45
+  },
+  {
+    "date": "2022-08-05",
+    "mainnet": 1649,
+    "arb": 21,
+    "polygon": 50
+  },
+  {
+    "date": "2022-08-06",
+    "mainnet": 1649,
+    "arb": 21,
+    "polygon": 50
+  },
+  {
+    "date": "2022-09-07",
+    "mainnet": 1649,
+    "arb": 21,
+    "polygon": 50
   }
 ]
