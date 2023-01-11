@@ -1,18 +1,10 @@
 ---
-import Chart from './Chart.astro'
+import Chart from './Chart.vue'
 ---
 
 <div class="flex flex-col justify-center items-center my-16 pt-8">
   <h2 class="text-center text-5xl dark:text-white">Stats</h2>
   <Chart client:load />
-  <div class="my-16">
-    <h3 class="text-5xl dark:text-white">What comes next:</h3>
-    <ul class="text-2xl dark:text-white mt-8 space-y-2">
-      <li>2022 July --- Close raising funds</li>
-      <li>2022 Summer --- Start marketing</li>
-      <li>2022 Winter --- Listing on CEX</li>
-    </ul>
-  </div>
   <a class="m-auto w-fit " href="https://discord.com/invite/VwJp4KM">
     <button
       class="w-max select-none rounded-lg bg-gray-300 p-2.5 text-xl dark:bg-indigo-600"
