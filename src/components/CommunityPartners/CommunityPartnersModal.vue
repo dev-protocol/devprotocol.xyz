@@ -70,7 +70,7 @@
                         alt="GitHub icon"
                       />
                     </a>
-                    <a href="https://twitter.com/devprtcl">
+                    <a href="https://twitter.com/poweredbyClubs">
                       <img
                         class="w-6 pt-1 brightness-0 invert filter"
                         src="/assets/twitter.svg"
