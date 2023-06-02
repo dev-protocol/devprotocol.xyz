@@ -92,7 +92,7 @@ export default {
         {
           name: 'WebXDAO',
           image: 'https://github.com/WebXDAO.png',
-          link: 'https://webxdao.github.io',
+          link: 'https://webxdao.xyz',
           description:
             'An Open Source Community that focuses on the future of the web',
           extraClass: 'rounded-full',
