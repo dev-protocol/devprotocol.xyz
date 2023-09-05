@@ -22,19 +22,23 @@ import L2 from '@components/Home/Banners/L2.astro'
   <Hero />
   <Apps />
   <article class="mt-10 lg:mt-20">
-    <div class="grid gap-18 md:gap-32 my-28">
+    <div class="gap-18 my-28 grid md:gap-32">
       <Why />
       <How />
     </div>
     <DevToken />
     <MaxieToken />
-    <div class="grid gap-y-20 mt-20">
+    <div class="mt-20 grid gap-y-20">
       <L2 />
       <Creators />
-      <hr class="h-2 mx-auto rounded-sm dark:border-gray-600" style="width: 70%"
+      <hr
+        class="mx-auto h-2 rounded-sm dark:border-gray-600"
+        style="width: 70%"
       />
       <SuccessStories client:visible />
-      <hr class="h-2 mx-auto rounded-sm dark:border-gray-600" style="width: 70%"
+      <hr
+        class="mx-auto h-2 rounded-sm dark:border-gray-600"
+        style="width: 70%"
       />
       <Patrons />
     </div>
